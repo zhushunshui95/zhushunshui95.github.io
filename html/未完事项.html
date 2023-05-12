@@ -1,0 +1,662 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>未完事项 - San Min Zhu Yi</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主义第五章.html"><strong aria-hidden="true">18.</strong> 民生主义第五章</a></li><li class="chapter-item expanded "><a href="民生主义第六章.html"><strong aria-hidden="true">19.</strong> 民生主义第六章</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">20.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html"><strong aria-hidden="true">21.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">23.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">24.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html"><strong aria-hidden="true">25.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">28.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">30.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">31.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html"><strong aria-hidden="true">32.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">35.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">36.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html"><strong aria-hidden="true">37.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">38.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">39.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html"><strong aria-hidden="true">40.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">41.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">43.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">44.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">45.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html" class="active"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">San Min Zhu Yi</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>未完事项：</p>
+<p>六经著述</p>
+<p>考古与上古史</p>
+<p>第八好处 </p>
+<p>宪法新编</p>
+<p>第十制度设计</p>
+<p>科举考试内容及参考书籍</p>
+<p>军事训练</p>
+<p>文武之备</p>
+<blockquote>
+<p>【秋风】再思张君劢、钱穆之争: 文明与宪制之辩</p>
+<p>再思张君劢、钱穆之争: 文明与宪制之辩</p>
+<p>作者：姚中秋（秋风）</p>
+<p>来源：《清华大学学报》（哲学社会科学版）2017年第2期</p>
+<p>时间：孔子二五六八年岁次丁酉三月二十日癸酉</p>
+<pre><code>       耶稣2017年4月16日
+</code></pre>
+<p>摘要:张君劢、钱穆两先生均为现代新儒学之重要人物，然其为学路径不同，故对中国传统政治之性质、对儒家义理转生现代政制之前景，持有大体相反的看法，而发生或隐或显之争论。张君劢认为，构建现代中国之良好政制之路是自移植西方民主，钱穆先生则以为可在儒家文明内部转生创发。由此，两人对孙中山先生之五权宪法方案也持完全不同的看法:钱穆支持，而张君劢反对。此一分歧实贯穿19世纪末以来之现代儒学发展，今日则展开为港台儒学与大陆新兴政治儒学之争。</p>
+<p>关键词:张君劢;钱穆;港台新儒家;政治儒学;中国传统政治;现代宪制</p>
+<p>【正文】</p>
+<p>张君劢先生</p>
+<p>钱穆先生</p>
+<p>张君劢、钱穆二贤，在相对中立的现代学术史叙事中，均为广义现代新儒学之代表人物。然两人为学路径大不相同，政治观点多有相反之处;尤其到晚年，公开爆发激烈争论:张君劢一生最后著作《钱著〈中国传统政治〉商榷》，厚厚600多页，系统反驳钱穆先生于中国历史、政治之看法，可视为现代新儒学史上不大不小的事件。</p>
+<p>钱、张思想争论实可远溯至抗日战争时期。甲午之战中国败于日本，催生了现代中国一大核心政治议题:建立现代宪制。戊戌维新即以此为诉求，但此事十分繁难，先贤前赴后继，中国一次又一次进入立宪时刻。此事实本身即令人深思:想象的现代宪制何以难产?抗日战争全面爆发后，精英群体逐渐形成抗战建国纲领，故抗战始终伴随着立宪努力，此为中国又一立宪时刻。作为民盟领导人，张君劢先生是其中活跃而重要之政治人物，在作为立宪会议之政治协商会议上，因缘际会，成为中华民国宪法起草者;完成起草后，在宪法通过后著《中华民国民主宪法十讲》，阐述此宪法之精神和原则。至于钱穆，当时不过是一普通大学教授，本不能与当时政治风云人物张君劢相提并论。但他关注中国文明之前途命运，当然不会置身此一大事之外，故在报刊陆续发表文章，讨论宪法设计。抗战胜利之际，1945年底结集为《政学私言》出版。当时，两人可能未直接争论，但两本近乎同时出版之著作之政治主张大不相同，且与各自一二十年之后的立论完全一致，则晚年发生公开争论在情理之中。</p>
+<p>笔者大学攻读历史学，研究生论文研究钱穆先生之历史文化思想，回首迄今研究中国思想、政治之学术路径，大体上由钱穆先生入。不过，毕业之后，荒废学业，20世纪90年代中期始学西学十余年，而后转入儒学。在由西学转进儒学过程中，张君劢先生是重要启发者，其兼容儒学与宪政之努力令我入迷，曾系统研读其著述并出版专书，以探究研究其保守—宪政主义之思想构造与政治实践。故钱张二贤均为我师，两人在重大问题上势成扞格，如何调和?在研究张君劢先生时，即困扰我心，只是当初学力不足，予以回避。然此问题萦绕心中，盖此争论触及中国文明寻求其新生转进之际所不能不解决的根本困扰:在中西古今之思想和政治传统、资源之纠葛中，现代中国究竟如何抉择、尤其是在政治领域?儒家参与之两千余年中国政制实践，对今日构建优良社会治理秩序，是否毫无意义?如果是，那儒家塑造、维系社会政治秩序之能力岂非全不足取?而儒家向来以齐家、治国、平天下为行道之要务，儒家若在政治上基本失败两千年，还有资格参与、主导现代以至于今日中国之大变化么?</p>
+<p>当下海峡两岸高度复杂的文化与政治现实，包括近来港台新儒家代表人物与所谓大陆新儒家或曰政治儒学代表人物之间的争论，促使笔者重返此一议题。唯本文不拟如钱穆或张君劢争论时那样，进入复杂的历史叙述，展开具体辨正，而主要关注两人关于认知中国传统政制之方法，及由此所决定之现代宪制构思、设计取向。不过，对钱穆先生之认知方法，笔者已有专文讨论，故本文首先检讨、辨正张君劢先生对钱穆先生之批评，再由钱穆先生之论述与之对勘，以揭示张君劢先生思想中之严重断裂。论述中引入孙中山先生宪制方案以为中介，因为两人的政治思考均以此为枢轴，或赞或弹，其各自的方法、倾向于此清晰可见。</p>
+<p>一、钱穆与张君劢政治学方法之别</p>
+<p>至少从《国史大纲》起，钱穆先生即对现代中国学术、包括政治学，多有严厉批评，盖“近代中国学者专以抄袭稗贩西方为无上之能事”，故现代中国学术近乎全盘移植西方，学者并以此衡量中国政制，自然有无视、甚至敌视态度，其构想宪制必为全盘移植。此一反思贯穿钱穆先生一生。</p>
+<p>而作为继承传统中国历史学传统、而又对现代世界保持开放心态、因而可谓不新不旧之历史学家，钱穆先生始终认为，中国现代政治不可能走全盘移植之路。然而，若欲在政治上自主地走中国之路，就不能不首先在学术上自主。《国史大纲》论各时代，无不以学术为先导。故钱穆先生的政治论述，每每首先呼吁学术范式层面之反思:全盘移植之西方学术是否可以充分而得当地描述、解释中国数千年治理实践?以此学术构思现代中国宪制，因而完全无视传统政制，是否正当?此在《政学私言》中随处可见。身在政治学圈外的钱穆先生始终试图唤醒圈内的反思意识，进而主张:</p>
+<p>我们还得把自己历史归纳出自己的恰当名称，来为自己政治传统划分它演进的阶段，这才是尊重客观实事求是的科学精神。若只知道根据西方成说，附会演绎，太随便，亦太懒惰，决不是学者应取的态度。钱穆先生呼吁发展“中国政治学”，以为理解中国政治之历史和现实、进而设计现代政制之工具。</p>
+<p>张君劢向来在政治学圈人，毕生致力于宪法研究、设计，并不避艰险，数度投入立宪政治;而他完全拒绝钱穆先生的呼吁，并拒绝“中国政治学”之倡议。《中国专制君主政制之评议》第一篇题为《钱著之逻辑方法》，专门批评钱穆先生的方法，进而显明自己的方法。</p>
+<p>序论中张君劢先生坦指钱穆先生不通西学:“独其涉及中西比较之处，每觉其未登西方之堂奥，而好作长短得失之批评”;而他作此书目的正是“就中西政治之理论制度，互相比较，且说明其所以优劣高下之故”。两人都在长尺度上比较中西政治之长短高下，但其看法近乎相反。这显然是因为，两人之评判标准大相径庭。概言之，张君劢先生以西方政治学为政治学本身，钱穆先生则相信，中国政治与西方政治本身相当重大而明显的差异，则思考政治之学自有差异，中国学者不可以西方政治学为唯一的政治学，据以判断中国政治，不论是历史还是现实。比如，《中国传统政治》之开篇谓:</p>
+<p>近代中国学者专以抄袭稗贩西方为无上之能事，于是也说中国政治由神权转入到君权。因为中国没有议会和宪法，中国自然是君主专制，说不上民权。但不知中国自来政治理论，并不以主权为重点，因此根本上并没有主权在上帝抑或在君主那样的争辩。若硬把中国政治史也分成神权时代与君权时代，那只是模糊影响，牵强附会，不能贴切历史客观事实之真相。至于认为中国以往政治，只是君主专制，说不到民权，也一样是把西洋现成名词硬装进中国，并不是实事求是。真要求了解中国史，当知西洋近代，又有法西斯共产极权两种政治，完全逃出了他们以前所归纳的君主专制、君主立宪和民主立宪之三范畴。可见这三范畴也只照他们以前历史来归纳。难道中国传统政治便一定在此三范畴之内，不会以别一方式出现吗?</p>
+<p>钱穆先生以为，“中国自来政治理论，并不以主权为重点”，据此则讨论传统政治，不必以辨析政体归属、进而不必以辨析君主制之性质为重点。依先生之论，政治学是一门经验性学科，其概念、推理，当归纳自具体的政治历史和现实，而非演绎推理———这似乎与亚里士多德之政治思考方式暗合。</p>
+<p>《中国专制君主政制之评议》第一篇开篇引用了上引文字。张君劢先生则以为，此论正显示钱穆先生对政治学之无知。“东方学者每好以博闻强记为事，而不乐受逻辑之严格规矩，此乃钱著之论传统政治，所以对于主题之君主竟未着重，且对于何谓君主专制、何谓非君主专制，竟未细为划分，而遽以宰相制、三省制等为非君主专制之论证也”。先生以为，钱穆先生根本没有认识到政治学之主要研究对象何在，因为“西方政治学者以政体为一主题”，“西方政治学者向以权力为政府之特质，其讨论政府，先从权力所在为下手处”，并以权力归属判断政体性质。钱穆先生之论，“其意以为论政治可以不以权力为重点”，故不究其归于何种主体，“乃创为责任论或曰职分论，为中国政治理论之基本”。在张君劢先生看来，钱穆先生基于中国历史和现实构建政治学理论，据以自我认识和创制立法，是完全错误的:</p>
+<p>吾人处此中西交通时代，应对于中国政治中国社会，与西方同以一种立场，一种定义分类法，先行试用，指出其共通者何在，所以见其为同种现象，自有同种公例之可求;更从而指出相异者何在，以见其既有特种情形存在，乃不能不加以另行说明或曰限制条件。反之，倘吾人注重其相异者，乃谓西方科学方法根本上不适用于中国政治与社会，推至其极，将谓中国自有中国政治学，不可与西方一炉而冶，中国自有中国社会学，不可与西方共通，则其末流之弊，必至于中国应有中国植物学，中国应有中国动物学。此为世界治学方法上极重大问题，不可不注意者也。要点在于时代之根本特征，“中西交通”。但显然，在张君劢先生笔下，此非两个文明平等之相互交通，相互认知和会通，相反，中西有清楚而确定的高下之分，故中国学者认识中国政治中国社会，应当采取西方的概念、推理、表达工具，以先见其与西方之同，再见其与西方之异。张君劢先生以为，此为现代中国知识生产之唯一正当方式，否则，必荒唐、愚蠢以至于建立中国植物学、动物学云。</p>
+<p>不过，此类比式批评成立否?固然，难有中国植物学或中国动物学———其实也未必，比如，中国植物学不能不用中国人长期是用因而熟悉的植物命名，否则，其知识难以为人所知、所用。由此更进一步，果真不可能有中国政治学、中国社会学么?毕竟，两者研究对象有很大不同，哈耶克即曾辨析自然科学中的事实与社会科学中的事实之巨大差异，谓社会科学之研究对象是“主观事实”，故“不但人们针对外在事物的行为，而且人与人之间的全部关系和所有社会制度，都只能根据人们对它们的想法去理解”。据此，研究中国政治、经济、法律制度，不能不致力于“理解”中国人之价值、观念，概言之，不能不“理解”中国历史和文化，在其中“理解”各个领域的制度———西人早就指出，“理解”不同于自然科学中的知识;如此，难免有中国政治学或中国社会学。此非自标新异，而是势必如此。</p>
+<p>事实上，人们所见之西人政治学正是西人在西方文明背景下发展出来的，可谓西人之自我理解。然而，不顾这一事实，张君劢先生称之为一般的、普遍的“科学方法”，以之分析、判断中国政治中国社会。他以为，惟有如此，方可正确地认识中国政治中国社会。这一论述隐含着一段特殊心曲:</p>
+<p>钱氏诚爱护中国文化，应将中国政治、中国社会推到世界一般政治学、一般社会学之大炉中，示人以共同者何在，然后吾国政治与社会，乃能为世界所共晓;而其所以异者之出之于中国特别情形者，亦可随之而大明。</p>
+<p>张君劢先生又举哲学为例，说自己致力于“将中国哲学，倾于世界哲学洪炉中，以见其同，正足以见中国哲学自有其与人共同之处，而不必引以为愧者也”。但同时他也告诉西人中国哲学有力行特点:“倘吾国人专重其相异之力行方面，主张吾国哲学不同于西方而另为一类，则中国哲学，将永远自处于世界一般哲学之外，而期其为西方所尊重，不可得矣”。此处透露之心曲，甚为重要，可谓张君劢先生一切立论之心理基础———事实上，其在近世中国极为常见，可谓精英群体之基本心态:存在所谓一般世界哲学、政治学，不过，此所谓“世界”就在西方。也即，在当今世界，西方是普遍的，中国是特殊的;西方的哲学、政治学是普遍的，中国固有的思考则是特殊的，甚至可以说根本就没有。在此，中国被特殊化。但当然，在此中西交通时代，自我特殊化的中国必须寻求普遍化，当然就是西方化:中国人当以西方哲学为标准，重新检视自己的思想，从中发现合乎西方范式的哲学———张君劢等先生所发展之现代新儒学，正是以西人哲学范式切割传统儒学大量议题，重新厘定儒学研究之范围，发展出儒家哲学范式。张君劢先生以为，唯有如此，儒家思想才能“为西方所尊重”。当然，中国人也当以西方政治学为标准发展政治学，并以此判断中国传统政治，设计中国政治发展方向，这样，“吾国政治与社会，乃能为世界所共晓”，进而获得其尊重。得到西方尊重、为世界所共晓，也即通过西方化融入所谓“世界”，构成中国思想、学术、社会、政治发展之基本方向。张君劢先生之所以言辞批驳钱穆先生，即因为钱竟反此方向而行。</p>
+<p>可见，钱穆、张君劢二限思考学术、宪制之方向、方法，截然不同，两人思想学术之基本差异，乃至其个人交往之疏远感，正由此产生。</p>
+<p>当然，由于意识形态与政治的原因，在民国立宪政治进程中，孙中山先生提出之宪法设计方案始终处在舞台中心。张钱二先生基于其不同思路、方法，对此方案持有不同立场，隐然展开非接触性争论，从中可以更为具体看出，两者对于现代宪制与中国文明关系之思考，故以下就此略加辨析。</p>
+<p>二、张君劢与孙中山宪法设计方案</p>
+<p>孙中山先生晚年经历道统自觉，日益重视国民大会与五权宪法，尤其重视考试院、监察院，突出中国政制之连续性。可以说，孙中山先生这一宪制构想具有清晰、深刻的中国品质。然而，当时学院主流宪法学界对此方案颇不以为然，盖因此方案不合乎其所知之西方通行宪制，这让孙中山先生相当苦恼。比如，张君劢先生大体不认可孙中山先生方案，故在参与中华民国宪法起草过程中，尽最大努力削减孙中山宪法方案之最有中国属性的部分。</p>
+<p>这一点在其《中华民国民主宪法十讲》中有十分清楚的表达。本书系在政协所拟宪草公布后为解释宪法而发表之系列演讲构成，张君劢先生隐然以之自比于《联邦党人文集》，“新宪之精义，不外乎此”。张君劢先生明确提出:他所起草之宪法草案，立脚点在调和中山先生五权宪法与世界民主国宪法之根本原则，中山先生为民国之创造人，其宪法要义自为吾人所当尊重，然民主国宪法之要义，如人民监督政府之权，如政府对议会负责，既为各国通行之制，吾国自不能自外。</p>
+<p>在此，孙中山先生五权宪法与所谓世界民主国宪法之根本原则似在相对而立的状态;他尊重五权宪法，实出于不得已，但此非各国通行之例，所以他的工作就是要用世界民主国宪法之根本原则，改造五权宪法设想。“不能自外”的意识，与《中国专制君主政制之评议》完全相同。那么，所谓现代世界民主国宪法之根本原则是什么?从本书论证看，即三权分立之制，“宪法所规定的是国家权力如何确立与如何限制。一个国家，离不了立法、司法、行政三种权力，或者如中山先生再加上考试、监察二种。”三权分立是各国通行之例，提及考试权和监察权，张君劢先生极为勉强，置于国民大会，则完全被忽视。</p>
+<p>在具体展开对宪制之论述后，张君劢首先分析国民大会问题。设立国民大会是孙中山先生宪制思想之基础，张君劢先生则深不以为然，从多个角度提出怀疑，而倾向于政协会议上提出的“无形国大”，即张君劢先生所说“合四万万人而成为国民大会，此为我人对于直接民权的理想”，实即取消国民大会。这一设想不为国民党接受，最终宪法草案写入国民大会，但已大幅度削减国民大会之权。最引人注目的是，《中华民国民主宪法十讲》没有篇章单独讨论考试院和监察院，尽管宪法草案中有考试院和监察院。在逐次讨论国民大会问题、行政权(总统与行政院)、立法权(立法院等)、司法独立(司法院等)之后，张君劢先生立即转入讨论民主国政党与立宪国家财政两个问题，似乎刻意以此替代考试权和监察权。</p>
+<p>在孙中山五权宪法设计中，考试权和监察权乃依据中国传统政治经验、为矫正西方三权分立宪制之明显缺陷而设，由此显示出孙中山宪法方案之中国性。由《中华民国民主宪法十讲》之权衡取舍、谋篇布局则清晰可见张君劢先生之立场:对考试权和监察权，他直接选择无视甚至蔑视，理由大约很简单:此非世界通行之例。</p>
+<p>反过来，张君劢先生为政党政治专设一章，可见其高度重视。孙中山先生观察西方政治，深见政党政治之弊端，故有其宪法方案以克服之;张君劢先生则相信，“现代政治不能一日离开政党，是为显然易见之事”。他当然也知道政党之弊，但他相信，西人已找到解决办法，故其弊端不足为虑。张君劢先生也是政党政治之积极实践者，从青年时代起，他就积极参与政党活动，并组织政党，以政党领导人身份参与立宪。</p>
+<p>也即，到今天，孙中山先生苦心孤诣保持传统于现代宪制中之努力，基本已告失败。由此引发两个问题:第一，当台湾宪制终于如张君劢先生等主流宪法学所愿，不受国民大会牵扯，考试、监察两权形同虚设，大体以三权分立宪制运作，台湾政治生态处在何种状态?算得上好的政治吗?是否具有长远的政治生命力?第二，另一方面，孙中山先生旨在保持中国政治连续性的努力失败，是因其宪法方案不可行，还是因为其根本就无机会实施?</p>
+<p>对这两个问题，钱穆先生都有所思考。</p>
+<p>三、钱穆与孙中山宪法设计方案</p>
+<p>钱穆先生不是专业政治学者，他所深入研究者是中国历史，尤其是其中之治理之道，政制是其中最重要部分。事实上，从《国史大纲》布局可见，钱穆先生高度重视历代政制之变动，此本为传统史学之重点所在。而钱穆先生在抗战初年撰著此书，有强烈的文化自觉，故对此前之思想学术有自觉反思，此可见于《国史大纲》之《引论》。其中专门论述当时塑造国人史观最广最深者之所谓“革新派”，此派最显著的特征是依据西方理论裁剪中国历史。钱穆先生分析其为三期:第一期，“当前清末叶。当时，有志功业之士所渴欲改革者，厥在‘政体’，故彼辈论史，则曰:‘中国自秦以来二千年，皆专制黑暗政体之历史也’”。③这一流传甚广的观点，在相当程度上决定了钱穆先生的史学问题意识:辩驳所谓中国长期君主专制政体论。由此，钱穆先生之史学研究实有突出的政治学、宪法学色彩。《国史大纲》最突出的贡献似在于论定西汉武帝之后的政府是士人政府，其宪制是皇权与士大夫共治。这否定了所谓中国长期君主专制论，历史上诸多重要制度也因此而凸显其恰当而重要的意义，比如选举制，士人政府内的分权制衡等。</p>
+<p>钱穆先生之史学本身有强烈政治学导向，故在抗战建国的政治气氛中得以轻松进入政治学领域，提出自家宪制方案，并给予历史、理论说明，见《政学私言》。以历史文化学者身份而能提出如此完整、自成体系的宪制法案，纵观近世中国学界，似可谓独一无二。惟有通过钱穆先生的问题意识及其史学研究范式，才能理解这一点。</p>
+<p>张君劢先生认为，现代政治必然以政党政治的形态展开，钱穆先生则指出:</p>
+<p>中国传统政治之最高理论与终极目标即为一种民主政治，而此种民主政治之所向往，即一种公忠不党或超派超党无派无党之民主政治。中山先生之五权宪法，本为融通中外而创设，故其精神，亦自涵有公忠不党超派超党无派无党之精义，其所以为适切国情之点亦在此。</p>
+<p>张君劢先生坚持西方三权分立之制，奉之为真理，为此刻意忽略孙中山先生依据中国传统政制所增设之考试院、监察院;钱穆先生则站在孙中山先生一边:</p>
+<p>中山先生五权宪法中考试、监察两权，厥为中国传统政制精义所寄。考试制度之用意，即在“公开政权，选贤与能”。夫真能代表民意者，就实论之，并不在人民中之多数，而实在人民中之贤者。中国传统考试制度，即在以客观方法选拔贤能，而使在政府中直接操政……中山先生于民权主义中即详论“权”、“能”之分别，又特倡“知难行易”之学说以为其政论之根据。若论多数，则不知不觉之民众必占上选，然真能代表民众中不知不觉多多数者，转在少数先知先觉与后知后觉之人才，故据中山先生之意见，亦必主张贤能代表之传统观念。</p>
+<p>此“贤能代表”与西方大众投票选举之“统计代表”相对。对考试制度，《选举与考试》一文有更深入讨论。</p>
+<p>当日本于1945年9月9日在南京投向签字日之清晨，钱穆先生奋笔疾书《建国信望》，全面阐明其建国纲领，全依中山遗教为框架，因为他断定:“孙中山先生之三民主义，将为此后新中国建国之最高准绳。”关于政制，钱穆先生谓:</p>
+<p>二八:新中国之政治发展，必然将向“民主政治”之途而迈进。但此种民主政治，绝非英美式的民主政治，亦非苏俄式的民主政治，亦非任何其他国家之民主政治，而断然为中国文化圈里的中国式的民主政治。</p>
+<p>二九:此种民主政治，大体必遵照中山先生民权主义之理想而实现。</p>
+<p>其下钱穆先生列述此种政制之基本原则，比如，它“将为一种‘全民’政治而非政党政治与阶级政治”，并再度申论考试制度之价值:</p>
+<p>中山先生主张“治权”与“政权”划分，又主张以“考试”限制人民之被选举权;此两理论，必将透彻发挥，以为中国新政治之基石。尤其是后一理论，乃中国传统政治精义所在，中国人将大胆提出，以确然完成将来新中国的新政治。</p>
+<p>由以上可见，钱穆先生之所以高度肯定孙中山先生政治理论与宪制构想，全因其认定，后者本乎中国传统政治精义，活用历史上行之有效的制度，而又广泛吸纳他国既有经验，从而熔铸合乎中国人观念、切实可行之制度构想，此正为钱穆先生所肯定之中国现代政治发展之正道。孙中山先生在见证西式观念在中国政治中之失灵后，以其政治家的敏锐转向中国政制传统;钱穆先生在见证西式观念所致中国人历史文化认知之混乱后，同样转向中国政制传统;两人均以此为本构造中国政治学，构想现代中国之良好而可行宪制。故钱穆先生之肯定孙中山政治思想和五权宪法，绝非附和当政者，而出自其延续中国历史文化之热心与自身学术研究之心得。</p>
+<p>钱穆先生在引发张君劢先生批评的《中国传统政治》一文最后，再次高度肯定孙中山先生，分析指出孙中山先生之思考方法:</p>
+<p>在近代中国，能巨眼先瞩，了解中国传统政治，而求能把它逐步衔接上世界新潮流的，算只有孙中山先生一人……政治上之权能分职，最能撷取中国传统政治如我所谓信托政权的内在精神，而发挥出它的真意义。在西方所倡三权分立的理论下，再加添中国传统考试监察两权，使在政府内部自身，有一套能为社会自动负责之法制，而一面又减轻了近代西方政治之对立性与外倾性，把来符合中国自己的国情。</p>
+<p>钱穆以为，孙中山才是真正具有创造力之政治思想家，因为制度移植论者只是简单地进行制度的平移，而并无任何思想创发与制度创新。孙中山先生不是简单地照搬思想观念，而是融古今中外为一体，且以中国政治精神为根本。然而，钱穆先生指出，在学界全盘西化的气氛中，如此思想创造反而不为人所接受:</p>
+<p>大体上，在他总是有意参酌中外古今而自创一新格，惜乎他的意见与理想，不易为国人所接受。人人只把一套自己所懂得于外国的来衡量，来批评，则孙先生的主张，既不合英美，又不合苏联，亦不合德意，将见为一无是处。无怪他要特别申说知难之叹了。</p>
+<p>孙中山先生尊重中国传统政治、延续其中已被历史证明最为卓越之制度，其思想反而是创造的，其制度也是切实可行的。但这种努力反而遭人嘲笑，在钱穆先生看来，在现代中国特殊的文化气氛中，进行真正具有创造性的知识生产所面临之最大挑战，是精英群体对自身历史、文化之封闭，此种封闭形成于张君劢先生已清楚显示之心态:专心寻求西方之尊重，而不是寻找切合于中国民众秩序意向之优良制度。恐怕正是这种封闭甚至于冷漠，导致近世中国各路精英之创制立法，频频遭遇失败。此一事实显示孙中山先生思考方法之可贵:</p>
+<p>推敲孙先生政治意见的最大用心处，实与中国传统政治精义无大差违。他只把社会最下层的民众，来正式替换了以往最上层的皇室。从前是希望政府时时尊重民意，现在则民意已有自己确切表达之机构与机会。而一面仍承认政府与民众之一体，而偏重到政权与民权之划分。只求如何能使贤者在职，能者在位，而已在职位者，则求其能畅遂表达他的贤与能，而不受不必需要的牵制。又在政府自身，则仍注重其内在职权之分配与平衡，而不失其稳定性。这一种稳定性，实与一较广大的国家，而又有较长久的历史传统性者，为较更适合。能稳定并不比能动进一定坏，此当斟酌国情，自求所适。此一理想，自然并不即是完满无缺，尽可容国人之继续研求与修改。但他的大体意见，则不失为已给中国将来新政治出路一较浑括的指示。比较完全抹杀中国自己传统，只知在外国现成政制中择一而从的态度，总已是高出万倍。</p>
+<p>此处抉发了孙中山先生宪制设计方案与传统政治精神的切合之处，含义甚广。当另文专门讨论。要之，在钱穆先生看来，孙中山先生最可贵之处在于，在中国思考中国政治:</p>
+<p>我们也可说，孙中山的政治理想，还是较偏于内倾型的，以其注意到国情。而目下其他意见，无论是主张英美民权自由，与主张苏俄共产极权，都是外倾型的，以其目光只在向外看，而没有肯回头一看我们自己的。</p>
+<p>据《国史大纲》引论，此所谓“内倾”是双重的:首先，“治国史之第一任务，在能于国家民族之内部自身，求得其独特之精神在”，类似地，政治思考亦当持内在立场。这是因为，中国文明始终有其内在的“生力”，即便遭遇近世挫折，“我民族国家之前途，仍将于我先民文化所贻自身内部获得其生机”。如果中国文明确可截断前流，那么宪制设计自可全盘西化，否则，宪制设计就不能不从传统出发。</p>
+<p>但在20世纪强烈反传统的文化气氛中，即便有国民党以权力守护，孙中山先生之创造性宪法构想也难以完全落实:</p>
+<p>我们当知孙中山的三民主义与五权宪法，并不是确经试验而失败了。他的那番理想与意见，实从未在中国试验过，而且也未经近代中国的知识分子细心考虑与研索过。</p>
+<p>但这并不意味着孙中山先生的思路和方法失败了:</p>
+<p>将来中国政治若有出路，我敢断言，决不仅就在活动上，决不仅是在革命与组党上，也决不仅是在抄袭外国一套现成方式上，而必须触及政治的本质，必须有像孙中山式的为自己而创设的一套政治理想与政治意见出现。纵使这些意见与理想，并不必是孙中山的三民主义与五权宪法，而孙中山的三民主义与五权宪法，也仍还有留待国人继续研求与实行试验之价值。这是我穷究了中国二千年传统政治所得的结论。</p>
+<p>此处对孙中山先生思考方法之肯定，实为钱穆先生之夫子自道，其历史研究正为探寻中国人“为自己而创设的一套政治理想与政治意见”;然此种努力，却遭到张君劢先生之言辞抨击乃至挖苦。</p>
+<p>四、反思性结语</p>
+<p>以上概述张君劢、钱穆二贤之宪制思想，重在抉发其思考进路和方法，首先可见，两人均在中西关联之框架内思考中国宪制与文明之前景。当鸦片战争以来，欧美与中国同在天下、且严重压迫中国，中国学者不能不如此———事实上，无不如此，直到今天。</p>
+<p>但二贤之区别也甚为明显:张君劢先生坚信，儒家思想确在现代中国仍有其作用，但政治上例外:中国必须全盘接受西方民主政治，不仅在基本价值上，也在具体制度上，比如三权分立就是优良政治之通例，中国须原原本本地采用之。据此，张君劢先生反对孙中山先生之国民大会与五权宪法设想;据此，张君劢判定中国传统政治是专制君主政体，而反对钱穆先生之论断。</p>
+<p>至于钱穆先生的思想，则与之不同:一方面，他反复声明不反对民主政治，另一方面，他也不迷信民主政治，更不以西方政治思想作为唯一正确的政治思想，而始终坚持中国政治思考之内在立场。故其历史研究重在抉发中国政治之精神、原则、优良制度，并将由此所发现之中国优良政治制度用于现代中国之宪制设计中，从而形成中国政治学之初步框架与保持历史连续之宪制方案。</p>
+<p>以上所述二贤之思想分歧，实为现代儒家内部持续存在之分歧的一个故事;一百多年前康梁与张之洞之间的分歧，则可视为所有这些分歧之较完整原型;近来发生之港台新儒学与大陆新儒学之争议，可视为这一分歧之最新故事。双方所持不同立场，决定其对儒学之新形态、及其在今日所可扮演之角色，有相当不同的期待。</p>
+<p>核心争点在于，儒学有资格、能力影响、塑造政制否？儒家不同于希伯来神教，也有别于希腊“哲学”，最为整全，自敬天、敬祖、敬鬼神，而诚意、正心、修身，到齐家、治国、平天下，其中，政是儒家行道之重要机制，故夫子“知天命”，乃出仕于鲁;在鲁不得志，周游列国，“孔子至于是邦，必闻其政”;</p>
+<p>孔门编纂《论语》，列《为政》为第二篇，可见其重要。故传统上，儒家必致力于以自身义理构造社会治理机制，包括宪制;无儒家式宪制，儒家价值恐怕难以维系。</p>
+<p>然而，现代儒者恰在此问题上发生严重分歧。一部分现代儒学者断定，传统中国政制，哪怕其基于儒家义理，也已被证明是失败的;至今日，相形于西方民主政治，儒家宪制已完全丧失存在之合理性。这差不多是近人所谓“现代新儒学”或“港台新儒学”之共识。据此，现代新儒学接受西方关于政治的真理，视大众投票、三权分立为核心之民主政制为中国政治变革之唯一方向，着力于思考儒家价值、思想如何实现自我转化，以接纳和服务于民主政制。</p>
+<p>在现代新儒家最有影响力的人物中，差不多只有钱穆先生一人认为，传统中国政制并非漆黑一片，反有诸多可取之处，即便到今日也有其价值。故他认为，今日国人当立足儒家义理，基于中国数千年政治观念、制度和实践，从事宪制设计。到晚近，有所谓“大陆新儒学”兴起，如蒋庆等人，亦作如此论断。不过，后者思想并非接续钱穆先生，而由康有为发展而来，因而有所谓“康党”之名，而钱穆先生对康有为早就有严厉批评———这涉及另一学术公案。不管怎样，从学术结构上看，在钱穆先生那里，儒家义理与政治思考是贯通的，中国历史也是连续的;相反，在港台新儒学那里，儒家义理与政治思考截为两橛，中国历史因此也发生断裂。</p>
+<p>现代儒学在儒学义理可否、能否发展出其政治理论且构建儒家式宪制问题上之分歧，可概括为现代宪制与中国文明兼容与否之问:面临强势西方之中国完全可以且应从其固有文明内生出有效而优良之现代宪制，还是中国文明已无此能力，只能通过宪制移植建立良好政制，其文明反而应当自我调整而适应之?</p>
+<p>《中国必须再儒化——“大陆新儒家”新主张》
+蒋庆 陈明 康晓光 余东海 秋风 著
+新加坡世界科技出版公司2016年出版</p>
+<p>当然，如果仔细辨析即可发现，这两种立场实不对称。孙中山、钱穆先生并不拒绝民主，只是其宪制设计绝不限于民主。民主只是其中儒家式宪政结构中之一术而非全部，更非贯穿其中之道。民主纳入完整的儒家治理架构，有其恰当位置，但宪制结构之整体则是中国式、儒家式的，贯穿中国政治精神，也延续中国固有优良制度。此可谓“中体西用”，由此，其理论保持儒学固有之整全属性，其所构想之中国政治也保持连续。在这一思想中，现代中国之变虽然剧烈，虽然遭遇强烈外部冲击，也仍是中国文明之“新生转进”。</p>
+<p>另一方面，张君劢先生等现代新儒家先贤几乎以民主政制为其宪制结构之全部，从而与中国政治传统一刀两断;由此，其儒学不能不放弃在内的政治思考，而收缩为心性之学;由此，其理论丧失儒学本有之整全属性，而循西方学术路径向哲学深挖，无暇对修身、齐家、治国、平天下作现代阐发。因而，现代新儒学之义理结构是严重残缺不全的。</p>
+<p>张君劢先生于抗战期间参与立宪，的确是现代儒家历史上最为辉煌的时刻，然而，义理结构不全之儒学只能给精英们接受民主政制提供一点点帮助———其实，有没有这点帮助，对于政治进程都不重要;却不能在快速变动的文化与政治进城中树立自身之主体性，当然也就无法设想自己的完整政教结构;这样，张君劢先生所构想之宪法虽得以实施，但在文教、政治结构中，儒学自身却缺乏存身之体，而处在边缘化的尴尬状态———比如在台湾正式学术体制中，儒学始终是边缘的;更为重要的是，义理结构不全、哲学化之儒学，也没有能力通过多种管道参与台湾现实社会、政治运作，甚至在现实的文化场域中都是缺席的。儒学如此边缘化在政治上的后果之一是，民主政治失去反思性力量之牵引，而在各种因素的牵扯下不断下坠，此即台湾晚近以来政治之困境所在。</p>
+<p>现代新儒学对民主政治有绝大信任。然而，福山所指美国等国之“政治衰败”现象①表明，此制不足以维护良好社会政治秩序。实际上，当年美国立宪者创制立法，即费尽心机避免民主制而构建共和制。孙中山先生有鉴于其所见民主政制之明显弊端而重新思考，为此，进入中国传统而另造新制;钱穆先生同样对此种政治衰败有过预言，而提出本乎中国政治精义之宪制方案，其根本在于，以儒家精义构筑民主政治所需之文教、社会基础，并以之约束民主，比如，以国民大会制度防范政客之自我封闭与特殊利益化;考试制度旨在养成并遴选德能出众之现代士大夫，等等。或可设想，若真行此制，可避免政治衰败?</p>
+<p>当年，钱穆先生对中国政治历史之重新认识，及据此提出之儒家宪制方案，几被当作笑话，即便在儒家内部，也遭遇带有严重道德谴责意味的批评;孙中山先生的宪制方案，即便有官方意识形态之身份，仍不得有效实施。不能不说，此乃时势使然:彼时，西方文明如日中天，中国文明疲弱不振。不过到今天，大势已全然不同。《中庸》曰:“君子之中庸也，君子而时中”，儒学或曰中国学者不能不重新思考中国文明与宪制的关系。回到孙中山、钱穆，正当其时。</p>
+<p>这一重新思考的前提是重新认识中国历史，相应地，重新认识人类历史，以在更长的时间尺度上重新厘定中西文明和政制之关系。如钱穆先生所痛心指出者，以现代西方为标准认识历史，必至于自我否定，故“今日国人对于国史，乃最为无识也”。然而，曾高呼“历史终结论”的福山，今天已在重新认识中国历史，认为中国建立了世界上最早而成熟的现代国家。当人类已进入“世界历史之中国时刻”，对中国学人来说，从更为平衡的立场上重新书写人类政制之历史，已刻不容缓。</p>
+</blockquote>
+<p>历史考证</p>
+<h2 id="今年的四仲中星记录按尧典体例就可以记录为日中星参日永星翼宵中星箕日短星室请自行对着stellarium检测一下用不了多久大家能把无知无能的蝴蝶结学派甩出银河系"><a class="header" href="#今年的四仲中星记录按尧典体例就可以记录为日中星参日永星翼宵中星箕日短星室请自行对着stellarium检测一下用不了多久大家能把无知无能的蝴蝶结学派甩出银河系"><a href="https://zhuanlan.zhihu.com/p/412982762">今年的“<em>四仲中星</em>”记录，按《尧典》体例就可以记录为：日中星参，日永星翼，宵中星箕，日短星室。请自行对着Stellarium检测一下——用不了多久，大家能把无知无能的蝴蝶结学派甩出银河系。</a></a></h2>
+<p><a href="https://www.zhihu.com/people/dao-fei-chang-57"><img src="https://pica.zhimg.com/50/v2-d66dcc74f76dd0a92db1ed73b4308cc7_s.jpg?source=4e949a73" alt="道非常" /></a></p>
+<p><a href="https://www.zhihu.com/people/dao-fei-chang-57">道非常</a></p>
+<p>前生定住布达拉独坐天台送晚霞三劫修来空性慧一轮皓月映芳华</p>
+<p>今日#秋分# ， 日躔翼宿，昏箕中，旦参中。
+好学深思的读者朋友可以想一想，如果用《<a href="https://www.zhihu.com/search?q=%E5%B0%9A%E4%B9%A6%C2%B7%E5%B0%A7%E5%85%B8&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22412982762%22%7D">尚书·尧典</a>》的体例来描述，应该怎样写？
+《尧典》将“秋分”称为“宵中”，就是“昼夜时长相等、平分一天时长”的意思。
+<a href="https://www.zhihu.com/search?q=%E5%B8%9D%E5%B0%A7%E6%97%B6%E4%BB%A3&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22412982762%22%7D">帝尧时代</a>，“宵中星虚”，就是秋分当天昏时（日落时刻）虚宿在南中天。
+今年的秋分，日落时刻，箕宿在南中天，因此按《尧典》体例就可以记录为：宵中星箕。
+那么我们可以继续考虑一下，今年春分当天，昏旦时刻的中星是什么呢？
+很显然，既然秋分当天昏箕中，旦参中，那么春分当天必然是昏参中，旦箕中。
+因此今年春分的昏时星空，按《尧典》体例就可以记录为：日中星参。
+我们继续来考虑一下，秋分交节时刻，日躔翼宿，这就是说秋分点在<a href="https://www.zhihu.com/search?q=%E7%BF%BC%E5%AE%BF&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22412982762%22%7D">翼宿</a>。秋分昏时，箕宿在南中天，说明冬至点（太阳周年视运动黄经270°）在箕宿；秋分旦时，参宿在南中天，说明夏至点（太阳黄经180°）在参宿。
+那么，当太阳周年视运动位置在南天中逆时针运行到箕宿，到达冬至点，冬至交节当天，昏旦时刻的中星是什么呢？
+当太阳周年视运动位置在南天逆时针运行到达冬至点，位于<a href="https://www.zhihu.com/search?q=%E7%AE%95%E5%AE%BF&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22412982762%22%7D">箕宿</a>时，秋分点在翼宿，位于太阳的右边（西边）；左边（东边）的<a href="https://www.zhihu.com/search?q=%E6%98%A5%E5%88%86%E7%82%B9&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22412982762%22%7D">春分点</a>在哪一宿呢？
+好学深思的读者朋友们可以用高精度专业天文软件Stellarium检测一下，观测地仍设在<a href="https://www.zhihu.com/search?q=%E4%B8%89%E6%98%9F%E5%A0%86&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22412982762%22%7D">三星堆</a>，看看今年3月20日春分交节时刻，太阳周年视运动位置黄经360°/0°位于哪一宿哪一度，看着我的星空图对比一下（图三）。</p>
+<p>科技史</p>
+<p><strong>中国科学技术史</strong>，是一套以科学发展为主轴的中国史。中国科学史可与<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E6%80%9D%E6%83%B3%E5%8F%B2">中国思想史</a>结合在一起，相辅相成，是世界科学文化史的重要组成部分。中国科学萌芽于先秦时期，受到当时的哲学家中注重逻辑思辩、<a href="https://zh.wikipedia.org/wiki/%E8%AE%A4%E8%AF%86%E8%AE%BA">认识论</a>及几何学研究的<a href="https://zh.wikipedia.org/wiki/%E5%A2%A8%E5%AE%B6">墨家</a>，以及重视辩论的<a href="https://zh.wikipedia.org/wiki/%E5%90%8D%E5%AE%B6">名家</a>所启蒙。汉代<a href="https://zh.wikipedia.org/wiki/%E9%80%A0%E7%B4%99%E8%A1%93">造纸术</a>的普及提供了条件，使前人的科学思想知识及辩证，通过纸张保存了下来，后人得以前人的科学著作为蓝本作改良，或通过辩证后推翻，形成一套经验主义科学传统。至隋唐及宋朝时，中国的科学曾长时期高据世界领先地位。然而由于近代历史原因，许多古中国科学著作或失传或流失海外，均不利于中国科学史的发掘整理。科学著作的失传及流失，甚至令后世史家曾一度认为中国没有科学。</p>
+<p>现时可考证到的古中国科学著作，以及相关的古代著作数量庞大，涵盖科学数个主要分支：数学、医学、自然科学、建筑及工程学，又有其他次分支，包括农学、航海学、心理学、地图学及物候学等多个学科内容。系统化地记载了当时的科学知识及技术的发现及发明，包括了算术、草药应用、活字印刷、建筑及铸造术、机械构造法、观星导航术及地图制作。其中较为著名的中国科学著作有刘徽的数学著作《<a href="https://zh.wikipedia.org/wiki/%E6%B5%B7%E5%B2%9B%E7%AE%97%E7%BB%8F">海岛算经</a>》，记载了<a href="https://zh.wikipedia.org/w/index.php?title=%E5%9B%9B%E6%AC%A1%E9%87%8D%E5%B7%AE%E8%A7%82%E6%B5%8B%E6%9C%AF&amp;action=edit&amp;redlink=1">四次重差观测术</a>的发明，领先世界一千余年；南北朝数学家<a href="https://zh.wikipedia.org/wiki/%E7%A5%96%E5%86%B2%E4%B9%8B">祖冲之</a>著有的《<a href="https://zh.wikipedia.org/wiki/%E7%BC%80%E6%9C%AF">缀术</a>》，准确估算<a href="https://zh.wikipedia.org/wiki/%E5%9C%86%E5%91%A8%E7%8E%87">圆周率</a>，该书后来东传至<a href="https://zh.wikipedia.org/wiki/%E6%9C%9D%E9%B2%9C">朝鲜</a>、<a href="https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC">日本</a>；唐代王孝通的《<a href="https://zh.wikipedia.org/wiki/%E7%B7%9D%E5%8F%A4%E7%AE%97%E7%B6%93">缉古算经</a>》；金朝数学家李冶的《<a href="https://zh.wikipedia.org/wiki/%E6%B5%8B%E5%9C%86%E6%B5%B7%E9%95%9C">测圆海镜</a>》；元代数学家朱世杰的《<a href="https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%85%83%E7%8E%89%E9%89%B4">四元玉鉴</a>》；明代数学家王文素的《<a href="https://zh.wikipedia.org/wiki/%E7%AE%97%E5%AD%A6%E5%AE%9D%E9%89%B4">算学宝鉴</a>》；数学家程大位的珠算理论著作《<a href="https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95%E7%B5%B1%E5%AE%97">直指算法统宗</a>》；数学家李之藻的《<a href="https://zh.wikipedia.org/wiki/%E5%90%8C%E6%96%87%E7%AE%97%E6%8C%87">同文算指</a>》；数学家朱载堉著有的《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%BE%8B%E5%90%95%E7%B2%BE%E4%B9%89&amp;action=edit&amp;redlink=1">律吕精义</a>》，发明了十二平均律。</p>
+<p>医学方面有<a href="https://zh.wikipedia.org/wiki/%E5%BC%A0%E4%BB%B2%E6%99%AF">张仲景</a>的医学临床著作《<a href="https://zh.wikipedia.org/wiki/%E5%82%B7%E5%AF%92%E9%9B%9C%E7%97%85%E8%AB%96">伤寒杂病论</a>》；隋朝医学家<a href="https://zh.wikipedia.org/wiki/%E5%B7%A2%E5%85%83%E6%96%B9">巢元方</a>的外科手术著作《<a href="https://zh.wikipedia.org/wiki/%E8%AB%B8%E7%97%85%E6%BA%90%E5%80%99%E8%AB%96">诸病源候论</a>》；明朝医药学家<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%97%B6%E7%8F%8D">李时珍</a>的《<a href="https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE">本草纲目</a>》；明代医学家<a href="https://zh.wikipedia.org/wiki/%E5%90%B3%E6%9C%89%E6%80%A7">吴有性</a>的温病学派著作《<a href="https://zh.wikipedia.org/wiki/%E7%98%9F%E7%96%AB%E8%AE%BA">瘟疫论</a>》，为中国最早有关传染病研究的著作。另外有明代<a href="https://zh.wikipedia.org/wiki/%E8%8C%85%E5%85%83%E4%BB%AA">茅元仪</a>的军事书籍《<a href="https://zh.wikipedia.org/wiki/%E6%AD%A6%E5%A4%87%E5%BF%97">武备志</a>》，记载有当时的兵器发明；明代学者<a href="https://zh.wikipedia.org/wiki/%E5%B1%A0%E6%9C%AC%E7%95%AF">屠本畯</a>又著成中国现存最早的海洋生物专著《<a href="https://zh.wikipedia.org/wiki/%E9%97%BD%E4%B8%AD%E6%B5%B7%E9%94%99%E7%96%8F">闽中海错疏</a>》；清代数学家<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%96%84%E5%85%B0">李善兰</a>发明了<a href="https://zh.wikipedia.org/w/index.php?title=%E5%AF%B9%E6%95%B0%E5%BE%AE%E7%A7%AF%E5%88%86&amp;action=edit&amp;redlink=1">对数微积分</a>，并在组合恒等式方面提出<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%96%84%E5%85%B0%E6%81%92%E7%AD%89%E5%BC%8F">李善兰恒等式</a>，发表了《<a href="https://zh.wikipedia.org/w/index.php?title=%E8%80%83%E6%95%B0%E6%A0%B9%E6%B3%95&amp;action=edit&amp;redlink=1">考数根法</a>》，是质数论方面最早的著作。隋朝时又兴<a href="https://zh.wikipedia.org/wiki/%E5%8D%9A%E7%89%A9%E5%AD%A6">博物学</a>，出现为数不少的地方志（或称图志、图经）。著有《<a href="https://zh.wikipedia.org/w/index.php?title=%E8%AF%B8%E9%83%A1%E7%89%A9%E4%BA%A7%E5%9C%9F%E4%BF%97%E8%AE%B0&amp;action=edit&amp;redlink=1">诸郡物产土俗记</a>》、《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%8C%BA%E5%AE%87%E5%9B%BE%E5%BF%97&amp;action=edit&amp;redlink=1">区宇图志</a>》与《<a href="https://zh.wikipedia.org/w/index.php?title=%E8%AF%B8%E5%B7%9E%E5%9B%BE%E7%BB%8F%E9%9B%86&amp;action=edit&amp;redlink=1">诸州图经集</a>》，风俗物产图《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%89%A9%E4%BA%A7%E5%9C%9F%E4%BF%97%E8%AE%B0&amp;action=edit&amp;redlink=1">物产土俗记</a>》及《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%8C%BA%E5%AE%87%E5%9B%BE%E5%BF%97&amp;action=edit&amp;redlink=1">区宇图志</a>》，开中国编撰一统志之先河。朗蔚之采各地所上图经，纂成《<a href="https://zh.wikipedia.org/w/index.php?title=%E9%9A%8B%E8%AF%B8%E5%B7%9E%E5%9B%BE%E7%BB%8F%E9%9B%86&amp;action=edit&amp;redlink=1">隋诸州图经集</a>》二百卷。裴矩写成《<a href="https://zh.wikipedia.org/wiki/%E8%A5%BF%E5%9F%9F%E5%9B%BE%E8%AE%B0">西域图记</a>》，记载自敦煌通中亚诸国直至地中海的三条丝路。</p>
+<p>中国科学及数学的传统造就了农业、纺织及手工业、铸造工业、商业及兵器的技术发展，并衍生出各种发明品。其中北宋<a href="https://zh.wikipedia.org/wiki/%E6%B2%88%E6%8B%AC">沈括</a>在《梦溪笔谈》中记载了<a href="https://zh.wikipedia.org/wiki/%E6%8C%87%E5%8D%97%E9%87%9D">指南针</a>的制造方法，此外他还发现了<a href="https://zh.wikipedia.org/wiki/%E7%9C%9F%E5%8C%97">真北</a>的概念，改进了天文观测用的<a href="https://zh.wikipedia.org/wiki/%E6%97%A5%E6%99%B7">日规</a>、<a href="https://zh.wikipedia.org/wiki/%E6%B8%BE%E5%A4%A9%E5%84%80">浑天仪</a>、瞄准管和水钟以及描述了如何使用<a href="https://zh.wikipedia.org/wiki/%E4%B9%BE%E8%88%B9%E5%A1%A2">干船坞</a>来修理船只；设计出了一套<a href="https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%BD%A2%E5%AD%B8">地形学</a>理论，以及区域气候随时间渐变的理论；沈括的同期的科学家<a href="https://zh.wikipedia.org/wiki/%E8%98%87%E9%A0%8C">苏颂</a>创制了星图的天球图集，写过跟<a href="https://zh.wikipedia.org/wiki/%E6%A4%8D%E7%89%A9%E5%AD%B8">植物学</a>、<a href="https://zh.wikipedia.org/wiki/%E5%8B%95%E7%89%A9%E5%AD%B8">动物学</a>、<a href="https://zh.wikipedia.org/wiki/%E7%A4%A6%E7%89%A9%E5%AD%B8">矿物学</a>及<a href="https://zh.wikipedia.org/wiki/%E5%86%B6%E9%87%91%E5%AD%B8">冶金学</a>相关的制药专著，及于1088年在<a href="https://zh.wikipedia.org/wiki/%E9%96%8B%E5%B0%81">开封</a>市建过一座大型天文钟楼。为操作最高处的<a href="https://zh.wikipedia.org/wiki/%E6%B8%BE%E5%A4%A9%E5%84%80">浑天仪</a>，他的钟楼配备了擒纵器装置，这装置世界已知最古老的环状动力传输的链传输装置。兵器方面有十四世纪末发明的热兵器“<a href="https://zh.wikipedia.org/wiki/%E7%A5%9E%E7%81%AB%E9%A3%9E%E9%B8%A6">神火飞鸦</a>”；十六世纪中叶发明的火箭“<a href="https://zh.wikipedia.org/wiki/%E7%81%AB%E9%BE%8D%E5%87%BA%E6%B0%B4">火龙出水</a>”；1580年军事家<a href="https://zh.wikipedia.org/wiki/%E6%88%9A%E7%BB%A7%E5%85%89">戚继光</a>发明的地雷“<a href="https://zh.wikipedia.org/w/index.php?title=%E8%87%AA%E7%8A%AF%E9%92%A2%E8%BD%AE%E7%81%AB&amp;action=edit&amp;redlink=1">自犯钢轮火</a>”。周代发明的<a href="https://zh.wikipedia.org/wiki/%E7%AD%B9%E7%AE%97">筹算</a>，促成了印度阿拉伯的数字体系，而中国的造纸、纺织等技术在751年的<a href="https://zh.wikipedia.org/wiki/%E6%80%9B%E7%BD%97%E6%96%AF%E6%88%98%E5%BD%B9">怛罗斯战役</a>之后传入<a href="https://zh.wikipedia.org/wiki/%E9%98%BF%E6%8B%89%E4%BC%AF%E5%B8%9D%E5%9B%BD">阿拉伯帝国</a>，之后在十二世纪传入西班牙，到十三世纪传入意大利，到十四世纪初叶传遍整个欧洲。有关中国古代科学研究的证据，可见于汉代大司农<a href="https://zh.wikipedia.org/wiki/%E8%80%BF%E5%AF%BF%E6%98%8C">耿寿昌</a>发明的<a href="https://zh.wikipedia.org/wiki/%E6%B5%91%E8%B1%A1">浑象</a>；唐代天文学家<a href="https://zh.wikipedia.org/wiki/%E5%83%A7%E4%B8%80%E8%A1%8C">僧一行</a>对<a href="https://zh.wikipedia.org/wiki/%E5%AD%90%E5%8D%88%E7%BA%BF">子午线</a>长度的测量；明代数学家<a href="https://zh.wikipedia.org/wiki/%E6%9C%B1%E8%BD%BD%E5%A0%89">朱载堉</a>发明的<a href="https://zh.wikipedia.org/w/index.php?title=%E7%B4%AF%E9%BB%8D%E5%AE%9A%E5%B0%BA%E6%B3%95&amp;action=edit&amp;redlink=1">累黍定尺法</a>，精确计算出北京的地理位置及<a href="https://zh.wikipedia.org/wiki/%E5%9C%B0%E7%A3%81%E5%81%8F%E8%A7%92">地磁偏角</a>，又计算出<a href="https://zh.wikipedia.org/wiki/%E5%9B%9E%E5%BD%92%E5%B9%B4">回归年</a>长度和<a href="https://zh.wikipedia.org/wiki/%E6%B0%B4%E9%93%B6">水银</a>的比重，均是著名的<a href="https://zh.wikipedia.org/wiki/%E7%BB%8F%E9%AA%8C%E4%B8%BB%E4%B9%89">经验主义</a>科学研究例子。晋代医学家<a href="https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B4%AA">葛洪</a>《抱朴子‧博喻》曰：“学而不思， 则疑阂实繁；讲而不精，则长惑丧功。”，道出了古代中国学者对辩证及实验重要性的认知。</p>
+<p>至近代，中国科学渐见没落，经历了一段再启蒙时期，欧洲列强的科学传统及成果传到中国。在清末的洋务运动主张“中体西用”。以中国传统的思想、文化及制度为基础，引进西方先进的科学技术，是为“中学为体，西学为用”。洋务运动的拥护者<a href="https://zh.wikipedia.org/wiki/%E5%86%AF%E6%A1%82%E8%8A%AC">冯桂芬</a>主张接受欧美思想为主的学术，提出“以中国之伦常名教为原本，辅以诸国富强之术”的主张。至廿一世纪，随着现代中国工业的快速发展和经济的迅速增长，中国科学才见起色。</p>
+<h2 id="目录"><a class="header" href="#目录">目录</a></h2>
+<ul>
+<li>1先秦
+<ul>
+<li>1.1数学
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E6%97%A9%E6%9C%9F%E5%AF%86%E7%A0%81%E5%AD%A6">1.1.1早期密码学</a></li>
+</ul>
+</li>
+<li>1.2物理学与天文学
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E6%99%82%E7%A9%BA%E8%A7%80">1.2.1时空观</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E8%93%8B%E5%A4%A9%E8%AA%AA">1.2.2盖天说</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%A4%A9%E6%96%87%E8%A7%80%E6%B8%AC">1.2.3天文观测</a></li>
+</ul>
+</li>
+<li>1.3生物学与物候学
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%AD%E7%9A%84%E8%A7%A3%E5%89%96%E5%AD%B8">1.3.1甲骨文中的解剖学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E8%A7%A3%E5%89%96%E5%AD%B8%E7%9A%84%E7%B3%BB%E7%BB%9F%E5%8C%96%E3%80%81%E8%A1%80%E6%B6%B2%E5%BE%AA%E7%8E%AF%E7%9A%84%E6%A6%82%E5%BF%B5">1.3.2解剖学的系统化、血液循环的概念</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%85%88%E7%A7%A6%E7%94%9F%E5%91%BD%E8%A7%82">1.3.3先秦生命观</a></li>
+</ul>
+</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%A7%91%E6%8A%80">1.4科技</a></li>
+</ul>
+</li>
+<li>2秦汉三国
+<ul>
+<li>2.1天文学与数学
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%9B%96%E5%A4%A9%E8%AF%B4%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%8F%90%E5%87%BA">2.1.1盖天说数学模型的提出</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E6%B8%BE%E5%A4%A9%E8%AF%B4">2.1.2浑天说</a></li>
+<li>2.1.3宣夜假说
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%AE%A3%E5%A4%9C%E8%AF%B4%E4%B8%AD%E7%9A%84%E3%80%8C%E6%B0%94%E3%80%8D">2.1.3.1宣夜说中的“气”</a></li>
+</ul>
+</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%A4%A9%E6%96%87%E8%A7%80%E6%B8%AC_2">2.1.4天文观测</a></li>
+</ul>
+</li>
+<li>2.2医学、生物学
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%94%9F%E7%89%A9%E6%BC%94%E5%8C%96%E8%AB%96%E8%88%87%E7%89%A9%E7%AB%9E%E8%AB%96">2.2.1生物进化论与物竞论</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%94%9F%E7%89%A9%E5%AD%A6%E5%85%83%E6%B0%A3%E8%AA%AC">2.2.2生物学元气说</a></li>
+</ul>
+</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E6%AD%B7%E6%B3%95%E8%88%87%E7%A7%91%E6%8A%80">2.3历法与科技</a></li>
+</ul>
+</li>
+<li>3魏晋南北朝
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%94%9F%E7%89%A9%E5%AD%B8%E8%88%87%E9%86%AB%E5%AD%B8">3.1生物学与医学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E6%95%B0%E5%AD%A6">3.2数学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%A4%A9%E6%96%87%E5%AD%B8">3.3天文学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%9C%B0%E5%9B%BE%E5%AD%B8">3.4地图学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%A7%91%E6%8A%80%E8%88%87%E7%99%BC%E6%98%8E">3.5科技与发明</a></li>
+</ul>
+</li>
+<li>4隋唐
+<ul>
+<li>4.1天文学与数学
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%90%A6%E5%AE%9A%E8%93%8B%E5%A4%A9%E8%AA%AA">4.1.1否定盖天说</a></li>
+</ul>
+</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E9%86%AB%E5%AD%B8">4.2医学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E6%9B%86%E6%B3%95">4.3历法</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%8D%9A%E7%89%A9%E5%AD%B8">4.4博物学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%BB%BA%E7%AF%89%E5%AD%B8%E8%88%87%E7%A7%91%E6%8A%80">4.5建筑学与科技</a></li>
+</ul>
+</li>
+<li>5宋辽金夏
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6">5.1自然科学</a></li>
+<li>5.2医学
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E4%BA%BA%E4%BD%93%E8%A7%A3%E5%89%96%E5%AD%A6">5.2.1人体解剖学</a></li>
+</ul>
+</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E6%95%B8%E5%AD%B8_2">5.3数学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%A7%91%E6%8A%80%E8%88%87%E7%99%BC%E6%98%8E_2">5.4科技与发明</a></li>
+</ul>
+</li>
+<li>6元代
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E6%95%B0%E5%AD%A6_2">6.1数学</a></li>
+<li>6.2天文学与历法
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%AE%A3%E5%A4%9C%E8%AF%B4%E7%9A%84%E7%99%BC%E5%B1%95">6.2.1宣夜说的发展</a></li>
+</ul>
+</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%8C%BB%E5%AD%A6">6.3医学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%A7%91%E6%8A%80%E8%88%87%E5%BB%BA%E7%AF%89%E5%B7%A5%E7%A8%8B">6.4科技与建筑工程</a></li>
+</ul>
+</li>
+<li>7明代
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E6%95%B0%E5%AD%A6_3">7.1数学</a></li>
+<li>7.2天文学
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%AE%A3%E5%A4%9C%E8%AA%AC%E7%9A%84%E7%99%BC%E5%B1%95%E3%80%81%E5%9C%B0%E5%8B%95%E5%AE%87%E5%AE%99%E6%A8%A1%E5%9E%8B">7.2.1宣夜说的发展、地动宇宙模型</a></li>
+</ul>
+</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%8C%BB%E5%AD%A6_2">7.3医学</a></li>
+<li>7.4科技与发明
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E6%99%9A%E6%98%8E%E5%AE%9E%E7%94%A8%E4%B8%BB%E7%BE%A9">7.4.1晚明实用主义</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>8清朝
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E9%86%AB%E5%AD%B8_3">8.1医学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%A4%A9%E6%96%87%E5%AD%A6_2">8.2天文学</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%A7%91%E6%8A%80_2">8.3科技</a></li>
+</ul>
+</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E8%BF%91%E4%BB%A3">9近代</a></li>
+<li>10现代
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD%E7%A7%91%E6%8A%80">10.1中华民国科技</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%A7%91%E6%8A%80">10.2中华人民共和国科技</a></li>
+</ul>
+</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E4%B8%AD%E5%A4%96%E7%A7%91%E5%AD%A6%E4%BA%A4%E6%B5%81">11中外科学交流</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%8F%83%E8%80%83%E6%96%87%E7%8D%BB">12参考文献</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E7%9B%B8%E9%97%9C%E4%B9%A6%E7%B1%8D">13相关书籍</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%A4%96%E9%83%A8%E9%80%A3%E7%B5%90">14外部链接</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#%E5%8F%82%E8%A7%81">15参见</a></li>
+</ul>
+<h2 id="先秦编辑"><a class="header" href="#先秦编辑">先秦[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=1">编辑</a>]</a></h2>
+<p>参见：<a href="https://zh.wikipedia.org/wiki/%E5%A2%A8%E5%AE%B6">墨家</a>和<a href="https://zh.wikipedia.org/wiki/%E5%90%8D%E5%AE%B6">名家</a></p>
+<h3 id="数学编辑"><a class="header" href="#数学编辑">数学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=2">编辑</a>]</a></h3>
+<p>参见：<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9C%8B%E6%95%B8%E5%AD%B8%E5%8F%B2">中国数学史</a></p>
+<p>商代出现了<a href="https://zh.wikipedia.org/wiki/%E5%8D%81%E8%BF%9B%E4%BD%8D%E5%88%B6">十进位制</a>，与古埃及的数字系统<a href="https://zh.wikipedia.org/wiki/%E5%8D%81%E8%BF%9B%E5%88%B6">十进制</a>不同。</p>
+<p>周代又发明了<a href="https://zh.wikipedia.org/wiki/%E7%B1%8C%E7%AE%97">筹算</a>，能进行<a href="https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97">四则运算</a>以及<a href="https://zh.wikipedia.org/wiki/%E4%B9%98%E6%96%B9">乘方</a>，<a href="https://zh.wikipedia.org/wiki/%E9%96%8B%E6%96%B9">开方</a>等较复杂运算，并可以表示与计算<a href="https://zh.wikipedia.org/wiki/0">零</a>、<a href="https://zh.wikipedia.org/wiki/%E8%B2%A0%E6%95%B8">负数</a>和<a href="https://zh.wikipedia.org/wiki/%E5%88%86%E6%95%B8">分数</a>。<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E6%95%B0%E5%AD%A6%E5%8F%B2">中国数学史</a>学者<a href="https://zh.wikipedia.org/wiki/%E8%93%9D%E4%B8%BD%E8%93%89">蓝丽蓉</a>认为，筹算促成了阿拉伯数字体系[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-1">1]</a>。创造<a href="https://zh.wikipedia.org/wiki/%E4%B9%9D%E5%9B%A0%E6%AD%8C">九因歌</a>，为世界上最简便的乘法表，直到今日还在使用。</p>
+<h4 id="早期密码学编辑"><a class="header" href="#早期密码学编辑">早期密码学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=3">编辑</a>]</a></h4>
+<p>周代兵书《六韬·龙韬》记载了<a href="https://zh.wikipedia.org/wiki/%E5%AF%86%E7%A0%81%E5%AD%A6">密码学</a>的运用，其中的《<a href="https://zh.wikipedia.org/w/index.php?title=%E9%98%B4%E7%AC%A6&amp;action=edit&amp;redlink=1">阴符</a>》和《<a href="https://zh.wikipedia.org/w/index.php?title=%E9%98%B4%E4%B9%A6&amp;action=edit&amp;redlink=1">阴书</a>》便记载了<a href="https://zh.wikipedia.org/wiki/%E5%91%A8%E6%AD%A6%E7%8E%8B">周武王</a>问<a href="https://zh.wikipedia.org/wiki/%E5%A7%9C%E5%AD%90%E7%89%99">姜子牙</a>关于征战时与主将通信的方式[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-2">2]</a>。<a href="https://zh.wikipedia.org/w/index.php?title=%E9%98%B4%E7%AC%A6&amp;action=edit&amp;redlink=1">阴符</a>是以八等长度的符来表达不同的消息和指令，可算是密码学中的<a href="https://zh.wikipedia.org/w/index.php?title=%E6%9B%BF%E4%BB%A3%E6%B3%95&amp;action=edit&amp;redlink=1">替代法</a>，把信息转变成敌人看不懂的符号。至于阴书则运用了<a href="https://zh.wikipedia.org/w/index.php?title=%E7%A7%BB%E4%BD%8D%E6%B3%95&amp;action=edit&amp;redlink=1">移位法</a>，把书一分为三，分三人传递，要把三份书重新拼合才能获得还原的信息。</p>
+<h3 id="物理学与天文学编辑"><a class="header" href="#物理学与天文学编辑">物理学与天文学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=4">编辑</a>]</a></h3>
+<p>参见：<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%A4%A9%E6%96%87%E5%AD%A6%E5%8F%B2">中国天文学史</a></p>
+<p>“物理”一词最早出现于战国时期佚书《鹖冠子·王𫓧篇》，这里“物理”指的是一切事物之道理。中国关于物理的论述，约始于公元前460年-380年，战国思想家<a href="https://zh.wikipedia.org/wiki/%E5%A2%A8%E5%AD%90">墨子</a>做了历史上最早的小孔成像实验，以了解光的传播特性。又提出了关于“端”的论述，指出“端”是不占有空间的，是物体不可再细分的最小单元，至于后期墨家认为物质世界是由微小的不可再分割的物质粒子所构成[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-Youlan1997-3">3]</a>[<a href="https://zh.wikipedia.org/wiki/Wikipedia:%E5%88%97%E6%98%8E%E6%9D%A5%E6%BA%90">页码请求</a>]。这与公元前五世纪，古希腊哲学家<a href="https://zh.wikipedia.org/wiki/%E7%95%99%E5%9F%BA%E4%BC%AF">留基伯</a>提出的<a href="https://zh.wikipedia.org/wiki/%E5%8E%9F%E5%AD%90%E8%AB%96">原子论</a>有吻合之处。战国哲学家<a href="https://zh.wikipedia.org/wiki/%E5%90%8D%E5%AE%B6">名家</a><a href="https://zh.wikipedia.org/wiki/%E6%83%A0%E6%96%BD">惠施</a>、<a href="https://zh.wikipedia.org/wiki/%E9%82%93%E6%9E%90">邓析</a>和<a href="https://zh.wikipedia.org/wiki/%E5%85%AC%E5%AD%99%E9%BE%99">公孙龙</a>，与墨子一样，曾努力钻研宇宙间万物构成的原因[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-Youlan1997-3">3]</a>[<a href="https://zh.wikipedia.org/wiki/Wikipedia:%E5%88%97%E6%98%8E%E6%9D%A5%E6%BA%90">页码请求</a>]。惠施有十个命题，主要是对自然界的分析，其中有些含有辩证的元素[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-Youlan1997-3">3]</a>。名家的思想<a href="https://zh.wikipedia.org/wiki/%E5%90%88%E5%90%8C%E5%BC%82">合同异</a>以惠施为代表，认为“天与地卑，山与泽平”，万物“毕异”本为“毕同”，并无区别[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-Youlan1997-3">3]</a>。《墨子·经上》说：“中，同长也。”而惠施反驳说：“我知天下之中央，燕之北，越之南是也。”因为空间无边无际，到处都可以成为中心。然而惠施的著作没有能够流传下来，他的哲学思想只有通过其他人的转述而为后人所知，《庄子》、《荀子》、《韩非子》及《吕氏春秋》等书中也有对他言论的记载。</p>
+<p>墨子企图用更系统更严密的语言来描述他所观察的宇宙，著成《<a href="https://zh.wikipedia.org/wiki/%E5%A2%A8%E7%BB%8F">墨经</a>》。《<a href="https://zh.wikipedia.org/wiki/%E5%A2%A8%E7%BB%8F">墨经</a>》分《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%BB%8F%E4%B8%8A&amp;action=edit&amp;redlink=1">经上</a>》、《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%BB%8F%E4%B8%8B&amp;action=edit&amp;redlink=1">经下</a>》、《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%BB%8F%E4%B8%8A%E8%AF%B4&amp;action=edit&amp;redlink=1">经上说</a>》、《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%BB%8F%E4%B8%8B%E8%AF%B4&amp;action=edit&amp;redlink=1">经下说</a>》四篇。《经上》大都是原理、定义、界说；《经下》则建立论题并论证；《经说》则是对《经》的解释与阐述。先秦时期，思想家<a href="https://zh.wikipedia.org/wiki/%E5%BA%84%E5%AD%90">庄子</a>为了证明他的<a href="https://zh.wikipedia.org/wiki/%E8%99%9A%E6%97%A0%E4%B8%BB%E4%B9%89">虚无主义</a>，提出：“一尺之棰，日取其半，万世不竭。”的哲学悖论，类似于<a href="https://zh.wikipedia.org/wiki/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7">亚里士多德</a>《<a href="https://zh.wikipedia.org/wiki/%E7%89%A9%E7%90%86%E5%AD%A6">物理学</a>》一书中的<a href="https://zh.wikipedia.org/wiki/%E8%8A%9D%E8%AF%BA%E6%82%96%E8%AE%BA">芝诺悖论</a>。墨子解决了庄子的悖论。他设想有一条线甲乙，从甲端向乙端前进，进到全长一半丙点，则斫去，剩余乙丙是全长的一半。再如前法取乙丙一半，剩为全长四分之一。如此取至无穷多次，最后必将到达线的最前端乙。这正是数学上的极限逼近原理。直到1655年英国的<a href="https://zh.wikipedia.org/wiki/%E7%93%A6%E9%87%8C%E6%96%AF">瓦里斯</a>出版《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%97%A0%E7%A9%B7%E7%AE%97%E6%9C%AF&amp;action=edit&amp;redlink=1">无穷算术</a>》，才有“极限”概念的正确解释。《<a href="https://zh.wikipedia.org/wiki/%E5%A2%A8%E7%BB%8F">墨经</a>》包含大量力学与机械设计原理。他在《经上》中明确提出，力是物体加速运动的原因，即“力，刑之所以奋也”。更进一步，他在《经上说》中指出，力与重力等效，即“力，重之谓”。纠正了流传已久的谬误：把重力与重量混淆。他这种论断与近两千年后<a href="https://zh.wikipedia.org/wiki/%E4%BC%BD%E4%BF%90%E7%95%A5">伽俐略</a>、<a href="https://zh.wikipedia.org/wiki/%E7%89%9B%E9%A1%BF">牛顿</a>的理论极为接近。</p>
+<h4 id="时空观编辑"><a class="header" href="#时空观编辑">时空观[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=5">编辑</a>]</a></h4>
+<p>在《墨经》中，空间是一个与时间密不可分的概念，墨子认为“宇”即“域徙”，即物体运动的区域。没有像<a href="https://zh.wikipedia.org/wiki/%E7%89%9B%E9%A1%BF">牛顿</a>那样，存在一个绝对静止的时空的误解。两千多年后，<a href="https://zh.wikipedia.org/wiki/%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6">爱因斯坦</a>的<a href="https://zh.wikipedia.org/wiki/%E7%8B%AD%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA">狭义相对论</a>中认同，空间和时间并不相互独立，而是一个统一的四维时空整体，为这一直觉的朴素时空观添上了完美的注脚。而事实上，战国末年的<a href="https://zh.wikipedia.org/wiki/%E5%B0%B8%E4%BD%BC">尸佼</a>对<a href="https://zh.wikipedia.org/wiki/%E5%AE%87%E5%AE%99">宇宙</a>已有一个明确的定义∶“四方上下曰宇，往古来今曰宙”（《尸子》），“宇”就是包括东西南北四方和上下六合的三维空间，而“宙”就是包括过去现在和未来的一维时间。</p>
+<h4 id="盖天说编辑"><a class="header" href="#盖天说编辑">盖天说[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=6">编辑</a>]</a></h4>
+<p>参见：<a href="https://zh.wikipedia.org/wiki/%E8%93%8B%E5%A4%A9%E8%AA%AA">盖天说</a></p>
+<p>西周时期出现一种宇宙学说—<a href="https://zh.wikipedia.org/wiki/%E7%9B%96%E5%A4%A9%E8%AF%B4">盖天说</a>，当时认为天尊地卑，天圆地方，认为“天圆如张盖，地方如棋局”，穹隆状的天覆盖在呈正方形的平直大地上。后来在发展出几种不同的见解。由于圆盖形的天与正方形的大地边缘无法吻合，于是又有人提出，天并不与地相接，而是像一把大伞一样高高悬在大地之上，地的周边有八根柱子支撑着，天和地的形状犹如一座顶部为圆穹形的凉亭。共工怒触不周山和女娲补天的神话正是以此为依据的。到战国时期，对上述的盖天说开始发生怀疑，于是修改成“天似盖笠，地法覆槃”，就是说天好像斗笠那样是圆形的，地像是覆盖着倒放的盘子那样，并且认为北极位于天穹的中央，日月星辰绕之旋转不息。</p>
+<p>汉代的<a href="https://zh.wikipedia.org/wiki/%E6%B5%91%E5%A4%A9%E8%AF%B4">浑天说</a>可在战国时期找到其源头，屈原《天问》：“圜则九重，孰营度之？”这里的“圜”有的注家认为就是天球的意思。而《<a href="https://zh.wikipedia.org/wiki/%E5%BA%84%E5%AD%90">庄子</a>·逍遥游》：“天之苍苍其正色邪？其远而无所至极邪？”就用提问的方式表述了自己对宇宙无限的猜测。也是战国时代，道家中的宋钘和尹文一派就提出了朴素的元气学说，把宇宙万事万物的本原归结为“气”。这“气”,可以上为日、月、星辰,下为山、川、草、木。同时，名家的惠施又提出了“至大无外，谓之大一；至小无内，谓之小一”的朴素的无限大和无限小概念。这就为汉代的<a href="https://zh.wikipedia.org/wiki/%E5%AE%A3%E5%A4%9C%E8%AA%AA">宣夜说</a>的宇宙无限观念奠定了基础。</p>
+<h4 id="天文观测编辑"><a class="header" href="#天文观测编辑">天文观测[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=7">编辑</a>]</a></h4>
+<p>公元前2137年，《书经》是世界历史上最早记录日食。约公元前2000年，中国天文学家测定木星绕天一周的周期为12年。公元前14世纪，商代甲骨文中已有日食和月食的详细记录，以及世界最早的日珥记录。公元前687年有<a href="https://zh.wikipedia.org/wiki/%E5%9B%9B%E6%9C%88%E5%A4%A9%E7%90%B4%E5%BA%A7%E6%B5%81%E6%98%9F%E9%9B%A8">四月天琴座流星雨</a>的最早记录。</p>
+<p>此外，中国在该时期出现了世界上最早的<a href="https://zh.wikipedia.org/wiki/%E6%98%9F%E8%A1%A8">星表</a>，首次测量了<a href="https://zh.wikipedia.org/wiki/%E5%9B%9E%E5%BD%92%E5%B9%B4">回归年</a>的长度。</p>
+<p>公元前28年中国《汉书·五行志》，记载有世界最早的<a href="https://zh.wikipedia.org/wiki/%E5%A4%AA%E9%98%B3%E9%BB%91%E5%AD%90">太阳黑子</a>可靠记录。而中国更早有关太阳黑子的描述，有公元前约一百四十年成书的《<a href="https://zh.wikipedia.org/wiki/%E6%B7%AE%E5%8D%97%E5%AD%90">淮南子</a>》，说：“日中有踆乌。”。公元前165年的一次记载中说：“日中有王字。”。战国时期的一次记录描述为“日中有立人之像”。更早的观察和记录，可以上溯到三千多年前，甲骨文中有关太阳黑子的记载。从公元前二十八年到明代末年的一千六百多年当中，中国共有一百多次可靠的太阳黑子记录，这些记录不仅有确切日期，而且对黑子的形状、大小、位置乃至分裂、变化等，也都有很详细和认真的描述。</p>
+<p>先秦时期，中国天文学家就已经观测到彗星的不同形态，不仅画出了三尾彗、四尾彗，还窥视到今天用大望远镜也很难见到的彗核。</p>
+<h3 id="生物学与物候学编辑"><a class="header" href="#生物学与物候学编辑">生物学与物候学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=8">编辑</a>]</a></h3>
+<p><a href="https://zh.wikipedia.org/wiki/File:Bronze_jin_from_Henan.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Bronze_jin_from_Henan.jpg/220px-Bronze_jin_from_Henan.jpg" alt="img" /></a></p>
+<p>使用<a href="https://zh.wikipedia.org/wiki/%E5%A4%B1%E8%9C%A1%E6%B3%95">失蜡法</a>铸造的<a href="https://zh.wikipedia.org/wiki/%E4%BA%91%E7%BA%B9%E9%93%9C%E7%A6%81">云纹铜禁</a> <a href="https://zh.wikipedia.org/wiki/%E6%B2%B3%E5%8D%97%E5%8D%9A%E7%89%A9%E9%99%A2">河南博物院</a>馆藏</p>
+<p>《<a href="https://zh.wikipedia.org/wiki/%E5%B0%9A%E4%B9%A6">尚书</a>·尧典》记载<a href="https://zh.wikipedia.org/wiki/%E5%B0%A7">尧</a>时人们已观察到鸟兽在不同季节中的交尾、繁殖、脱羽、换毛等生理变化。</p>
+<p>农事历书《<a href="https://zh.wikipedia.org/wiki/%E5%A4%8F%E5%B0%8F%E6%AD%A3">夏小正</a>》成书，为中国现存最早的生物科学文献，书中除二月、十一与十二月外，每月记载其季节的星象（主要是<a href="https://zh.wikipedia.org/w/index.php?title=%E6%8B%B1%E6%9E%81%E6%98%9F%E8%B1%A1&amp;action=edit&amp;redlink=1">拱极星象</a>与<a href="https://zh.wikipedia.org/w/index.php?title=%E9%BB%84%E9%81%93%E6%98%9F%E8%B1%A1&amp;action=edit&amp;redlink=1">黄道星象</a>）以供务农用，另外亦有记载当月植物之生长形态、动物之活动习性与祭祀，为<a href="https://zh.wikipedia.org/wiki/%E7%89%A9%E5%80%99%E5%AD%B8">物候学</a>之重要典籍。大约成书于春秋中叶的《诗经》，记有黄河流域中、下游和长江以北地区的植物约130种,动物约90种。在《诗经》和《周礼》中载有一些动植物形态和生境以及动、植物的分布等知识。</p>
+<p>战国晚期，<a href="https://zh.wikipedia.org/wiki/%E8%8D%80%E5%AD%90">荀子</a>在<a href="https://zh.wikipedia.org/w/index.php?title=%E5%A2%A8%E5%AE%B6%E5%90%8E%E5%AD%B8&amp;action=edit&amp;redlink=1">墨家后学</a>逻辑的基础上，提出制定名称或概念的目的是在于“明贵贱”、“辨同异”。把名分为“共名”和“别名”两类；“共名”之上还有“共名”，“别名”之下还有“别名”。他运用这种逻辑分类法，按照事物本身的自然属性，把自然分为有生命的和无生命的；有生命的又分为无感知的和有感知的；有感知的又分为有思想的和无思想的。</p>
+<h4 id="甲骨文中的解剖学编辑"><a class="header" href="#甲骨文中的解剖学编辑">甲骨文中的解剖学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=9">编辑</a>]</a></h4>
+<p>商代解剖动物和人体是在祭祀杀牲和刑戮等活动中进行的。卜辞中有“傠牲”、“傠羌”、“傠人”的记载。学者研究“傝”字有剖腹支解之意，即解剖其腹肠，又解其肢体。甲骨文“叽”字，其形似头壳，中间的“+”示颅骨缝间有相连的纹理。心脏的象形字，中间的两点象血，显示心脏有藏血的功能。甲骨文的“兔”字（骨）写作Z中间的“丿”示骨干，两端的“八”示骨骺等等。这些都在一定程度上反映了当时人们对解剖和生理方面的认识。</p>
+<h4 id="解剖学的系统化血液循环的概念编辑"><a class="header" href="#解剖学的系统化血液循环的概念编辑">解剖学的系统化、血液循环的概念[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=10">编辑</a>]</a></h4>
+<p>医书《<a href="https://zh.wikipedia.org/wiki/%E9%BB%84%E5%B8%9D%E5%86%85%E7%BB%8F">黄帝内经</a>》首先开始正式记载人体解剖，强调解剖测量。“解剖”&quot;两字最先在《灵抠·经水篇》中出现，“若夫八尺之土，皮肉在此，外可度量切循而得之，其死可解剖而视之。其脏之坚脆，腑之大小，谷之多少，脉之长短，血之清浊，气之多少……皆有大数。”二千多年前的中国医人，开创了解剖尸体的先例。《内经》中的《肠胃篇》、《经筋篇》、《骨度篇》、《脉度篇》等，都是记述解剖学的专章。其中对人体骨胳、部位、脏腑、血管等，均有长度、重量、体积、容量的详细记载。书中一些解剖学的名称，主要脏腑的命名，到现代还在运用。</p>
+<p>《<a href="https://zh.wikipedia.org/wiki/%E5%85%A7%E7%B6%93">内经</a>》中的《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%81%B5%E6%9E%A2%C2%B7%E8%82%A0%E8%83%83%E7%AF%87&amp;action=edit&amp;redlink=1">灵枢·肠胃篇</a>》，叙述了消化道中各个器官：“唇至齿长九分，口广二寸半，齿以后至<a href="https://zh.wikipedia.org/wiki/%E4%BC%9A%E5%8E%8C">会厌</a>，深三寸半，大容五合；舌重十两，长七寸，广二寸半；<a href="https://zh.wikipedia.org/wiki/%E5%92%BD%E9%97%A8">咽门</a>重十两，广一寸半；至胃长一尺六寸，胃纤曲屈，伸之，长二尺六寸，大一尺五寸，径五寸，大容三斗五升。”。这里说明古人已注意到口、唇、齿也是消化道的重要部分。同时，该书对胃肠道的形状，描绘得也十分细致。<a href="https://zh.wikipedia.org/wiki/%E5%B0%8F%E8%82%A0">小肠</a>(指<a href="https://zh.wikipedia.org/wiki/%E5%8D%81%E4%BA%8C%E6%8C%87%E8%82%A0">十二指肠</a>和<a href="https://zh.wikipedia.org/wiki/%E7%A9%BA%E8%82%A0">空肠</a>)后附脊，左环回迭积，其注于回肠者，外附于脐上，回运环十六曲，大二寸半，径八分分之少半，长三丈三尺。<a href="https://zh.wikipedia.org/wiki/%E5%9B%9E%E8%82%A0">回肠</a>(其中包括结肠上段)当脐左环，回周叶积而下，回运环反十六曲，大四寸，径一寸寸之少半，长二丈一尺。广肠传脊(指乙状结肠和直肠)，以受回肠，左环叶脊上下，辟大八寸，径二寸寸之大半，长二尺八寸。肠胃所入至所出，长六丈四寸四分，回曲环反，三十二曲也。”书中消化道长度的记载，和近代解剖学的记载，基本一致的。</p>
+<p>古人对<a href="https://zh.wikipedia.org/wiki/%E8%A1%80%E6%B6%B2">血液</a>与<a href="https://zh.wikipedia.org/wiki/%E5%BF%83%E8%84%8F">心脏</a>的关系已有所认识，“诸血者，皆属于心”指出血液是受心脏控制的。“营周不休，五十而复大会。阴阳相贯，如环无端。”这段记载表明当时人们已意识到血液的流动是周而复始，如环之无端。事实上已经包含有血液循环的概念。</p>
+<h4 id="先秦生命观编辑"><a class="header" href="#先秦生命观编辑">先秦生命观[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=11">编辑</a>]</a></h4>
+<p>春秋以前，存在着<a href="https://zh.wikipedia.org/w/index.php?title=%E5%A4%A9%E8%B3%A6%E8%AF%B4&amp;action=edit&amp;redlink=1">天赋说</a>、<a href="https://zh.wikipedia.org/w/index.php?title=%E5%8C%96%E7%94%9F%E8%AF%B4&amp;action=edit&amp;redlink=1">化生说</a>及<a href="https://zh.wikipedia.org/wiki/%E9%98%B4%E9%98%B3%E4%BA%94%E8%A1%8C%E8%AF%B4">阴阳五行说</a>等几种截然不同的生命观。天赋说认为生命是天神赐予的。如《诗经·生民》：“诞降嘉种，维秬维秠，维穈维芑。”。《商颂》也说：“天命玄鸟，降而生商。”。《国语·周语》：“我姬氏出自天鼋”，即周代的祖先也是由“天鼋”产生的。另一种是“化生说”或“自然发生说”，认为生物是由另一种生物变化来的。《夏小正》有“鹰则为鸠”、“田鼠化为𫛪”等记载，认为鸠由鹰转化而来，𫛪是田鼠变成的。西周末年，史伯在原始的“五行说”的基础上提出“以土与金木水火杂，以成百物”[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-4">4]</a>，认为这五种不同性质的物质的相互作用就能产生出包括生命在内的万物。稍晚，春秋时期的<a href="https://zh.wikipedia.org/wiki/%E7%AE%A1%E4%BB%B2">管仲</a>及其后学则认为‘“水”是万物之本原，诸生之宗室也’[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-5">5]</a>，水是产生万物（包括生命）的物质基础。与<a href="https://zh.wikipedia.org/wiki/%E5%8F%B2%E4%BC%AF">史伯</a>几乎同时的<a href="https://zh.wikipedia.org/wiki/%E4%BC%AF%E9%98%B3%E7%88%B6">伯阳父</a>，也在原始的“阴阳说”的基础上提出“气”和“阴阳”的概念，认为阴、阳二气的对立而产生自然变异现象。</p>
+<p>荀子曾概括地指出，“形具而神生”[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-6">6]</a>。认为形（有机体）是神(生理功能和精神活动)的物质基础，他把人体结构与生理功能和精神活动联系起来视为统一的整体。</p>
+<h3 id="科技编辑"><a class="header" href="#科技编辑">科技[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=12">编辑</a>]</a></h3>
+<p>参见：<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9C%8B%E7%99%BC%E6%98%8E">中国发明</a></p>
+<p>西周晚期，出现了冶铁术[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-7">7]</a>，<a href="https://zh.wikipedia.org/wiki/%E9%93%81%E5%99%A8">铁器</a>被广泛使用，同时还出现了<a href="https://zh.wikipedia.org/w/index.php?title=%E7%85%89%E9%92%A2%E6%9C%AF&amp;action=edit&amp;redlink=1">炼钢术</a>。先秦时期，已懂得使用<a href="https://zh.wikipedia.org/wiki/%E5%A4%B1%E8%9C%A1%E6%B3%95">失蜡法</a>铸造青铜器：失蜡法在中国的历史要追溯到春秋战国时期，最早采用失蜡法铸造的青铜器是<a href="https://zh.wikipedia.org/w/index.php?title=%E6%A5%9A%E5%85%B1%E7%8E%8B%E7%86%8A%E5%AF%A9%E7%9B%82&amp;action=edit&amp;redlink=1">楚共王熊审盂</a>，<a href="https://zh.wikipedia.org/wiki/%E6%9B%BE%E4%BE%AF%E4%B9%99%E5%A2%93">曾侯乙墓</a>也曾经出土了青铜尊盘。战国时出现大规模的水利工程，包括了<a href="https://zh.wikipedia.org/wiki/%E9%83%BD%E6%B1%9F%E5%A0%B0">都江堰</a>、<a href="https://zh.wikipedia.org/wiki/%E9%83%91%E5%9B%BD%E6%B8%A0">郑国渠</a>等。</p>
+<h2 id="秦汉三国编辑"><a class="header" href="#秦汉三国编辑">秦汉三国[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=13">编辑</a>]</a></h2>
+<h3 id="天文学与数学编辑"><a class="header" href="#天文学与数学编辑">天文学与数学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=14">编辑</a>]</a></h3>
+<h4 id="盖天说数学模型的提出编辑"><a class="header" href="#盖天说数学模型的提出编辑">盖天说数学模型的提出[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=15">编辑</a>]</a></h4>
+<p>参见：<a href="https://zh.wikipedia.org/wiki/%E5%91%A8%E9%AB%80%E7%AE%97%E7%B6%93">周髀算经</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/File:Rigaotu1213CE.png"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rigaotu1213CE.png/200px-Rigaotu1213CE.png" alt="img" /></a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8">四库全书</a>《<a href="https://zh.wikipedia.org/wiki/%E5%91%A8%E9%AB%80%E7%AE%97%E7%B6%93">周髀算经</a>》日高图</p>
+<p>到了西汉，西周时期的<a href="https://zh.wikipedia.org/wiki/%E7%9B%96%E5%A4%A9%E8%AF%B4">盖天说</a>仍然流行。当时成书的《<a href="https://zh.wikipedia.org/wiki/%E5%91%A8%E9%AB%80%E7%AE%97%E7%B6%93">周髀算经</a>》就是<a href="https://zh.wikipedia.org/wiki/%E7%9B%96%E5%A4%A9%E8%AF%B4">盖天说</a>的代表作，以数学模型支撑该学说，然而该模型建基在错误的“日影千里差一寸”上，即八尺之表的日影在<a href="https://zh.wikipedia.org/wiki/%E5%AD%90%E5%8D%88%E7%BA%BF">子午线</a>方向上千里会差一寸。直到唐代天文学家<a href="https://zh.wikipedia.org/wiki/%E5%83%A7%E4%B8%80%E8%A1%8C">僧一行</a>通过实验后才证明“千里差一寸”是错误的。盖天说通常把日月星辰的出没解释为它们运行时远近距离变化所致，离远了就看不见，离近了就看见它们照耀。这种解释比较牵强。后来盖天说被越来越多的天文观测事实所否定。</p>
+<h4 id="浑天说编辑"><a class="header" href="#浑天说编辑">浑天说[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=16">编辑</a>]</a></h4>
+<p>参见：<a href="https://zh.wikipedia.org/wiki/%E6%B5%91%E5%A4%A9%E8%AF%B4">浑天说</a></p>
+<p>西汉的哲学家<a href="https://zh.wikipedia.org/wiki/%E6%89%AC%E9%9B%84">扬雄</a>提出了难盖天八事，对盖天说提出质疑，并提到了“浑天”这个词，这是现今所知，<a href="https://zh.wikipedia.org/wiki/%E6%B5%91%E5%A4%A9%E8%AF%B4">浑天说</a>的最早的记载。他在《法言·重黎》篇里说：“或问浑天。曰：落下闳营之，鲜于妄人度之，耿中丞象之。”。这里的“浑天”是浑天仪，实即浑仪的意思。扬雄是在和《<a href="https://zh.wikipedia.org/wiki/%E9%97%AE%E5%A4%A9">问天</a>》对照的情况下来说这段话的。由此可见，落下闳时已有<a href="https://zh.wikipedia.org/wiki/%E6%B5%91%E5%A4%A9%E8%AF%B4">浑天说</a>及其观庖瞧鳌。浑天说最初认为：地球不是孤零零地悬在空中的，而是浮在水上；后来又有发展，认为地球浮在气中，因此有可能回旋浮动，这就是“地有四游”的朴素地动说的先河。浑天说认为全天恒星都布于一个“天球”上，而日月五星则附丽于“天球”上运行，这与现代天文学的天球概念十分接近。因而浑天说采用球面坐标系，如赤道坐标系，来量度天体的位置，计量天体的运动。在古代，例如，对于恒星的昏旦中天，日月五星的顺逆去留，都采用浑天说体系来描述，所以，浑天说不只是一种宇宙学说，而且是一种观测和测量天体视运动的计算体系，类似现代的球面天文学。东汉的天文学家<a href="https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%A1%A1">张衡</a>主张浑天说，并对其加以补充，他在《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%B5%91%E5%A4%A9%E4%BB%AA%E6%B3%A8&amp;action=edit&amp;redlink=1">浑天仪注</a>》中指出天是一个圆球，而不是<a href="https://zh.wikipedia.org/wiki/%E7%9B%96%E5%A4%A9%E8%AF%B4">盖天说</a>中的半圆，地球在天之中类似于鸡蛋黄在鸡蛋内部。《浑天仪图注》：浑天如鸡子。天体圆如弹丸，地如鸡中黄，孤居于内，天大而地小。天表里有水。天之包地，犹壳之裹黄。[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-8">8]</a>。浑天说与盖天说这两种模型一致认为恒星随天一起左旋，而对于日、月以及金、木、水、火、土五星，则有左旋和右旋之争。</p>
+<p>三国时学者<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%95%83">王蕃</a>《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%B8%BE%E5%A4%A9%E8%B1%A1%E8%AA%AA&amp;action=edit&amp;redlink=1">浑天象说</a>》：天地之体状如鸟卵，天包于地外，犹卵之裹黄，周旋无端，其形浑浑然，故曰浑天。其术以为天半覆地上，半在地下，其南北极持其两端，其天与日月星宿斜而回转。后世认为这是中国古代有地圆学说的有力文献。</p>
+<h4 id="宣夜假说编辑"><a class="header" href="#宣夜假说编辑">宣夜假说[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=17">编辑</a>]</a></h4>
+<p>参见：<a href="https://zh.wikipedia.org/wiki/%E5%AE%A3%E5%A4%9C%E8%AA%AA">宣夜说</a></p>
+<p>浑天说弥补了盖天说宇宙模型的不足，然而盖天说和浑天说都有不少漏洞。日月星辰的运动都各有不同，有快有慢，全不像附在同一个东西上运动，所以就产生了另一种有关天地结构的新学说—宣夜说。宣夜说最早在战国时已出现，但要到汉代才被明确提出。东汉秘书郎<a href="https://zh.wikipedia.org/w/index.php?title=%E9%83%84%E8%90%8C&amp;action=edit&amp;redlink=1">郄萌</a>提到<a href="https://zh.wikipedia.org/wiki/%E5%AE%A3%E5%A4%9C%E8%AA%AA">宣夜说</a>，今见载于《<a href="https://zh.wikipedia.org/wiki/%E6%99%8B%E4%B9%A6">晋书</a>·天文志》和《<a href="https://zh.wikipedia.org/wiki/%E9%9A%8B%E4%B9%A6">隋书</a>·天文志》，设想宇宙是无限的，天体飘浮在虚空之中，互相远离，受“气”的推动而运行，进退不一。不论是中国古代的<a href="https://zh.wikipedia.org/wiki/%E7%9B%96%E5%A4%A9%E8%AF%B4">盖天说</a>还是<a href="https://zh.wikipedia.org/wiki/%E6%B5%91%E5%A4%A9%E8%AF%B4">浑天说</a>，无不把天看作一个坚硬的球壳，星都固定在这个球壳上。宣夜说否定这种看法，不认为天有某种形状，没有“天球”的想法，是中国古代一种朴素的无限宇宙观念。</p>
+<h5 id="宣夜说中的气编辑"><a class="header" href="#宣夜说中的气编辑">宣夜说中的“气”[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=18">编辑</a>]</a></h5>
+<p>宣夜说认为宇宙是无限的，宇宙中充满着气体，所有天体都在气体中漂浮运动。星辰日月的运动规律是由它们各自的特性所决定的，决没有坚硬的天球或是什么本轮、均轮来束缚它们。宣夜说承认天是没有形质的，天体各有自己的运动规律，宇宙是无限的空间。后来的宣夜说学者将其进一步发展为天体是由气体组成的，只不过是某种发光的气。《列子·天瑞篇》所说：“日月星宿亦积气中之有光耀者。”。三国时代<a href="https://zh.wikipedia.org/wiki/%E5%AE%A3%E5%A4%9C%E8%AA%AA">宣夜说</a>学者<a href="https://zh.wikipedia.org/w/index.php?title=%E6%9D%A8%E6%B3%89&amp;action=edit&amp;redlink=1">杨泉</a>又进一步说:“夫天,元气也,皓然而已,无他物焉。”。他认为银河也是气，并从中生出恒星来。他说：“气发而升，精华上浮，宛转随流，名之曰天河,一曰云汉,众星出焉。”（《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%89%A9%E7%90%86%E8%AE%BA&amp;action=edit&amp;redlink=1">物理论</a>》）。在思辨性的自然哲学中，这种猜测是十分精辟独到的。然而作为一个宇宙结构体系，宣夜说没有提出自己独立的对于天体坐标及其运动的量度方法。它的数据借自浑天说，使它只能停留在思辩的假说。</p>
+<h4 id="天文观测编辑-1"><a class="header" href="#天文观测编辑-1">天文观测[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=19">编辑</a>]</a></h4>
+<p>《史记·秦始皇本纪》记载的秦始皇七年（公元前240年）的彗星，被公认为是世界上最早的<a href="https://zh.wikipedia.org/wiki/%E5%93%88%E9%9B%B7%E5%BD%97%E6%98%9F">哈雷彗星</a>记录。从那时起到1986年，哈雷彗星共回归了三十次。天文学家<a href="https://zh.wikipedia.org/wiki/%E5%BC%A0%E9%92%B0%E5%93%B2">张钰哲</a>在晚年考证了《淮南子·兵略训》中“武王伐纣，东面而迎岁，......彗星出而授殷人其柄”这段文字，认为当时出现的这颗彗星也是哈雷彗星。他计算了近四千年哈雷彗星的轨道，并从其他相互印证的史料中肯定了武王伐纣的确切年代应为公元前1056年。如属实，将会把哈雷彗星的最早记录再往前推八百多年。</p>
+<p>在三国时代，编制了包括283个星座1465颗恒星的星表。公元前32年有极光的记录、公元134年有超新星的记录。</p>
+<p>1973年，马王堆汉墓帛书《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%A4%A9%E6%96%87%E6%B0%94%E8%B1%A1%E6%9D%82%E5%8D%A0&amp;action=edit&amp;redlink=1">天文气象杂占</a>》在<a href="https://zh.wikipedia.org/wiki/%E6%B9%96%E5%8D%97">湖南</a><a href="https://zh.wikipedia.org/wiki/%E9%95%BF%E6%B2%99">长沙</a>出土，图上除彗星之外，还绘有云、气、月掩星和恒星，是迄今发现的世界上最古老的彗星图。</p>
+<p>流传有数学著作《<a href="https://zh.wikipedia.org/wiki/%E4%B9%9D%E7%AB%A0%E7%AE%97%E6%9C%AF">九章算术</a>》。</p>
+<h3 id="医学生物学编辑"><a class="header" href="#医学生物学编辑">医学、生物学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=20">编辑</a>]</a></h3>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%BC%A0%E4%BB%B2%E6%99%AF">张仲景</a>著有医学临床著作《<a href="https://zh.wikipedia.org/wiki/%E5%82%B7%E5%AF%92%E9%9B%9C%E7%97%85%E8%AB%96">伤寒杂病论</a>》。秦汉时又流传医药学专著《<a href="https://zh.wikipedia.org/wiki/%E7%A5%9E%E5%86%9C%E6%9C%AC%E8%8D%89%E7%BB%8F">神农本草经</a>》。</p>
+<h4 id="生物进化论与物竞论编辑"><a class="header" href="#生物进化论与物竞论编辑">生物进化论与物竞论[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=21">编辑</a>]</a></h4>
+<p>汉代<a href="https://zh.wikipedia.org/wiki/%E5%88%98%E5%AE%89">刘安</a>在<a href="https://zh.wikipedia.org/wiki/%E5%BA%84%E5%AD%90">庄子</a>“物固相累，二类相召”的概念上，指出动物间“喜而相戏，怒而相害”的互助、竞争行为是“天之性也”（《淮南子·兵略训》）。刘安还把生物因生活条件的改变而导致枯槁、死亡和变异等现象，归因于环境（“势居不可移”）和遗传(“形性不可易”)。</p>
+<h4 id="生物学元气说编辑"><a class="header" href="#生物学元气说编辑">生物学元气说[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=22">编辑</a>]</a></h4>
+<p>西汉学者<a href="https://zh.wikipedia.org/wiki/%E5%88%98%E5%AE%89">刘安</a>提出了生物“同出于一（气），所为各异：有鸟、有鱼、有兽,谓之分物。方以类别,物以群分。性命不同，皆形于有。隔而不通，分而为万物。莫能反宗”（《淮南子·诠言训》）这样一个朴素的生物进化论。他还描绘了一幅生物变化的图式，认为这些不同类别的生物在其演变进程中“肖形而蕃”(《坠形训》),“由本至末,莫不有序”(《兵略训》)。东汉哲学家<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%85%85">王充</a>在刘安论述的基础上，提出“元气说”,认为“元气”是构成天地万物的最基本元素。</p>
+<h3 id="历法与科技编辑"><a class="header" href="#历法与科技编辑">历法与科技[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=23">编辑</a>]</a></h3>
+<p>汉代《<a href="https://zh.wikipedia.org/wiki/%E5%A4%AA%E5%88%9D%E5%8E%86">太初历</a>》第一次计算了日月蚀发生以及行星会合的周期，此历共实行了188年。<a href="https://zh.wikipedia.org/wiki/%E8%94%A1%E4%BC%A6">蔡伦</a>改良了古纸<a href="https://zh.wikipedia.org/wiki/%E7%81%9E%E6%A1%A5%E7%BA%B8">灞桥纸</a>，制成了世界第一种书写用纸“<a href="https://zh.wikipedia.org/w/index.php?title=%E8%94%A1%E4%BE%AF%E7%BA%B8&amp;action=edit&amp;redlink=1">蔡侯纸</a>”。技术改良降低了造纸成本，令到纸的使用普及。<a href="https://zh.wikipedia.org/wiki/%E5%BC%B5%E8%A1%A1">张衡</a>发明了<a href="https://zh.wikipedia.org/wiki/%E5%80%99%E9%A2%A8%E5%9C%B0%E5%8B%95%E5%84%80">候风地动仪</a>，是世界上最早的地震仪。《汉书·艺文志》记载了《海中星占验》、《海中五星经杂事》、《海中五星杂事》、《海中五星顺逆》、《海中二十八宿国分》、《海中二十八宿臣分》、《海中日月慧虹杂占》等海上观星导航术。</p>
+<h2 id="魏晋南北朝编辑"><a class="header" href="#魏晋南北朝编辑">魏晋南北朝[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=24">编辑</a>]</a></h2>
+<h3 id="生物学与医学编辑"><a class="header" href="#生物学与医学编辑">生物学与医学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=25">编辑</a>]</a></h3>
+<p>东晋<a href="https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B4%AA">葛洪</a>《<a href="https://zh.wikipedia.org/wiki/%E8%82%98%E5%BE%8C%E5%82%99%E6%80%A5%E6%96%B9">肘后备急方</a>》记载<a href="https://zh.wikipedia.org/w/index.php?title=%E6%B2%99%E8%99%B1&amp;action=edit&amp;redlink=1">沙虱</a>的形状“正如疥虫， 着火上映光方见行动”。晋代的《<a href="https://zh.wikipedia.org/wiki/%E5%8D%97%E6%96%B9%E8%8D%89%E6%9C%A8%E7%8A%B6">南方草木状</a>》也记述了当时岭南地区即今广东、广西和越南北部等地的植物80种，分为草、木、竹3类。南朝梁代<a href="https://zh.wikipedia.org/wiki/%E9%99%B6%E5%BC%98%E6%99%AF">陶弘景</a>(456～536)的《<a href="https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E7%BB%8F%E9%9B%86%E6%B3%A8">本草经集注</a>》，将药用动、植物分为草木、果、菜、米实、虫、兽等类。</p>
+<p>北魏农学家<a href="https://zh.wikipedia.org/wiki/%E8%B4%BE%E6%80%9D%E5%8B%B0">贾思勰</a>写成《<a href="https://zh.wikipedia.org/wiki/%E9%BD%8A%E6%B0%91%E8%A6%81%E8%A1%93">齐民要术</a>》，系统化地记录中国当时的农业知识及技术，是中国现存最早的农业百科全书。《齐民要术》在述及选优汰劣时，不仅注意到母畜孕期及仔畜出生时的生活条件，还注意到亲代和子代的遗传关系，“母长则受驹，父大则子壮”。此外，该书还描述了马与驴杂交产生的骡子“形容壮大，弥复胜马”的杂种优势现象。</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E9%99%B6%E5%BC%98%E6%99%AF">陶弘景</a>著成《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%A5%9E%E5%86%9C%E6%9C%AC%E8%8D%89%E7%BB%8F%E9%9B%86%E6%B3%A8&amp;action=edit&amp;redlink=1">神农本草经集注</a>》。</p>
+<h3 id="数学编辑-1"><a class="header" href="#数学编辑-1">数学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=26">编辑</a>]</a></h3>
+<p><a href="https://zh.wikipedia.org/wiki/File:Sea_island_survey.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Sea_island_survey.jpg/150px-Sea_island_survey.jpg" alt="img" /></a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%8F%A4%E4%BB%8A%E5%9B%BE%E4%B9%A6%E9%9B%86%E6%88%90">古今图书集成</a>《海岛算经》</p>
+<p>魏晋南北朝时期，出现了<a href="https://zh.wikipedia.org/wiki/%E5%88%98%E5%BE%BD">刘徽</a>、<a href="https://zh.wikipedia.org/wiki/%E7%A5%96%E5%86%B2%E4%B9%8B">祖冲之</a>及<a href="https://zh.wikipedia.org/w/index.php?title=%E5%BC%A0%E5%AD%90%E4%BF%A1&amp;action=edit&amp;redlink=1">张子信</a>等数学家。刘徽发明了<a href="https://zh.wikipedia.org/w/index.php?title=%E5%9B%9B%E6%AC%A1%E9%87%8D%E5%B7%AE%E8%A7%82%E6%B5%8B%E6%9C%AF&amp;action=edit&amp;redlink=1">四次重差观测术</a>，记载于《<a href="https://zh.wikipedia.org/wiki/%E6%B5%B7%E5%B2%9B%E7%AE%97%E7%BB%8F">海岛算经</a>》，该技术领先世界一千余年。<a href="https://zh.wikipedia.org/wiki/%E7%A5%96%E5%86%B2%E4%B9%8B">祖冲之</a>准确估算圆周率，领先世界一千年。</p>
+<h3 id="天文学编辑"><a class="header" href="#天文学编辑">天文学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=27">编辑</a>]</a></h3>
+<p><a href="https://zh.wikipedia.org/wiki/%E6%B5%91%E5%A4%A9%E8%AF%B4">浑天说</a>提出后，并未能立即取代盖天说，而是两家各执一端，争论不休。晋朝天文学家<a href="https://zh.wikipedia.org/wiki/%E8%99%9E%E8%80%B8">虞耸</a>提出<a href="https://zh.wikipedia.org/w/index.php?title=%E7%A9%B9%E5%A4%A9%E8%AE%BA&amp;action=edit&amp;redlink=1">穹天论</a>，就是在已备受质疑的<a href="https://zh.wikipedia.org/wiki/%E7%9B%96%E5%A4%A9%E8%AF%B4">盖天说</a>基础上发展起来的一种学说。虞耸著有《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%A9%B9%E5%A4%A9%E8%AE%BA&amp;action=edit&amp;redlink=1">穹天论</a>》说：“天形如穹窿，如鸡子幕，其周际接四海之表，浮乎元气之上，譬如复奁以抑水而不没者，气充其中故也。”。南北朝时还出现了<a href="https://zh.wikipedia.org/w/index.php?title=%E6%B5%91%E7%9B%96%E5%90%88%E4%B8%80%E8%AF%B4&amp;action=edit&amp;redlink=1">浑盖合一说</a>，亦是沿袭自盖天说。到了唐代，天文学家<a href="https://zh.wikipedia.org/wiki/%E5%83%A7%E4%B8%80%E8%A1%8C">僧一行</a>通过实验才彻底否定了<a href="https://zh.wikipedia.org/wiki/%E7%9B%96%E5%A4%A9%E8%AF%B4">盖天说</a>。</p>
+<h3 id="地图学编辑"><a class="header" href="#地图学编辑">地图学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=28">编辑</a>]</a></h3>
+<p>西晋政治家<a href="https://zh.wikipedia.org/wiki/%E8%A3%B4%E7%A7%80">裴秀</a>是中国地图学的先驱，他著有中国最早有记载的地图集《<a href="https://zh.wikipedia.org/wiki/%E7%A6%B9%E8%B2%A2%E5%9C%B0%E5%9F%9F%E5%9C%96">禹贡地域图</a>》，首次提出了“制图六体”，成为了中国地图学的基础。</p>
+<h3 id="科技与发明编辑"><a class="header" href="#科技与发明编辑">科技与发明[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=29">编辑</a>]</a></h3>
+<p>三国时发明家<a href="https://zh.wikipedia.org/wiki/%E9%A9%AC%E9%92%A7">马钧</a>在机械制造方面亦有成就。后赵时工程学家<a href="https://zh.wikipedia.org/wiki/%E8%A7%A3%E9%A3%9B">解飞</a>和<a href="https://zh.wikipedia.org/wiki/%E9%AD%8F%E7%8C%9B%E5%8F%98">魏猛变</a>发明了世界上最早的车磨。</p>
+<h2 id="隋唐编辑"><a class="header" href="#隋唐编辑">隋唐[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=30">编辑</a>]</a></h2>
+<h3 id="天文学与数学编辑-1"><a class="header" href="#天文学与数学编辑-1">天文学与数学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=31">编辑</a>]</a></h3>
+<h4 id="否定盖天说编辑"><a class="header" href="#否定盖天说编辑">否定盖天说[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=32">编辑</a>]</a></h4>
+<p><a href="https://zh.wikipedia.org/wiki/File:Jigu_Suanjing.JPG"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Jigu_Suanjing.JPG/150px-Jigu_Suanjing.JPG" alt="img" /></a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%BA%93%E5%85%A8%E4%B9%A6">四库全书</a>《<a href="https://zh.wikipedia.org/wiki/%E7%B7%9D%E5%8F%A4%E7%AE%97%E7%B6%93">缉古算经</a>》</p>
+<p><a href="https://zh.wikipedia.org/wiki/File:Dunhuang_star_map.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Dunhuang_star_map.jpg/200px-Dunhuang_star_map.jpg" alt="img" /></a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E6%95%A6%E7%85%8C%E6%98%9F%E5%9B%BE">敦煌星图</a>是迄今为止存留的最古老的星图。</p>
+<p>唐代天文学家<a href="https://zh.wikipedia.org/wiki/%E4%B8%80%E8%A1%8C">僧一行</a>用<a href="https://zh.wikipedia.org/wiki/%E5%9C%AD%E8%A1%A8">圭表</a>首次实测<a href="https://zh.wikipedia.org/wiki/%E5%AD%90%E5%8D%88%E7%BA%BF">子午线</a>一度之长，证明西汉《<a href="https://zh.wikipedia.org/wiki/%E5%91%A8%E9%AB%80%E7%AE%97%E7%B6%93">周髀算经</a>》中的“日影千里差一寸”是错误的，彻底推翻了<a href="https://zh.wikipedia.org/wiki/%E7%9B%96%E5%A4%A9%E8%AF%B4">盖天说</a>。惟他仍然支持存在漏洞的浑天说，还与天文仪器制造家<a href="https://zh.wikipedia.org/wiki/%E6%A2%81%E4%BB%A4%E7%93%92">梁令瓒</a>合作，制成水运浑天铜仪。唐中宗时期（公元705-710年）绘制了<a href="https://zh.wikipedia.org/wiki/%E6%95%A6%E7%85%8C%E6%98%9F%E5%9B%BE">敦煌星图</a>，是迄今为止存留的最古老的星图，绘制了当时对恒星的观测。数学家<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%AD%9D%E9%80%9A">王孝通</a>《<a href="https://zh.wikipedia.org/wiki/%E7%B7%9D%E5%8F%A4%E7%AE%97%E7%B6%93">缉古算经</a>》在世界上第一次创立三元方程，对中国的代数学发展有重要意义。</p>
+<h3 id="医学编辑"><a class="header" href="#医学编辑">医学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=33">编辑</a>]</a></h3>
+<p>隋朝的临床医学开始分科，<a href="https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E9%86%AB%E7%BD%B2&amp;action=edit&amp;redlink=1">大医署</a>分为医学、药学两科；而医学又分为医、针、按摩、咒禁四科；其中医科又分成体疗、少小、疮肿、耳目口齿与角法等五个专业[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-%E9%9A%8B%E6%9C%9D%E9%86%AB%E5%AD%B8-9">9]</a>。隋朝医学家以<a href="https://zh.wikipedia.org/wiki/%E5%B7%A2%E5%85%83%E6%96%B9">巢元方</a>最为著名，他撰有《<a href="https://zh.wikipedia.org/wiki/%E8%AB%B8%E7%97%85%E6%BA%90%E5%80%99%E8%AB%96">诸病源候论</a>》[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-10">10]</a>。这是中国第一部详细论述疾病分类和病因、病理的著作。书中记有用肠吻合手术治疗外伤断肠。隋炀帝于<a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E4%B8%9A">大业</a>时期敕编《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%9B%9B%E6%B5%B7%E7%B1%BB%E8%81%9A%E6%96%B9&amp;action=edit&amp;redlink=1">四海类聚方</a>》，全书共2600卷，专述理论，与《诸病源候论》相辅相成[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-%E9%9A%8B%E6%9C%9D%E9%86%AB%E5%AD%B8-9">9]</a>。</p>
+<p>唐代<a href="https://zh.wikipedia.org/wiki/%E5%AD%99%E6%80%9D%E9%82%88">孙思邈</a>著有医书《<a href="https://zh.wikipedia.org/wiki/%E5%A4%87%E6%80%A5%E5%8D%83%E9%87%91%E8%A6%81%E6%96%B9">千金要方</a>》和《<a href="https://zh.wikipedia.org/wiki/%E5%8D%83%E9%87%91%E7%BF%BC%E6%96%B9">千金翼方</a>》。</p>
+<p>唐代柳宗元、刘禹锡不仅坚持王充的“元气说”,认为元气是构成天地万物的物质原料，还提出了万物的运动变化均由自身的“自动自休，自峙自流”(即内在的矛盾运动)所致。</p>
+<h3 id="历法编辑"><a class="header" href="#历法编辑">历法[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=34">编辑</a>]</a></h3>
+<p>隋朝历法比前朝更加精密。600年<a href="https://zh.wikipedia.org/wiki/%E5%8A%89%E7%84%AF">刘焯</a>借由<a href="https://zh.wikipedia.org/wiki/%E5%8C%97%E6%9C%9D">北朝</a><a href="https://zh.wikipedia.org/w/index.php?title=%E5%BC%B5%E5%AD%90%E4%BF%A1&amp;action=edit&amp;redlink=1">张子信</a>的数据，测定<a href="https://zh.wikipedia.org/wiki/%E6%AD%B2%E5%B7%AE">岁差</a>为76年差一度，已接近准确值。604年刘焯制定出《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%9A%87%E6%A5%B5%E6%AD%B7&amp;action=edit&amp;redlink=1">皇极历</a>》，推日行盈缩，黄道月道损益，日月食多少及所在所起，都比以前诸历精密，而且提出“<a href="https://zh.wikipedia.org/w/index.php?title=%E7%AD%89%E9%96%93%E8%B7%9D%E4%BA%8C%E6%AC%A1%E5%85%A7%E6%8F%92%E6%B3%95&amp;action=edit&amp;redlink=1">等间距二次内插法</a>”的公式。《皇极历》比过去的历法准确，虽然被排斥不得施行，但对后世历学提供了新标准[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-%E9%9A%8B%E6%9C%9D%E7%A7%91%E6%8A%80-11">11]</a>。<a href="https://zh.wikipedia.org/wiki/%E5%AE%9A%E6%9C%94">定朔</a>法、<a href="https://zh.wikipedia.org/wiki/%E5%AE%9A%E6%B0%94">定气</a>法也是刘焯的创见。</p>
+<h3 id="博物学编辑"><a class="header" href="#博物学编辑">博物学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=35">编辑</a>]</a></h3>
+<p>隋廷提倡博物学，在当时出现大量地方志（或称图志、图经）。隋廷明令全国各地推行方志编写[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-12">12]</a>，最后著有《<a href="https://zh.wikipedia.org/w/index.php?title=%E8%AB%B8%E9%83%A1%E7%89%A9%E7%94%A2%E5%9C%9F%E4%BF%97%E8%A8%98&amp;action=edit&amp;redlink=1">诸郡物产土俗记</a>》、《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%8D%80%E5%AE%87%E5%9C%96%E5%BF%97&amp;action=edit&amp;redlink=1">区宇图志</a>》与《<a href="https://zh.wikipedia.org/w/index.php?title=%E8%AB%B8%E5%B7%9E%E5%9C%96%E7%B6%93%E9%9B%86&amp;action=edit&amp;redlink=1">诸州图经集</a>》。<a href="https://zh.wikipedia.org/wiki/%E9%9A%8B%E7%82%80%E5%B8%9D">隋炀帝</a>又诏天下诸郡上风俗物产地图，据以编成《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%89%A9%E7%94%A2%E5%9C%9F%E4%BF%97%E8%A8%98&amp;action=edit&amp;redlink=1">物产土俗记</a>》及《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%8D%80%E5%AE%87%E5%9C%96%E5%BF%97&amp;action=edit&amp;redlink=1">区宇图志</a>》，开中国编撰一统志之先河。<a href="https://zh.wikipedia.org/w/index.php?title=%E6%9C%97%E8%94%9A%E4%B9%8B&amp;action=edit&amp;redlink=1">朗蔚之</a>采各地所上图经而纂成《隋诸州图经集》二百卷[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-13">13]</a>。<a href="https://zh.wikipedia.org/wiki/%E8%A3%B4%E7%9F%A9">裴矩</a>于<a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E4%B8%9A">大业</a>时期在<a href="https://zh.wikipedia.org/wiki/%E5%BC%B5%E6%8E%96">张掖</a>掌管<a href="https://zh.wikipedia.org/wiki/%E4%BA%92%E5%B8%82">互市</a>，从书传及西域商人的言论中，搜集西域山川、姓氏、风土、服章、物产等资料而写成《<a href="https://zh.wikipedia.org/wiki/%E8%A5%BF%E5%9F%9F%E5%9C%96%E8%A8%98">西域图记</a>》。这本书还记载自敦煌通中亚诸国直至地中海的三条<a href="https://zh.wikipedia.org/wiki/%E7%B5%B2%E8%B7%AF">丝路</a>。</p>
+<h3 id="建筑学与科技编辑"><a class="header" href="#建筑学与科技编辑">建筑学与科技[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=36">编辑</a>]</a></h3>
+<p>建筑学方面，有名的有李春、宇文恺与何稠。610年<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%98%A5_(%E9%9A%8B%E6%9C%9D)">李春</a>于现今河北省<a href="https://zh.wikipedia.org/wiki/%E5%AE%81%E6%99%8B%E5%8E%BF">宁晋县</a><a href="https://zh.wikipedia.org/wiki/%E6%B4%A8%E6%B2%B3">洨河</a>建造安济桥[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-14">14]</a>，<a href="https://zh.wikipedia.org/wiki/%E5%AE%89%E6%BF%9F%E6%A9%8B">安济桥</a>是目前世界最古老的现存完好的大跨度单孔敞肩坦弧石拱桥，圆弧拱的跨度大，圆弧拱仍然够高，水上船只来往通过非常方便。安济桥桥拱不是使用半圆拱，而是使用跨度大、<a href="https://zh.wikipedia.org/wiki/%E6%89%81%E5%B9%B3%E7%8E%87">扁平率</a>低的单孔1/4圆拱桥梁结构，是中国建筑史的重大成就之一[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-15">15]</a>。另外四个小桥洞节约石料二百多立方米，又减少桥身五分之一的重量，让桥基部分的负担大大减轻。同时可以起分洪缓冲的作用，减轻洪流对桥身的冲击力量。<a href="https://zh.wikipedia.org/wiki/%E5%AE%87%E6%96%87%E6%84%B7">宇文恺</a>曾为隋炀帝造观风行殿，殿下置轮轴，离合便利，可以分开行动，也可以合成一个容纳数百人的大殿。<a href="https://zh.wikipedia.org/wiki/%E4%BD%95%E7%A8%A0">何稠</a>为隋炀帝造六合城。在攻城时，一夜间可以合成一座周围八里、高十仞的大城，城上能列甲士，立旗仗。另外何稠能用绿瓷制玻璃，与真玻璃无异[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-16">16]</a>。</p>
+<p>868年，中国《<a href="https://zh.wikipedia.org/wiki/%E9%87%91%E5%89%9B%E7%B6%93">金刚经</a>》的印制是世界上已知最早的<a href="https://zh.wikipedia.org/wiki/%E9%9B%95%E7%89%88%E5%8D%B0%E5%88%B7">雕版印刷</a>。中国的<a href="https://zh.wikipedia.org/wiki/%E9%80%A0%E7%BA%B8%E6%9C%AF">造纸</a>、<a href="https://zh.wikipedia.org/wiki/%E7%B4%A1%E7%B9%94">纺织</a>等技术在751年的<a href="https://zh.wikipedia.org/wiki/%E6%80%9B%E7%BD%97%E6%96%AF%E6%88%98%E5%BD%B9">怛罗斯战役</a>之中传入阿拉伯帝国，之后在12世纪传入<a href="https://zh.wikipedia.org/wiki/%E8%A5%BF%E7%8F%AD%E7%89%99">西班牙</a>，到13世纪传入<a href="https://zh.wikipedia.org/wiki/%E6%84%8F%E5%A4%A7%E5%88%A9">意大利</a>，到14世纪初叶传遍整个欧洲。</p>
+<h2 id="宋辽金夏编辑"><a class="header" href="#宋辽金夏编辑">宋辽金夏[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=37">编辑</a>]</a></h2>
+<h3 id="自然科学编辑"><a class="header" href="#自然科学编辑">自然科学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=38">编辑</a>]</a></h3>
+<p>宋代理学兴盛，对规律探求的重视是宋人的特色，无论对哲学、政治、诗歌、艺术以及自然事物都如此。南宋理学家<a href="https://zh.wikipedia.org/wiki/%E6%9C%B1%E7%86%B9">朱熹</a>在解释雪花何以呈六角形时将雪花与太阴玄精石的比较，预示了后来播云技术的发展。朱熹也是世界历史上第一个辨认出<a href="https://zh.wikipedia.org/wiki/%E5%8C%96%E7%9F%B3">化石</a>的人。</p>
+<p>宋代<a href="https://zh.wikipedia.org/wiki/%E6%9D%9C%E7%BB%BE">杜绾</a>推测鱼类化石之成因，提出那是由于“古之陂泽……因山颓塞，岁久土凝为石”[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-17">17]</a>所致，<a href="https://zh.wikipedia.org/wiki/%E6%B2%88%E6%8B%AC">沈括</a>则在<a href="https://zh.wikipedia.org/wiki/%E9%A2%9C%E7%9C%9F%E5%8D%BF">颜真卿</a>的<a href="https://zh.wikipedia.org/w/index.php?title=%E6%B5%B7%E9%99%86%E5%8F%98%E8%BF%81%E8%AF%B4&amp;action=edit&amp;redlink=1">海陆变迁说</a>的基础上，推断了<a href="https://zh.wikipedia.org/wiki/%E5%BB%B6%E5%B7%9E">延州</a>、<a href="https://zh.wikipedia.org/wiki/%E6%B3%BD%E5%B7%9E">泽州</a>的古气候，以及<a href="https://zh.wikipedia.org/wiki/%E5%BB%B6%E5%B7%9E">延州</a>、<a href="https://zh.wikipedia.org/wiki/%E5%A9%BA%E5%B7%9E">婺州</a><a href="https://zh.wikipedia.org/wiki/%E9%87%91%E5%8D%8E%E5%B1%B1">金华山</a>的古代动、植物的地理分布状况。</p>
+<h3 id="医学编辑-1"><a class="header" href="#医学编辑-1">医学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=39">编辑</a>]</a></h3>
+<p>宋代医学分科由唐代的四科到宋代的九科再发展到元代的十三科。<a href="https://zh.wikipedia.org/wiki/%E5%AE%8B%E6%85%88">宋慈</a>所著的《<a href="https://zh.wikipedia.org/wiki/%E6%B4%97%E5%86%A4%E5%BD%95">洗冤录</a>》是世界上最早法医专著。</p>
+<p>北宋嘉祐年间<a href="https://zh.wikipedia.org/wiki/%E8%8B%8F%E9%A2%82">苏颂</a>编撰《<a href="https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E5%9B%BE%E7%BB%8F">本草图经</a>》，刊行于1061年，共20卷，目录1卷。载有常用单方千余首。附有九百多幅药图，是中国现存最早的版刻本草图谱。宋代医药学家<a href="https://zh.wikipedia.org/wiki/%E5%94%90%E6%85%8E%E5%BE%AE">唐慎微</a>依据《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%98%89%F0%A7%99%97%E8%A1%A5%E6%B3%A8%E6%9C%AC%E8%8D%89&amp;action=edit&amp;redlink=1">嘉𧙗补注本草</a>》和《<a href="https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E5%9B%BE%E7%BB%8F">本草图经</a>》两书，再参考其他248部医书，著成《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E8%A7%82%E7%BB%8F%E5%8F%B2%E8%AF%81%E7%B1%BB%E5%A4%87%E6%80%A5%E6%9C%AC%E8%8D%89&amp;action=edit&amp;redlink=1">大观经史证类备急本草</a>》，1083年刊行第一版，1090刊行第二版；在政和六年（1116年）刊印第三版：《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%94%BF%E5%92%8C%E6%96%B0%E4%BF%AE%E7%BB%8F%E5%8F%B2%E8%AF%81%E7%B1%BB%E5%A4%87%E7%94%A8%E6%9C%AC%E8%8D%89&amp;action=edit&amp;redlink=1">政和新修经史证类备用本草</a>》，后世统称两者为《<a href="https://zh.wikipedia.org/wiki/%E8%AF%81%E7%B1%BB%E6%9C%AC%E8%8D%89">证类本草</a>》，又名《<a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%A7%82%E6%9C%AC%E8%8D%89">大观本草</a>》，成为明代医药学家<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%99%82%E7%8F%8D">李时珍</a>著《<a href="https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE">本草纲目</a>》的蓝本。《证类本草》共32卷，60万字，共列载了1558种药物，包括476种新增药物。此书又开创了方药对照的新形式，收集了不少方剂，供临床药物应用。该书在12世纪传入日本，14世纪传入朝鲜。</p>
+<h4 id="人体解剖学编辑"><a class="header" href="#人体解剖学编辑">人体解剖学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=40">编辑</a>]</a></h4>
+<p>到了北宋时期，先后产生了两部人体解剖学图谱——《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%AC%A7%E5%B8%8C%E8%8C%83%E4%BA%94%E8%84%8F%E5%9B%BE&amp;action=edit&amp;redlink=1">欧希范五脏图</a>》和《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%AD%98%E7%9C%9F%E5%9B%BE&amp;action=edit&amp;redlink=1">存真图</a>》。《欧希范五脏图》完成于北宋庆历年间（1041－1048），当时广西地方政府处死了<a href="https://zh.wikipedia.org/w/index.php?title=%E6%AC%A7%E5%B8%8C%E8%8C%83&amp;action=edit&amp;redlink=1">欧希范</a>等56名反叛者，令宜州推官<a href="https://zh.wikipedia.org/w/index.php?title=%E5%90%B4%E7%AE%80&amp;action=edit&amp;redlink=1">吴简</a>解剖死者的胸腹，经仔细观察鉴别后，由画工宋景描绘成图，名之为《欧希范五脏图》。原图虽早已亡佚，但这一史实在当时及稍后的许多史志及笔记文集中都有记载，尤其在后来的《存真图》中，对这次解剖活动记载甚详。《欧希范五脏图》主要反映了人体内脏的解剖情况，如“肺之下有心、肝、胆、脾，胃之下有小肠，小肠之下有大肠。小肠皆晶莹无物，大肠则为滓秽。大肠之旁则有膀胱”；“肾则有一在肝之右微下，一在脾之左微上，脾则有在心之右”；“其中黄漫者，脂也”。就现有的文献看，吴简对胸腹内脏器官的解剖位置与相互关系的描述，还是较为准确的，也比前人有很大进步。如他实际上已经注意到右肾比左肾的位置略低，这是一个了不起的发现；他还明确指出脾在心之左，也从形态学上纠正了《内经》中左肝右脾的错误认识。而且，图中还注意到“多病嗽，则肺且胆黑”、“少得目疾，肝中有白点”等病理解剖现象。不过，由于历史条件所限，吴简的论述中仍然存在一些错误的认识，如认为“喉中有窍三，一食、一水、一气”；心脏有的无窍，肝脏片数不同等，这些可能是观察上有所偏差所致。</p>
+<h3 id="数学编辑-2"><a class="header" href="#数学编辑-2">数学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=41">编辑</a>]</a></h3>
+<p>宋代数学著作改进了算法，以及发展出抽象数学。有高次方程的近似解法、多元一次方程组的解法、高阶等差级数、同余方程组解法等。1248年，金朝数学家<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%86%B6">李冶</a>著《<a href="https://zh.wikipedia.org/wiki/%E6%B5%8B%E5%9C%86%E6%B5%B7%E9%95%9C">测圆海镜</a>》，系统地发展了<a href="https://zh.wikipedia.org/wiki/%E5%A4%A9%E5%85%83%E6%9C%AF">天元术</a>，并将复杂的几何问题代数化。</p>
+<p>宋代<a href="https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%85%AC%E4%BA%AE">曾公亮</a>、丁度等编撰《<a href="https://zh.wikipedia.org/wiki/%E6%AD%A6%E7%BB%8F%E6%80%BB%E8%A6%81">武经总要</a>》中，记载了<a href="https://zh.wikipedia.org/wiki/%E5%AD%97%E9%AA%8C">字验</a>加密法。北宋前期，军事上会使用密本体制，用一首五言律诗的四十个汉字，分别代表四十种情况。</p>
+<h3 id="科技与发明编辑-1"><a class="header" href="#科技与发明编辑-1">科技与发明[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=42">编辑</a>]</a></h3>
+<p>中国四大发明中，指南针、火药、活字印刷术三大发明都出现于北宋。宋代又有人尝试发明眼镜，用天然水晶的折射来纠正视力。在纺织业上，元黄道婆由崖州（今海南岛）引进黎族的棉纺织技术再加以改良，提高旧的的棉纺织效率与产量，棉布从此成为汉人最主要的衣着布料。</p>
+<p>1044年，北宋<a href="https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%85%AC%E4%BA%AE">曾公亮</a>著军事著作《<a href="https://zh.wikipedia.org/wiki/%E6%AD%A6%E7%BB%8F%E6%80%BB%E8%A6%81">武经总要</a>》。北宋<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E8%AF%AB">李诫</a>于1100年写成建筑学著作《<a href="https://zh.wikipedia.org/wiki/%E8%90%A5%E9%80%A0%E6%B3%95%E5%BC%8F">营造法式</a>》。北宋1092年由<a href="https://zh.wikipedia.org/wiki/%E8%8B%8F%E9%A2%82">苏颂</a>、<a href="https://zh.wikipedia.org/wiki/%E9%9F%A9%E5%85%AC%E5%BB%89">韩公廉</a>制成的<a href="https://zh.wikipedia.org/wiki/%E6%B0%B4%E9%81%8B%E5%84%80%E8%B1%A1%E5%8F%B0">水运仪象台</a>集浑仪、浑象、圭表、计时与报时为一体，实物高十二米，宽七米，《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%96%B0%E4%BB%AA%E8%B1%A1%E6%B3%95%E8%A6%81&amp;action=edit&amp;redlink=1">新仪象法要</a>》记载了这部仪器的构造。2012年8月国际天文联合会大会在北京召开期间，由中科院自然科学史研究所与清华大学等单位复原的模型（原物的1/3）在北京国家会议中心展出。</p>
+<p>北宋科学家<a href="https://zh.wikipedia.org/wiki/%E6%B2%88%E6%8B%AC">沈括</a>著百科全书《<a href="https://zh.wikipedia.org/wiki/%E6%A2%A6%E6%BA%AA%E7%AC%94%E8%B0%88">梦溪笔谈</a>》。</p>
+<h2 id="元代编辑"><a class="header" href="#元代编辑">元代[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=43">编辑</a>]</a></h2>
+<h3 id="数学编辑-3"><a class="header" href="#数学编辑-3">数学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=44">编辑</a>]</a></h3>
+<p><a href="https://zh.wikipedia.org/wiki/File:%E5%9B%9B%E5%85%83%E8%87%AA%E4%B9%98%E6%BC%94%E6%AE%B5%E5%9B%BE.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%E5%9B%9B%E5%85%83%E8%87%AA%E4%B9%98%E6%BC%94%E6%AE%B5%E5%9B%BE.jpg/220px-%E5%9B%9B%E5%85%83%E8%87%AA%E4%B9%98%E6%BC%94%E6%AE%B5%E5%9B%BE.jpg" alt="img" /></a></p>
+<p>《<a href="https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%85%83%E7%8E%89%E9%89%B4">四元玉鉴</a>》书影</p>
+<p><a href="https://zh.wikipedia.org/wiki/File:%E5%9C%86%E5%9F%8E%E5%9B%BE%E5%BC%8F.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%E5%9C%86%E5%9F%8E%E5%9B%BE%E5%BC%8F.jpg/220px-%E5%9C%86%E5%9F%8E%E5%9B%BE%E5%BC%8F.jpg" alt="img" /></a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E7%9F%A5%E4%B8%8D%E8%B6%B3%E9%BD%8B%E5%8F%A2%E6%9B%B8">知不足斋丛书</a>《<a href="https://zh.wikipedia.org/wiki/%E6%B5%8B%E5%9C%86%E6%B5%B7%E9%95%9C">测圆海镜</a>》圆城图式</p>
+<p>1303年，元代数学家<a href="https://zh.wikipedia.org/wiki/%E6%9C%B1%E4%B8%96%E6%9D%B0">朱世杰</a>著成《<a href="https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%85%83%E7%8E%89%E9%89%B4">四元玉鉴</a>》，将“天元术”推广为“四元术”（四元高次联立方程），并提出“消元”的解法。朱世杰亦研究各有限项级数求和问题，而且在此基础上得到高次差的<a href="https://zh.wikipedia.org/wiki/%E5%85%A7%E6%8F%92">内插</a>公式。</p>
+<h3 id="天文学与历法编辑"><a class="header" href="#天文学与历法编辑">天文学与历法[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=45">编辑</a>]</a></h3>
+<p>元世祖至元十七年（1280年），<a href="https://zh.wikipedia.org/wiki/%E9%83%AD%E5%AE%88%E6%95%AC">郭守敬</a>与<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E6%81%82">王恂</a>等完成编制《<a href="https://zh.wikipedia.org/wiki/%E6%8E%88%E6%97%B6%E5%8E%86">授时历</a>》。《授时历》以365.2425天为一年，与<a href="https://zh.wikipedia.org/wiki/%E5%9C%B0%E7%90%83">地球</a>绕<a href="https://zh.wikipedia.org/wiki/%E5%A4%AA%E9%98%B3">太阳</a>一周的实际时间只有26秒的差距。制订《<a href="https://zh.wikipedia.org/wiki/%E6%8E%88%E6%97%B6%E5%8E%86">授时历</a>》时，列出了三次内插公式（<a href="https://zh.wikipedia.org/wiki/%E6%8B%9B%E5%B7%AE%E6%B3%95">招差法</a>），还使用“垛垒、招差、勾股、弧矢之法”计算。《<a href="https://zh.wikipedia.org/wiki/%E6%8E%88%E6%97%B6%E5%8E%86">授时历</a>》通过三年多的两百次测量计算，采用365.2425日作为一个回归年的长度。这个数值与现今世界上通用的公历值相同，比欧洲《<a href="https://zh.wikipedia.org/wiki/%E6%A0%BC%E9%87%8C%E6%9B%86">格里历</a>》的编制早了三百年。</p>
+<p>元代天文学家<a href="https://zh.wikipedia.org/wiki/%E8%B5%B5%E5%8F%8B%E9%92%A6">赵友钦</a>著有《<a href="https://zh.wikipedia.org/wiki/%E9%9D%A9%E8%B1%A1%E6%96%B0%E4%B9%A6">革象新书</a>》。</p>
+<h4 id="宣夜说的发展编辑"><a class="header" href="#宣夜说的发展编辑">宣夜说的发展[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=46">编辑</a>]</a></h4>
+<p>元代学者<a href="https://zh.wikipedia.org/wiki/%E9%82%93%E7%89%A7">邓牧</a>认为在无限的虚空中有无限多的天地，“天地大也，其在虚空中不过一粟而已耳”（《伯牙琴》），与三百年后<a href="https://zh.wikipedia.org/wiki/%E6%84%8F%E5%A4%A7%E5%88%A9">意大利</a>哲学家<a href="https://zh.wikipedia.org/wiki/%E5%B8%83%E9%B2%81%E8%AF%BA">布鲁诺</a>的宇宙无限论如出一辙。</p>
+<h3 id="医学编辑-2"><a class="header" href="#医学编辑-2">医学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=47">编辑</a>]</a></h3>
+<p>元朝医学出现了四大学派。医药学在继承传统的基础上，兼收并蓄，互通有无。</p>
+<h3 id="科技与建筑工程编辑"><a class="header" href="#科技与建筑工程编辑">科技与建筑工程[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=48">编辑</a>]</a></h3>
+<p>元朝农学家<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%A5%AF">王祯</a>改进了活字印刷术，设计出木活字及转轮排字架，并于1298年用木活字排印《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%97%8C%E5%BE%B7%E5%8E%BF%E5%BF%97&amp;action=edit&amp;redlink=1">旌德县志</a>》，其《<a href="https://zh.wikipedia.org/w/index.php?title=%E9%80%A0%E6%B4%BB%E5%AD%97%E5%8D%B0%E4%B9%A6%E6%B3%95&amp;action=edit&amp;redlink=1">造活字印书法</a>》（附于《农书》书末）是最早的系统性介绍活字排版印刷术的科技文献。此外，<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%A5%AF">王祯</a>又编著《<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%A5%AF%E5%86%9C%E4%B9%A6">农书</a>》，有37卷，现存36卷，是中国古代一部对农业生产进行全面系统论述的著作。《农书》全书约有十三余万字与300多幅图画，全文分为《农桑通诀》、《百谷谱》、《农器图谱》三大部分。《农桑通诀》包括对农、林、牧、副、渔及水利等各个方面的综合性论述，提出“顺天之时、因地之宜、存乎其人”的农耕思想。《百谷谱》对各种农作物的品种、特性、栽培、种植、收获、贮藏和利用等知识加以介绍，将农作物分为谷、蔬、果、杂等六大类，为中国农作物分类学奠基；而对于植物性状的描述，也是此前书籍不曾有过的。《农器图谱》则是《农书》的重点部分，该部分就田制、仓廪、舟车、灌溉、蚕桑、织纤、麻芒等分为20门类，详细介绍了257种农业机械，而且配绘图谱306幅并加以文字说明，其价值超过以往所有农业机械书籍。</p>
+<p>1291年，天文学家<a href="https://zh.wikipedia.org/wiki/%E9%83%AD%E5%AE%88%E6%95%AC">郭守敬</a>指挥修建<a href="https://zh.wikipedia.org/wiki/%E5%85%83%E5%A4%A7%E9%83%BD">元大都</a>至<a href="https://zh.wikipedia.org/wiki/%E9%80%9A%E5%B7%9E">通州</a>的运河，当中有七座<a href="https://zh.wikipedia.org/wiki/%E6%B0%B4%E9%97%B8">水闸</a>，这七座水闸彼此相距约半公里的地方，又设计有斗门。<a href="https://zh.wikipedia.org/wiki/%E9%83%AD%E5%AE%88%E6%95%AC">郭守敬</a>的设计是通过水闸和斗门的关闭与开放，调节运河各段的水位高低，引导船舶顺畅通过。工程竣工后，元世祖亲自将这段164里长的运河命名为 “<a href="https://zh.wikipedia.org/wiki/%E9%80%9A%E6%83%A0%E6%B2%B3">通惠河</a>”。</p>
+<h2 id="明代编辑"><a class="header" href="#明代编辑">明代[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=49">编辑</a>]</a></h2>
+<p><a href="https://zh.wikipedia.org/wiki/File:Stellardiagram-Zhengho.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Stellardiagram-Zhengho.jpg/220px-Stellardiagram-Zhengho.jpg" alt="img" /></a></p>
+<p>《<a href="https://zh.wikipedia.org/wiki/%E9%83%91%E5%92%8C%E8%88%AA%E6%B5%B7%E5%9B%BE">郑和航海图</a>》中，一幅题为“<a href="https://zh.wikipedia.org/wiki/%E5%BF%BD%E9%B2%81%E8%B0%9F%E6%96%AF">忽鲁谟斯国</a>回<a href="https://zh.wikipedia.org/wiki/%E5%8F%A4%E9%87%8C">古里国</a>过洋牵星图”。</p>
+<p><a href="https://zh.wikipedia.org/wiki/File:%E7%AE%97%E5%AD%A6%E5%AE%9D%E9%89%B4.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/%E7%AE%97%E5%AD%A6%E5%AE%9D%E9%89%B4.jpg/220px-%E7%AE%97%E5%AD%A6%E5%AE%9D%E9%89%B4.jpg" alt="img" /></a></p>
+<p>王文素《<a href="https://zh.wikipedia.org/wiki/%E7%AE%97%E5%AD%A6%E5%AE%9D%E9%89%B4">算学宝鉴</a>》书影</p>
+<p><a href="https://zh.wikipedia.org/wiki/File:Compendium_of_Materia_Medica.png"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Compendium_of_Materia_Medica.png/220px-Compendium_of_Materia_Medica.png" alt="img" /></a></p>
+<p>《<a href="https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE">本草纲目</a>》金陵本</p>
+<h3 id="数学编辑-4"><a class="header" href="#数学编辑-4">数学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=50">编辑</a>]</a></h3>
+<p>明朝数学家<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E6%96%87%E7%B4%A0">王文素</a>著作《<a href="https://zh.wikipedia.org/wiki/%E7%AE%97%E5%AD%A6%E5%AE%9D%E9%89%B4">新集通证古今算学宝鉴</a>》，继承和发展了<a href="https://zh.wikipedia.org/w/index.php?title=%E6%9D%A8%E8%BE%89%E7%AE%97%E5%AD%A6&amp;action=edit&amp;redlink=1">杨辉算学</a>的精要，是中国历史上重要的算学理论著作，也是清代《<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E7%90%86%E7%B2%BE%E8%95%B4">数理精蕴</a>》问世前中国最大的一部数学著作。数学家<a href="https://zh.wikipedia.org/wiki/%E7%A8%8B%E5%A4%A7%E4%BD%8D">程大位</a>写成集珠算理论之大成的著作《<a href="https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95%E7%B5%B1%E5%AE%97">直指算法统宗</a>》。又流传有天文学著作《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%99%BD%E7%8C%BF%E7%8C%AE%E4%B8%89%E5%85%89%E5%9B%BE&amp;action=edit&amp;redlink=1">白猿献三光图</a>》，载有一百三十二幅云图。明末数学家<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E9%8C%AB%E9%97%A1">王锡阐</a>著《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%99%93%E5%BA%B5%E6%96%B0%E6%B3%95&amp;action=edit&amp;redlink=1">晓庵新法</a>》。</p>
+<h3 id="天文学编辑-1"><a class="header" href="#天文学编辑-1">天文学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=51">编辑</a>]</a></h3>
+<p>该时期流传有天文学著作《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%99%BD%E7%8C%BF%E7%8C%AE%E4%B8%89%E5%85%89%E5%9B%BE&amp;action=edit&amp;redlink=1">白猿献三光图</a>》，载有一百三十二幅云图。</p>
+<h4 id="宣夜说的发展地动宇宙模型编辑"><a class="header" href="#宣夜说的发展地动宇宙模型编辑">宣夜说的发展、地动宇宙模型[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=52">编辑</a>]</a></h4>
+<p>明代学者<a href="https://zh.wikipedia.org/wiki/%E9%BB%83%E9%81%93%E5%91%A8">黄道周</a>为说明岁差还提出过一种地动宇宙模型，在恒星天球内地球和日月五星绕共同的宇宙中心运转，地球的公转周期为23376年。</p>
+<h3 id="医学编辑-3"><a class="header" href="#医学编辑-3">医学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=53">编辑</a>]</a></h3>
+<p>医学方面，<a href="https://zh.wikipedia.org/wiki/%E6%9C%B1%E6%A9%9A">朱橚</a>（周定王）、<a href="https://zh.wikipedia.org/w/index.php?title=%E6%BB%95%E7%A1%95&amp;action=edit&amp;redlink=1">滕硕</a>及<a href="https://zh.wikipedia.org/w/index.php?title=%E5%88%98%E9%86%87&amp;action=edit&amp;redlink=1">刘醇</a>编成《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%99%AE%E6%B5%8E%E6%96%B9&amp;action=edit&amp;redlink=1">普济方</a>》，<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%97%B6%E7%8F%8D">李时珍</a>著《<a href="https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE">本草纲目</a>》，<a href="https://zh.wikipedia.org/w/index.php?title=%E6%9D%A8%E7%BB%A7%E6%B4%B2&amp;action=edit&amp;redlink=1">杨继洲</a>著《<a href="https://zh.wikipedia.org/w/index.php?title=%E9%92%88%E7%81%B8%E5%A4%A7%E6%88%90&amp;action=edit&amp;redlink=1">针灸大成</a>》，<a href="https://zh.wikipedia.org/w/index.php?title=%E9%99%88%E5%AE%9E%E5%8A%9F&amp;action=edit&amp;redlink=1">陈实功</a>著《<a href="https://zh.wikipedia.org/wiki/%E5%A4%96%E7%A7%91%E6%AD%A3%E5%AE%97">外科正宗</a>》，<a href="https://zh.wikipedia.org/wiki/%E5%90%B3%E6%9C%89%E6%80%A7">吴有性</a>著《<a href="https://zh.wikipedia.org/wiki/%E7%98%9F%E7%96%AB%E8%AE%BA">瘟疫论</a>》，<a href="https://zh.wikipedia.org/wiki/%E5%BC%B5%E6%99%AF%E5%B2%B3">张景岳</a>著《<a href="https://zh.wikipedia.org/wiki/%E7%B1%BB%E7%BB%8F">类经</a>》，</p>
+<p>中国是世界上最早种痘预防<a href="https://zh.wikipedia.org/wiki/%E5%A4%A9%E8%8A%B1">天花</a>的文明。1727年<a href="https://zh.wikipedia.org/w/index.php?title=%E4%BF%9E%E8%8C%82%E9%B2%B2&amp;action=edit&amp;redlink=1">俞茂鲲</a>《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%97%98%E7%A7%91%E9%87%91%E9%95%9C%E8%B5%8B%E9%9B%86%E8%A7%A3&amp;action=edit&amp;redlink=1">痘科金镜赋集解</a>》中所写到的，“闻种痘法起于<a href="https://zh.wikipedia.org/wiki/%E6%98%8E%E6%9C%9D">明朝</a>隆庆年间（1567－1572年），宁国府太平县，姓氏失考，得之异人丹家之传，由此蔓延天下。至今种花者，宁国人居多，近日溧阳人窃而为之者亦不少。当日异传之家，今日尚留苗种，必须三金，方得一丹苗，买苗后一家因以获利。”而在1741年<a href="https://zh.wikipedia.org/w/index.php?title=%E5%BC%A0%E7%90%B0&amp;action=edit&amp;redlink=1">张琰</a>的《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%A7%8D%E7%97%98%E6%96%B0%E4%B9%A6&amp;action=edit&amp;redlink=1">种痘新书</a>》中提到：“余祖承聂久吾先生之教，种痘箕裘，已经数代。”由所叙可知张琰之父是位种人痘专家，由乃祖所传，其祖又得之医家聂久吾，据考聂久吾即聂尚恒，隆庆六年(1572)生。由此看来，中国的人痘接种术，最迟在十六世纪或更早一些就已经发明了。</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E6%9C%B1%E8%BD%BD%E5%A0%89">朱载堉</a>著音律学著作《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%BE%8B%E5%90%95%E7%B2%BE%E4%B9%89&amp;action=edit&amp;redlink=1">律吕精义</a>》发明<a href="https://zh.wikipedia.org/wiki/%E5%8D%81%E4%BA%8C%E5%B9%B3%E5%9D%87%E5%BE%8B">十二平均律</a>，<a href="https://zh.wikipedia.org/wiki/%E5%AE%8B%E5%BA%94%E6%98%9F">宋应星</a>著《<a href="https://zh.wikipedia.org/wiki/%E5%A4%A9%E5%B7%A5%E5%BC%80%E7%89%A9">天工开物</a>》。农学方面，明代植物学家<a href="https://zh.wikipedia.org/wiki/%E6%9C%B1%E6%A9%9A">朱橚</a>的《<a href="https://zh.wikipedia.org/wiki/%E6%95%91%E8%8D%92%E6%9C%AC%E8%8D%89">救荒本草</a>》，<a href="https://zh.wikipedia.org/w/index.php?title=%E4%BF%9E%E5%AE%97%E6%9C%AC&amp;action=edit&amp;redlink=1">俞宗本</a>著《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%A7%8D%E6%A0%91%E4%B9%A6&amp;action=edit&amp;redlink=1">种树书</a>》，<a href="https://zh.wikipedia.org/wiki/%E9%A9%AC%E4%B8%80%E9%BE%99">马一龙</a>著《<a href="https://zh.wikipedia.org/w/index.php?title=%E5%86%9C%E8%AF%B4&amp;action=edit&amp;redlink=1">农说</a>》，<a href="https://zh.wikipedia.org/wiki/%E5%B1%A0%E6%9C%AC%E7%95%AF">屠本畯</a>著中国现存最早的海洋生物专著《<a href="https://zh.wikipedia.org/wiki/%E9%97%BD%E4%B8%AD%E6%B5%B7%E9%94%99%E7%96%8F">闽中海错疏</a>》，<a href="https://zh.wikipedia.org/wiki/%E5%96%BB%E4%BB%81">喻仁</a>、<a href="https://zh.wikipedia.org/wiki/%E5%96%BB%E6%9D%B0">喻杰</a>合著兽医学著作《<a href="https://zh.wikipedia.org/wiki/%E5%85%83%E4%BA%A8%E7%96%97%E9%A9%AC%E9%9B%86">元亨疗马集</a>》，<a href="https://zh.wikipedia.org/wiki/%E5%BE%90%E5%85%89%E5%90%AF">徐光启</a>著《<a href="https://zh.wikipedia.org/wiki/%E5%86%9C%E6%94%BF%E5%85%A8%E4%B9%A6">农政全书</a>》，玉米、地瓜、土豆、花生、烟草、西红柿、向日葵、南瓜、辣椒从美洲传入。地理学方面，编成《<a href="https://zh.wikipedia.org/wiki/%E9%83%91%E5%92%8C%E8%88%AA%E6%B5%B7%E5%9B%BE">郑和航海图</a>》，地理学家<a href="https://zh.wikipedia.org/wiki/%E5%BE%90%E9%9C%9E%E5%AE%A2">徐霞客</a>著《<a href="https://zh.wikipedia.org/wiki/%E5%BE%90%E9%9C%9E%E5%AE%A2%E6%B8%B8%E8%AE%B0">徐霞客游记</a>》，明末清初思想家<a href="https://zh.wikipedia.org/wiki/%E9%A1%BE%E7%82%8E%E6%AD%A6">顾炎武</a>著《<a href="https://zh.wikipedia.org/wiki/%E8%82%87%E5%9F%9F%E5%BF%97">肇域志</a>》、《<a href="https://zh.wikipedia.org/wiki/%E5%A4%A9%E4%B8%8B%E9%83%A1%E5%9C%8B%E5%88%A9%E7%97%85%E6%9B%B8">天下郡国利病书</a>》。造园家<a href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E6%88%90">计成</a>写成园林学著作《<a href="https://zh.wikipedia.org/wiki/%E5%9B%AD%E5%86%B6">园冶</a>》。</p>
+<p>明初学者<a href="https://zh.wikipedia.org/wiki/%E8%91%89%E5%AD%90%E5%A5%87_(%E6%98%8E%E6%9C%9D)">叶子奇</a>指出:“草木一核之微,而色香臭味,花实枝叶,无不具于一仁之中。及其再生，一一相肖”[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-18">18]</a>，指出草木种子的重要性。后来学者<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%BB%B7%E7%9B%B8">王廷相</a>更进一步指出，生物种的不变是由于“气种之有定”。他说:“万物巨细柔刚,各异其材；声色臭味,各殊其性,阅千古不变者，气种之有定也。”。[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-19">19]</a></p>
+<h3 id="科技与发明编辑-2"><a class="header" href="#科技与发明编辑-2">科技与发明[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=54">编辑</a>]</a></h3>
+<h4 id="晚明实用主义编辑"><a class="header" href="#晚明实用主义编辑">晚明实用主义[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=55">编辑</a>]</a></h4>
+<p>晚明实学思潮造成这个时期学术文化的生机蓬勃，而且以强大的生命力延续到清初。更发展出博学派、经史派等流派，其多重视实用及<a href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6">自然科学</a>的研究。晚明时期，数学、物理学、天文学、地理学、植物学、医学、声律学等诸多学科以及机械、冶金、农业、水利、等技术分枝都展开了大规模的科学总结和新的开创。明末清初的两位科学家<a href="https://zh.wikipedia.org/w/index.php?title=%E7%8E%8B%E5%BE%B5_(%E5%A4%A9%E5%90%AF%E8%BF%9B%E5%A3%AB)&amp;action=edit&amp;redlink=1">王征</a>和<a href="https://zh.wikipedia.org/wiki/%E9%BB%83%E5%B1%A5%E8%8E%8A">黄履庄</a>所分别发明的“自行车”、“双轮小车”，是自行车发明源自中国的有力证据。“自行车”一词最早出现在明末<a href="https://zh.wikipedia.org/w/index.php?title=%E7%8E%8B%E5%BE%B5_(%E5%A4%A9%E5%90%AF%E8%BF%9B%E5%A3%AB)&amp;action=edit&amp;redlink=1">王征</a>所著的《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%96%B0%E5%88%B6%E8%AF%B8%E5%99%A8%E5%9B%BE%E8%AF%B4&amp;action=edit&amp;redlink=1">新制诸器图说</a>》一书当中。</p>
+<p>军事方面，<a href="https://zh.wikipedia.org/wiki/%E8%8C%85%E5%85%83%E4%BB%AA">茅元仪</a>著《<a href="https://zh.wikipedia.org/wiki/%E6%AD%A6%E5%A4%87%E5%BF%97">武备志</a>》，出版名著《<a href="https://zh.wikipedia.org/wiki/%E7%81%AB%E9%BE%99%E7%BB%8F">火龙经</a>》，<a href="https://zh.wikipedia.org/w/index.php?title=%E8%B5%B5%E5%A3%AB%E7%A5%AF&amp;action=edit&amp;redlink=1">赵士祯</a>著《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%A5%9E%E5%99%A8%E8%B0%B1&amp;action=edit&amp;redlink=1">神器谱</a>》，<a href="https://zh.wikipedia.org/wiki/%E5%AD%AB%E5%85%83%E5%8C%96">孙元化</a>著《<a href="https://zh.wikipedia.org/w/index.php?title=%E8%A5%BF%E6%B3%95%E7%A5%9E%E6%9C%BA&amp;action=edit&amp;redlink=1">西法神机</a>》，<a href="https://zh.wikipedia.org/wiki/%E7%84%A6%E5%8B%96">焦勖</a>著《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%81%AB%E6%94%BB%E6%8C%9A%E8%A6%81&amp;action=edit&amp;redlink=1">火攻挚要</a>》，<a href="https://zh.wikipedia.org/w/index.php?title=%E7%8E%8B%E9%92%B2&amp;action=edit&amp;redlink=1">王钲</a>编成中国第一部系统的机械工程专著《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%96%B0%E5%88%B6%E8%AF%B8%E5%99%A8%E5%9B%BE%E8%AF%B4&amp;action=edit&amp;redlink=1">新制诸器图说</a>》，<a href="https://zh.wikipedia.org/wiki/%E6%88%9A%E7%BB%A7%E5%85%89">戚继光</a>著《<a href="https://zh.wikipedia.org/wiki/%E7%BA%AA%E6%95%88%E6%96%B0%E4%B9%A6">纪效新书</a>》、《<a href="https://zh.wikipedia.org/w/index.php?title=%E7%BB%83%E5%85%B5%E5%AE%9E%E7%BA%AA&amp;action=edit&amp;redlink=1">练兵实纪</a>》。1372年造<a href="https://zh.wikipedia.org/wiki/%E7%A2%97%E5%8F%A3%E9%8A%83">碗口铳</a>，1377年造<a href="https://zh.wikipedia.org/wiki/%E6%89%8B%E9%93%B3">手铳</a>（小口径管形），14世纪末发明“<a href="https://zh.wikipedia.org/wiki/%E7%A5%9E%E7%81%AB%E9%A3%9E%E9%B8%A6">神火飞鸦</a>”，1453年造<a href="https://zh.wikipedia.org/w/index.php?title=%E9%93%9C%E7%81%AB%E9%93%B3&amp;action=edit&amp;redlink=1">铜火铳</a>（滑膛式），1524年在北京铸造<a href="https://zh.wikipedia.org/wiki/%E4%BD%9B%E6%9C%97%E6%A9%9F%E7%82%AE">佛朗机炮</a>，16世纪中叶发明“<a href="https://zh.wikipedia.org/wiki/%E7%81%AB%E9%BE%8D%E5%87%BA%E6%B0%B4">火龙出水</a>”，1558年造出中国第一批<a href="https://zh.wikipedia.org/wiki/%E7%81%AB%E7%BB%B3%E6%9E%AA">火绳枪</a>一万支，称之为“<a href="https://zh.wikipedia.org/wiki/%E9%B3%A5%E5%98%B4%E9%8A%83">鸟嘴铳</a>”，1580年<a href="https://zh.wikipedia.org/wiki/%E6%88%9A%E7%BB%A7%E5%85%89">戚继光</a>发明&quot;自犯钢轮火&quot;（其效类似<a href="https://zh.wikipedia.org/wiki/%E5%9C%B0%E9%9B%B7">地雷</a>），1642年南京出现<a href="https://zh.wikipedia.org/w/index.php?title=%E9%81%82%E5%8F%91%E7%81%AB%E6%9E%AA&amp;action=edit&amp;redlink=1">遂发火枪</a>。</p>
+<h2 id="清朝编辑"><a class="header" href="#清朝编辑">清朝[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=56">编辑</a>]</a></h2>
+<p>清代考据学大兴。在文献学方面，有集全国之力完成的《<a href="https://zh.wikipedia.org/wiki/%E5%8F%A4%E4%BB%8A%E5%9B%BE%E4%B9%A6%E9%9B%86%E6%88%90">古今图书集成</a>》和《<a href="https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%BA%93%E5%85%A8%E4%B9%A6">四库全书</a>》，也有各个地方印行的小型地方志。中国现存地方志高达八千多种，其中明代有一千多种，清代有五千五百种。在十八世纪中叶到十九世纪中叶，对中国古籍进行了前所未有的总结。</p>
+<h3 id="医学编辑-4"><a class="header" href="#医学编辑-4">医学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=57">编辑</a>]</a></h3>
+<p>清初，医学家<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E6%B8%85%E4%BB%BB">王清任</a>著《<a href="https://zh.wikipedia.org/wiki/%E5%8C%BB%E6%9E%97%E6%94%B9%E9%94%99">医林改错</a>》，强调<a href="https://zh.wikipedia.org/wiki/%E8%A7%A3%E5%89%96%E5%AD%A6">解剖学</a>知识对医病的重要性，并对古籍中有关<a href="https://zh.wikipedia.org/wiki/%E8%84%8F%E8%85%91">脏腑</a>的记载提出了疑问，通过对尸体<a href="https://zh.wikipedia.org/wiki/%E5%86%85%E8%84%8F">内脏</a>的解剖研究，绘制成《<a href="https://zh.wikipedia.org/w/index.php?title=%E4%BA%B2%E8%A7%81%E6%94%B9%E6%AD%A3%E8%84%8F%E8%85%91%E5%9B%BE&amp;action=edit&amp;redlink=1">亲见改正脏腑图</a>》二十五种，改正了前人的一些错误。《医林改错》中共有25幅图谱。王清任把古人画错的和他自己改正的，作了对照。他纠正了古人认为肝有7叶，肺下有24行气孔和气管直入心脏的错误说法。他发现了气管有2个分支和小支气管， 同时他还发现了许多过去医书上从来没有提到过的重要器官，如腹主动脉(王称其为卫总管或气管)、上腔静脉(荣管即血管)、颈总动脉(左右气管)、肾动脉、肠动脉、幽门括约肌(遮食)、总胆管(津管)；胰脏、十二指肠的入口(津门)等。此外，他还发现了视神经，并指出视神经与脑的关系，从而叙述了对脑功能的看法。在怀胎、天花方面他都有精辟独到的认识。</p>
+<h3 id="天文学编辑-2"><a class="header" href="#天文学编辑-2">天文学[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=58">编辑</a>]</a></h3>
+<p>天文学家<a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E9%8C%AB%E9%97%A1">王锡阐</a>著《<a href="https://zh.wikipedia.org/w/index.php?title=%E6%99%93%E5%BA%B5%E6%96%B0%E6%B3%95&amp;action=edit&amp;redlink=1">晓庵新法</a>》、《<a href="https://zh.wikipedia.org/w/index.php?title=%E4%BA%94%E6%98%9F%E8%A1%8C%E5%BA%A6%E8%A7%A3&amp;action=edit&amp;redlink=1">五星行度解</a>》等十几种天文学方面的著作，指出了当时天文学的错误，改良<a href="https://zh.wikipedia.org/wiki/%E6%97%A5%E9%A3%9F">日食</a>的算法、天文数据的应用、以及解决<a href="https://zh.wikipedia.org/wiki/%E5%9B%9E%E5%BD%92%E5%B9%B4">回归年</a>的长度、岁差常数等问题。数学家<a href="https://zh.wikipedia.org/wiki/%E6%98%8E%E5%AE%89%E5%9C%96">明安图</a>著有的《<a href="https://zh.wikipedia.org/wiki/%E5%89%B2%E5%9C%9C%E5%AF%86%E7%8E%87%E6%8D%B7%E6%B3%95">割圜密率捷法</a>》四卷，以“割圆连比例法”证明<a href="https://zh.wikipedia.org/w/index.php?title=%E5%89%B2%E5%9C%86%E4%B8%89%E6%B3%95&amp;action=edit&amp;redlink=1">割圆三法</a>（圆径求周、孤背求正弦、弦背求正矢）的公式，并发明了“弧背求通弦”、“通弦求弧背”、“正矢求弧背”等一系列数学公式。数学家<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%96%84%E8%98%AD">李善兰</a>独立发明<a href="https://zh.wikipedia.org/wiki/%E5%B0%8D%E6%95%B8">对数</a><a href="https://zh.wikipedia.org/wiki/%E5%BE%AE%E7%A9%8D%E5%88%86">微积分</a>，并在<a href="https://zh.wikipedia.org/wiki/%E7%B5%84%E5%90%88%E6%95%B8%E5%AD%B8">组合</a><a href="https://zh.wikipedia.org/wiki/%E6%81%86%E7%AD%89%E5%BC%8F">恒等式</a>方面提出<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%96%84%E5%85%B0%E6%81%92%E7%AD%89%E5%BC%8F">李善兰恒等式</a>。1872年发表了《<a href="https://zh.wikipedia.org/w/index.php?title=%E8%80%83%E6%95%B8%E6%A0%B9%E6%B3%95&amp;action=edit&amp;redlink=1">考数根法</a>》，是<a href="https://zh.wikipedia.org/wiki/%E8%B3%AA%E6%95%B8">质数</a>论方面最早的著作。</p>
+<h3 id="科技编辑-1"><a class="header" href="#科技编辑-1">科技[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=59">编辑</a>]</a></h3>
+<p>军事家<a href="https://zh.wikipedia.org/w/index.php?title=%E9%BE%9A%E6%8C%AF%E9%BA%9F&amp;action=edit&amp;redlink=1">龚振麟</a>著有《<a href="https://zh.wikipedia.org/w/index.php?title=%E9%93%B8%E7%82%AE%E9%93%81%E6%A8%A1%E5%9B%BE%E8%AF%B4&amp;action=edit&amp;redlink=1">铸炮铁模图说</a>》，发明<a href="https://zh.wikipedia.org/w/index.php?title=%E9%93%81%E6%A8%A1%E9%93%B8%E7%82%AE%E6%B3%95&amp;action=edit&amp;redlink=1">铁模铸炮法</a>，是世界历史上最早论述铁模铸造法的科技文献。1871年，<a href="https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7">上海</a><a href="https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E5%8C%97%E6%B0%B4%E7%BA%BF&amp;action=edit&amp;redlink=1">大北水线</a>电报公司选用6899个汉字，代以四码数字，成为中国最初的商用明码本，同时也设计了由明码本改编为密本及进行加乱的方法。</p>
+<h2 id="近代编辑"><a class="header" href="#近代编辑">近代[<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2&amp;action=edit&amp;section=60">编辑</a>]</a></h2>
+<p>至近代，中国科学渐见没落，经历了一段再启蒙时期，列强的科学传统及成果传到中国。在清末的洋务运动主张“中体西用”。以中国传统的思想、文化及制度为基础，引进西方先进的科学技术，是为“中学为体，西学为用”。洋务运动的拥护者<a href="https://zh.wikipedia.org/wiki/%E5%86%AF%E6%A1%82%E8%8A%AC">冯桂芬</a>主张接受欧美思想为主的学术，提出“以中国之伦常名教为原本，辅以诸国富强之术”的主张。</p>
+<p>据<a href="https://zh.wikipedia.org/wiki/%E6%99%AE%E6%9E%97%E6%96%AF%E9%A0%93%E5%A4%A7%E5%AD%B8">普林斯顿大学</a>东亚研究所及历史系荣休教授<a href="https://zh.wikipedia.org/w/index.php?title=%E7%8F%AD%E5%82%91%E6%98%8E%C2%B7%E8%89%BE%E7%88%BE%E6%9B%BC&amp;action=edit&amp;redlink=1">本杰明·艾尔曼</a>考证，中国最早将“science”一词翻作“格致”，直至<a href="https://zh.wikipedia.org/wiki/%E7%94%B2%E5%8D%88%E6%88%B0%E7%88%AD">甲午战争</a>后才将“格致”改翻作“科学”。这场战争彻底改变了中国知识分子看待传统学问——“格致学”的态度。持有坚船与利炮的<a href="https://zh.wikipedia.org/wiki/%E5%8C%97%E6%B4%8B%E8%89%A6%E9%9A%8A">北洋舰队</a>，竟然无法抵御<a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E6%97%A5%E6%9C%AC%E5%B8%9D%E5%9C%8B">日本</a>的攻势而败阵下来。日本在<a href="https://zh.wikipedia.org/wiki/%E6%98%8E%E6%B2%BB%E7%B6%AD%E6%96%B0">明治维新</a>之后，大量翻译<a href="https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%96%B9%E4%B8%96%E7%95%8C">西方</a>著作，也创造出了“science”一词对译的<a href="https://zh.wikipedia.org/wiki/%E6%97%A5%E6%96%87">日文</a>科学。因此，这场战役，可以说是日本的“科学”超越了中国的“格致学”。特别是在二十世纪之后，许多<a href="https://zh.wikipedia.org/wiki/%E6%B8%85%E5%BB%B7">清廷</a>派出赴日、<a href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9C%8B">美</a>、<a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%8B%B1%E5%B8%9D%E5%9C%8B">英</a>等地留学的留学生，见识到西方世界以及日本的国力、物力之后，纷纷主张废弃中国传统的“格致”之说，改取日本“科学”及其背后所代表的整个西方启蒙、进步、改变的意义。这个转变可以从胡适、陈独秀所创办的《<a href="https://zh.wikipedia.org/wiki/%E6%96%B0%E9%9D%92%E5%B9%B4">新青年</a>》杂志得见。他们在这部杂志上发表的文章，处处可见将“科学（science）”与“民主（democracy）”称为赛先生、德先生，认为唯有提倡科学与民主才能够拯救颓败的中国。至此，“科学”已取代了“格致学”，成为我们认识现代意义science的中文翻译词汇[<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%8F%B2#cite_note-20">20]</a>。</p>
+<h1 id="周髀算经与古代域外天学"><a class="header" href="#周髀算经与古代域外天学">《周髀算经》与古代域外天学</a></h1>
+<h2 id=""><a class="header" href="#"></a></h2>
+<p><a href="javascript:;">收藏</a> |<a href="javascript:void(0);">打印</a>|<a href="javascript:void(0);">下载word</a></p>
+<p>作 者：</p>
+<p><a href="http://rdbk1.ynlib.cn:6251/qw?s0=4&amp;s1=%E6%B1%9F%E6%99%93%E5%8E%9F">江晓原</a> </p>
+<p>作者简介：</p>
+<p>江晓原 中国科学院上海天文台，上海，200030</p>
+<p>原文出处：</p>
+<p>自然科学史研究</p>
+<p>内容提要：</p>
+<p>**期刊代号：**B2</p>
+<p>**分类名称：**科学技术哲学</p>
+<p>**复印期号：**1997 年 10 期</p>
+<p>关 键 词：</p>
+<p>字号：大中小</p>
+<p>摘要 在认识到《周髀算经》是中国古代唯一的希腊式公理化体系，以及《周髀算经》中盖天宇宙几何模型的正确形状之后，即可发现《周髀算经》中有明显的域外天文学成分：它的宇宙模型与古代印度的宇宙模型极为相似；它的寒暑五带知识在中国传统天文学体系中难以产生并且无人相信；它的天球坐标系统没有赤道特征。《周髀算经》背后极可能隐藏着一个古代中西方文化交流的大谜。</p>
+<p>关键词 《周髀算经》，域外天文学，宇宙模型，寒暑五带，天球坐标</p>
+<p>中图法分类号 P1—092</p>
+<p>根据现代学者认为比较可信的结论，《周髀算经》约成书于公元前100年。自古至今，它一直被毫无疑问地视为最纯粹的中国国粹之一。讨论《周髀算经》中有无域外天学成分，似乎是一个异想天开的问题。然而，如果我们先将眼界从中国古代天文学扩展到其它古代文明的天文学，再来仔细研读《周髀算经》原文，就会惊奇地发现，上述问题不仅不是那么异想天开，而且还有很深刻的科学史和科学哲学意义。</p>
+<p>1 盖天宇宙与古印度宇宙之惊人相似</p>
+<p>根据《周髀算经》原文中的明确交待，以及笔者在《〈周髀算经〉——中国古代唯一的公理化尝试》[（1）]和《〈周髀算经〉盖天宇宙结构考》[（2）]中对几个关键问题的详细论证[①a]，我们已经知道《周髀算经》中的盖天宇宙有如下特征：</p>
+<p>（1）大地与天为相距80000里的平行圆形平面。</p>
+<p>（2）大地中央有高大柱形物（高60000里的“璇玑”，其底面直径为23000里）。</p>
+<p>（3）该宇宙模型的构造者在圆形大地上为自己的居息之处确定了位置，并且这位置不在中央而是偏南。</p>
+<p>（4）大地中央的柱形延伸至天处为北极。</p>
+<p>（5）日月星辰在天上环绕北极作平面圆周运动。</p>
+<p>（6）太阳在这种圆周运动中有着多重同心轨道，并且以半年为周期作规律性的轨道迁移（一年往返一遍）。</p>
+<p>（7）太阳的上述运行模式可以在相当程度上说明昼夜成因和太阳周年视运动中的一些天象。</p>
+<p>令人极为惊讶的是，笔者发现上述七项特征竟与古代印度的宇宙模型全都吻合！这样的现象恐非偶然，值得加以注意和研究。下面先报道笔者初步比较的结果，更深入的研究或当俟诸异日。</p>
+<p>关于古代印度宇宙模型的记载，主要保存在一些《往世书》（Puranas）中。《往世书》是印度教的圣典，同时又是古代史籍，带有百科全书性质。它们的确切成书年代难以判定，但其中关于宇宙模式的一套概念，学者们相信可以追溯到吠陀时代——约公元前1000年之前，因而是非常古老的。《往世书》中的宇宙模式可以概述如下[（3）]：</p>
+<p>大地象平底的圆盘，在大地中央耸立着巍峨的高山，名为迷卢（Meru，也即汉译佛经中的“须弥山”，或作Sumeru，译成“苏迷卢”）。迷卢山外围绕着环形陆地，此陆地又为环形大海所围绕，……如此递相环绕向外延展，共有七圈大陆和七圈海洋。</p>
+<p>印度在迷卢山的南方。</p>
+<p>与大地平行的天上有着一系列天轮，这些天轮的共同轴心就是迷卢山；迷卢山的顶端就是北极星（Dhruva）所在之处，诸天轮携带着各种天体绕之旋转；这些天体包括日、月、恒星、……以及五大行星——依次为水星、金星、火星、木星和土星。</p>
+<p>利用迷卢山可以解释黑夜与白昼的交替。携带太阳的天轮上有180条轨道，太阳每天迁移一轨，半年后反向重复，以此来描述日出方位角的周年变化。……</p>
+<p>又唐代释道宣《释迦方志》卷上也记述了古代印度的宇宙模型，细节上恰可与上述记载相互补充：</p>
+<p>“……苏迷卢山，即经所谓须弥山也，在大海中，据金轮表，半出海上八万由旬，日月回薄于其腰也。外有金山七重围之，中各海水，具八功德。”根据这些记载，古代印度宇宙模型与《周髀算经》盖天宇宙模型却是有惊人的相似之处，在细节上几乎处处吻合：</p>
+<p>（1）两者的天、地都是圆形的平行平面；</p>
+<p>（2）“璇玑”和“迷卢山”同样扮演了大地中央的“天柱”角色；</p>
+<p>（3）周地和印度都被置于各自宇宙中大地的南半部分；</p>
+<p>（4）“璇玑”和“迷卢上”的正上方都是各种天体旋转的枢轴——北极；</p>
+<p>（5）日月星辰在天上环绕北极作平面圆周运动。</p>
+<p>（6）如果说印度迷卢山外的“七山七海”在数字上使人联想到《周髀算经》的“七衡六间”的话，那么印度宇宙中太阳天轮的180条轨道无论从性质还是功能来说都与七衡六间完全一致（太阳在七衡之间的往返也是每天连续移动的）。</p>
+<p>（7）特别值得指出，《周髀算经》中天与地的距离是八万里，而迷卢山也是高出海上“八万由旬”，其上即诸天轮所在，是其天地距离恰好同为八万单位，难道纯属偶然？</p>
+<p>在人类文明发展史上，文化的多元自发生成是完全可能的，因此许多不同文明中相似之处，也可能是偶然巧合。但是《周髀算经》的盖天宇宙模型与古代印度宇宙模型之间的相似程度实在太高——从整个格局到许多细节都一一吻合，如果仍用“偶然巧合”去解释，无论如何总显得过于勉强。</p>
+<p>当然，如果我们就此立刻进入关于“谁源于谁”的考据之中，那又将远远超出本文的范围。</p>
+<p>2 寒暑五带的知识来自何处？</p>
+<p>《周髀算经》中有相当于现代人熟知的关于地球上寒暑五带的知识。这是一个非常令人惊异的现象——因为这类知识是以往两千年间，中国传统天文学说中所没有、而且不相信的。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="伪史.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="伪史.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
