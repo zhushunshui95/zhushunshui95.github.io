@@ -6,9 +6,9 @@ language = "zh-CN"
 multilingual = false
 src = "src"
 
-[output.html]
+#[output.html]
 
-[output.wordcount]
+#[output.wordcount]
 
 
 
