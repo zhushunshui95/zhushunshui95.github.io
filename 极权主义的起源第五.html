@@ -4,43 +4,44 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>极权主义的起源第五 - San Min Zhu Yi</title>
-
+                
 
         <!-- Custom HTML head -->
         
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
-
+                <link rel="stylesheet" href="css/print.css" media="print">
+        
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
-
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-
-    </head>
+        
+            </head>
     <body>
-    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script>
+        <script type="text/javascript">
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
+        <script type="text/javascript">
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -56,7 +57,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
+        <script type="text/javascript">
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -68,14 +69,12 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script>
+        <script type="text/javascript">
             var html = document.querySelector('html');
-            var sidebar = null;
+            var sidebar = 'hidden';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
-            } else {
-                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -83,15 +82,15 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主义第五章.html"><strong aria-hidden="true">18.</strong> 民生主义第五章</a></li><li class="chapter-item expanded "><a href="民生主义第六章.html"><strong aria-hidden="true">19.</strong> 民生主义第六章</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">20.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html"><strong aria-hidden="true">21.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">23.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">24.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html" class="active"><strong aria-hidden="true">25.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">28.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">30.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">31.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html"><strong aria-hidden="true">32.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">35.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">36.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html"><strong aria-hidden="true">37.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">38.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">39.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html"><strong aria-hidden="true">40.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">41.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">43.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">44.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">45.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>
-            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主义第五章.html"><strong aria-hidden="true">18.</strong> 民生主义第五章</a></li><li class="chapter-item expanded "><a href="民生主义第六章.html"><strong aria-hidden="true">19.</strong> 民生主义第六章</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">20.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html"><strong aria-hidden="true">21.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">23.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">24.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html" class="active"><strong aria-hidden="true">25.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">28.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">30.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">31.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html"><strong aria-hidden="true">32.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">35.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">36.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html"><strong aria-hidden="true">37.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">38.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">39.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html"><strong aria-hidden="true">40.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">41.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">43.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">44.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">45.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -101,28 +100,28 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                    </div>
+                                            </div>
 
                     <h1 class="menu-title">San Min Zhu Yi</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-
+                                                                        
                     </div>
                 </div>
 
-                <div id="search-wrapper" class="hidden">
+                                <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
                         <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
@@ -132,9 +131,9 @@
                         </ul>
                     </div>
                 </div>
-
+                
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script>
+                <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -423,40 +422,39 @@ This is the first and greatest commandment.
 <p>几乎与此同时，马克思在《一个年轻人在择业前的思考》中写道：“宗教本身教导我们，那个众所效仿的至高完美的生命为全人类牺牲了自己。谁敢否认这一点？若我们选择的职业，能让我们为了全人类而努力工作，我们就不会在任何压力与重负面前低头，因为这压力与重负正是我们为了众生的福祉所作的牺牲。”（Religion itself teaches us that the ideal being whom all strive to copy sacrificed himself for the sake of mankind, and who would dare to set at nought such judgments? If we have chosen the position in life in which we can most of all work for mankind, no burdens can bow us down, because they are sacrifices for the benefit of all.）以上引用自:《一个年轻人在择业前的思考》</p>
 <p>马克思从高校毕业时，他的文凭里注明了他的宗教知识：“他的基督教理知识，是明晰、且相当有根基的。而且，他对基督教会的历史非常了解。”</p>
 <p>对于马列教而言，马克思相当于耶稣。列宁之于布尔什维克，好比奥姆真理教的麻原彰晃，人民圣殿教的吉姆琼斯。列宁之于苏俄，好比巴格达迪之于ISIS，穆罕默德之于哈里发国。如耶稣更改犹太教内容，马克思对基督教内容进行换马甲操作。如把基督教鼓吹的信耶稣/耶和华上天堂变成信共产主义就能进入共产主义社会等，而列宁则相当于保罗建立起基督教会性质的共产党组织，具体可参照下表：</p>
-<div class="table-wrapper"><table><thead><tr><th style="text-align: left">屬性</th><th style="text-align: left">馬列邪教共產黨員</th><th style="text-align: left">伊斯蘭教穆斯林</th><th style="text-align: left">基督教基督徒</th></tr></thead><tbody>
-<tr><td style="text-align: left">綱領</td><td style="text-align: left">共產黨宣言</td><td style="text-align: left">古蘭</td><td style="text-align: left">旧约、新約</td></tr>
-<tr><td style="text-align: left">組織</td><td style="text-align: left">黨支部</td><td style="text-align: left">回教堂</td><td style="text-align: left">耶教堂</td></tr>
-<tr><td style="text-align: left">組織頭目</td><td style="text-align: left">書記</td><td style="text-align: left">阿訇</td><td style="text-align: left">主教</td></tr>
-<tr><td style="text-align: left">最高頭目</td><td style="text-align: left">總書記</td><td style="text-align: left">哈裏發</td><td style="text-align: left">教宗</td></tr>
-<tr><td style="text-align: left">教規</td><td style="text-align: left">黨規</td><td style="text-align: left">伊斯蘭教法</td><td style="text-align: left">基督教會法</td></tr>
-<tr><td style="text-align: left">退教</td><td style="text-align: left">無法退教</td><td style="text-align: left">退教者死</td><td style="text-align: left">退教者死</td></tr>
-<tr><td style="text-align: left">奮鬥方向</td><td style="text-align: left">輸出革命赤化全世界</td><td style="text-align: left">為主道而奮鬥，綠化全世界</td><td style="text-align: left">為主道而奮鬥，十字化全世界</td></tr>
-<tr><td style="text-align: left">最高目標</td><td style="text-align: left">邁向共產主義社會，共妻</td><td style="text-align: left">死後進天堂，72處女</td><td style="text-align: left">死後進天堂</td></tr>
-<tr><td style="text-align: left">最高頭目選舉</td><td style="text-align: left">政治局常委在小黑屋裏選舉</td><td style="text-align: left">武力至上</td><td style="text-align: left">紅衣主教在小黑屋裏選舉</td></tr>
-<tr><td style="text-align: left">日常活動</td><td style="text-align: left">學習黨章黨規頭目的講話精神</td><td style="text-align: left">阿訇宣講、信徒禮拜，壹生中必須回總部受訓一次，受訓後在本組織中的地位和榮耀得到提升</td><td style="text-align: left">主教宣講、信徒禮拜，每周去耶教堂</td></tr>
-<tr><td style="text-align: left">整改方式</td><td style="text-align: left">整風運動</td><td style="text-align: left">無論貧富和地位，每年禁食一個月，期間停止娛樂和戰爭</td><td style="text-align: left">宗教戰爭</td></tr>
-<tr><td style="text-align: left">稅收體系</td><td style="text-align: left">共產</td><td style="text-align: left">教課</td><td style="text-align: left">十一稅</td></tr>
-<tr><td style="text-align: left">民政系統</td><td style="text-align: left">黨支部管理出生結婚死亡</td><td style="text-align: left">回教堂管理出生結婚死亡</td><td style="text-align: left">耶教堂管理出生結婚死亡</td></tr>
-<tr><td style="text-align: left">對待敵人</td><td style="text-align: left">消滅資產階級走資派，詛咒不信教的生活在資本主義的水深火熱中</td><td style="text-align: left">消滅不信主道的卡費勒，詛咒其下地獄</td><td style="text-align: left">消滅不信主道的異教徒，詛咒其下地獄</td></tr>
-<tr><td style="text-align: left">派系劃分</td><td style="text-align: left">托派、毛派和走資派</td><td style="text-align: left">遜尼派、什葉派</td><td style="text-align: left">羅馬教、新教、東正教</td></tr>
-<tr><td style="text-align: left">內鬥</td><td style="text-align: left">政治運動+政治清洗</td><td style="text-align: left">宗教教派戰爭</td><td style="text-align: left">宗教教派戰爭</td></tr>
-<tr><td style="text-align: left">對外擴張</td><td style="text-align: left">輸出革命</td><td style="text-align: left">基哈德Jihad</td><td style="text-align: left">Holy War</td></tr>
-<tr><td style="text-align: left">價值體系</td><td style="text-align: left">二元制塔基亞原則即勢力小時友愛善良，勢力大時殺光資本家和走資派，砸爛舊世界，建立一個全新的屬於無產階級的全新世界人間天堂，信奉“普世價值”並武力傳播，理論和事實不符那就修改事實</td><td style="text-align: left">二元制塔基亞原則即勢力小時溫和友愛善良，勢力大時殺光卡菲勒，砸爛舊世界，建立一個全新的屬於穆斯林的全新世界人間天堂，信奉“普世價值”並武力傳播，理論和事實不符那就修改事實</td><td style="text-align: left">二元制塔基亞原則即勢力小時友愛善良“打左臉右臉也伸過去”，勢力大時殺光異教徒，砸爛舊世界，建立一個全新的屬於基督徒的全新世界人間天堂，信奉“普世價值”並武力傳播，理論和事實不符那就修改事實</td></tr>
-<tr><td style="text-align: left">背後金主</td><td style="text-align: left">蘇聯老大哥等</td><td style="text-align: left">沙特等穆斯林國家及伊斯蘭組織</td><td style="text-align: left">英美等基督教國家及基督教組織</td></tr>
-<tr><td style="text-align: left">宣傳口號</td><td style="text-align: left">無產階級沒有祖國，無產階級皆兄弟</td><td style="text-align: left">只要信教，穆斯林皆兄弟</td><td style="text-align: left">只要信教，基督徒皆兄弟。</td></tr>
-<tr><td style="text-align: left">末日審判</td><td style="text-align: left">資本主義世界末日快來了，信馬列進入共產主義社會</td><td style="text-align: left">末日审判要來了，信伊斯蘭教上天堂</td><td style="text-align: left">末日审判快來了，信基督教上天堂</td></tr>
-<tr><td style="text-align: left">著名信徒</td><td style="text-align: left">列寧、斯大林</td><td style="text-align: left">巴格達迪、本拉登</td><td style="text-align: left">馬克思、恩格斯、希特勒</td></tr>
-<tr><td style="text-align: left">來源</td><td style="text-align: left">猶太教、基督教</td><td style="text-align: left">猶太教、基督教</td><td style="text-align: left">猶太教、柏拉圖、亞里斯多德</td></tr>
-<tr><td style="text-align: left">對華夏之危害</td><td style="text-align: left">消滅儒釋道徹底鏟除華夏文明等移植外來邪教</td><td style="text-align: left">消滅儒釋道徹底鏟除華夏文明等移植外來邪教</td><td style="text-align: left">消滅儒釋道徹底鏟除華夏文明等移植外來邪教</td></tr>
-<tr><td style="text-align: left">對待中國人</td><td style="text-align: left">大饑荒、文革等</td><td style="text-align: left">陜甘回亂、新疆回乱等</td><td style="text-align: left">洪楊之亂、全能神等</td></tr>
-<tr><td style="text-align: left">對中文詞匯的侵略</td><td style="text-align: left">解放、革命、封建等</td><td style="text-align: left">清真、真主等</td><td style="text-align: left">上帝、聖經、聖母等</td></tr>
-<tr><td style="text-align: left">對待猶太人</td><td style="text-align: left">仇視如斯大林</td><td style="text-align: left">仇視如穆罕默德</td><td style="text-align: left">仇視並滅絕如希特勒</td></tr>
-<tr><td style="text-align: left">期待救世主情節</td><td style="text-align: left">邪教頭子馬克思有彌賽亞情節</td><td style="text-align: left">邪教頭子穆罕默德本身就被當作救世主</td><td style="text-align: left">孽種耶穌本身也被當作救世主</td></tr>
-<tr><td style="text-align: left">對待其他異質文明</td><td style="text-align: left">差點消滅中國、朝鮮、安南整個華夏文明圈</td><td style="text-align: left">消滅了波斯、東羅馬等文明</td><td style="text-align: left">消滅了西羅馬、瑪雅等文明</td></tr>
-<tr><td style="text-align: left">對待同性戀</td><td style="text-align: left">處死</td><td style="text-align: left">用石頭砸死</td><td style="text-align: left">用火燒死</td></tr>
-<tr><td style="text-align: left">對待科學</td><td style="text-align: left">科學社會主義一點也不科學</td><td style="text-align: left">和《可蘭》不同的應該統統消滅掉</td><td style="text-align: left">和《新約》不同的應該統統消滅掉，布魯諾之類的應該燒死</td></tr>
+<table><thead><tr><th align="left">屬性</th><th align="left">馬列邪教共產黨員</th><th align="left">伊斯蘭教穆斯林</th><th align="left">基督教基督徒</th></tr></thead><tbody>
+<tr><td align="left">綱領</td><td align="left">共產黨宣言</td><td align="left">古蘭</td><td align="left">旧约、新約</td></tr>
+<tr><td align="left">組織</td><td align="left">黨支部</td><td align="left">回教堂</td><td align="left">耶教堂</td></tr>
+<tr><td align="left">組織頭目</td><td align="left">書記</td><td align="left">阿訇</td><td align="left">主教</td></tr>
+<tr><td align="left">最高頭目</td><td align="left">總書記</td><td align="left">哈裏發</td><td align="left">教宗</td></tr>
+<tr><td align="left">教規</td><td align="left">黨規</td><td align="left">伊斯蘭教法</td><td align="left">基督教會法</td></tr>
+<tr><td align="left">退教</td><td align="left">無法退教</td><td align="left">退教者死</td><td align="left">退教者死</td></tr>
+<tr><td align="left">奮鬥方向</td><td align="left">輸出革命赤化全世界</td><td align="left">為主道而奮鬥，綠化全世界</td><td align="left">為主道而奮鬥，十字化全世界</td></tr>
+<tr><td align="left">最高目標</td><td align="left">邁向共產主義社會，共妻</td><td align="left">死後進天堂，72處女</td><td align="left">死後進天堂</td></tr>
+<tr><td align="left">最高頭目選舉</td><td align="left">政治局常委在小黑屋裏選舉</td><td align="left">武力至上</td><td align="left">紅衣主教在小黑屋裏選舉</td></tr>
+<tr><td align="left">日常活動</td><td align="left">學習黨章黨規頭目的講話精神</td><td align="left">阿訇宣講、信徒禮拜，壹生中必須回總部受訓一次，受訓後在本組織中的地位和榮耀得到提升</td><td align="left">主教宣講、信徒禮拜，每周去耶教堂</td></tr>
+<tr><td align="left">整改方式</td><td align="left">整風運動</td><td align="left">無論貧富和地位，每年禁食一個月，期間停止娛樂和戰爭</td><td align="left">宗教戰爭</td></tr>
+<tr><td align="left">稅收體系</td><td align="left">共產</td><td align="left">教課</td><td align="left">十一稅</td></tr>
+<tr><td align="left">民政系統</td><td align="left">黨支部管理出生結婚死亡</td><td align="left">回教堂管理出生結婚死亡</td><td align="left">耶教堂管理出生結婚死亡</td></tr>
+<tr><td align="left">對待敵人</td><td align="left">消滅資產階級走資派，詛咒不信教的生活在資本主義的水深火熱中</td><td align="left">消滅不信主道的卡費勒，詛咒其下地獄</td><td align="left">消滅不信主道的異教徒，詛咒其下地獄</td></tr>
+<tr><td align="left">派系劃分</td><td align="left">托派、毛派和走資派</td><td align="left">遜尼派、什葉派</td><td align="left">羅馬教、新教、東正教</td></tr>
+<tr><td align="left">內鬥</td><td align="left">政治運動+政治清洗</td><td align="left">宗教教派戰爭</td><td align="left">宗教教派戰爭</td></tr>
+<tr><td align="left">對外擴張</td><td align="left">輸出革命</td><td align="left">基哈德Jihad</td><td align="left">Holy War</td></tr>
+<tr><td align="left">價值體系</td><td align="left">二元制塔基亞原則即勢力小時友愛善良，勢力大時殺光資本家和走資派，砸爛舊世界，建立一個全新的屬於無產階級的全新世界人間天堂，信奉“普世價值”並武力傳播，理論和事實不符那就修改事實</td><td align="left">二元制塔基亞原則即勢力小時溫和友愛善良，勢力大時殺光卡菲勒，砸爛舊世界，建立一個全新的屬於穆斯林的全新世界人間天堂，信奉“普世價值”並武力傳播，理論和事實不符那就修改事實</td><td align="left">二元制塔基亞原則即勢力小時友愛善良“打左臉右臉也伸過去”，勢力大時殺光異教徒，砸爛舊世界，建立一個全新的屬於基督徒的全新世界人間天堂，信奉“普世價值”並武力傳播，理論和事實不符那就修改事實</td></tr>
+<tr><td align="left">背後金主</td><td align="left">蘇聯老大哥等</td><td align="left">沙特等穆斯林國家及伊斯蘭組織</td><td align="left">英美等基督教國家及基督教組織</td></tr>
+<tr><td align="left">宣傳口號</td><td align="left">無產階級沒有祖國，無產階級皆兄弟</td><td align="left">只要信教，穆斯林皆兄弟</td><td align="left">只要信教，基督徒皆兄弟。</td></tr>
+<tr><td align="left">末日審判</td><td align="left">資本主義世界末日快來了，信馬列進入共產主義社會</td><td align="left">末日审判要來了，信伊斯蘭教上天堂</td><td align="left">末日审判快來了，信基督教上天堂</td></tr>
+<tr><td align="left">著名信徒</td><td align="left">列寧、斯大林</td><td align="left">巴格達迪、本拉登</td><td align="left">馬克思、恩格斯、希特勒</td></tr>
+<tr><td align="left">來源</td><td align="left">猶太教、基督教</td><td align="left">猶太教、基督教</td><td align="left">猶太教、柏拉圖、亞里斯多德</td></tr>
+<tr><td align="left">對華夏之危害</td><td align="left">消滅儒釋道徹底鏟除華夏文明等移植外來邪教</td><td align="left">消滅儒釋道徹底鏟除華夏文明等移植外來邪教</td><td align="left">消滅儒釋道徹底鏟除華夏文明等移植外來邪教</td></tr>
+<tr><td align="left">對待中國人</td><td align="left">大饑荒、文革等</td><td align="left">陜甘回亂、新疆回乱等</td><td align="left">洪楊之亂、全能神等</td></tr>
+<tr><td align="left">對中文詞匯的侵略</td><td align="left">解放、革命、封建等</td><td align="left">清真、真主等</td><td align="left">上帝、聖經、聖母等</td></tr>
+<tr><td align="left">對待猶太人</td><td align="left">仇視如斯大林</td><td align="left">仇視如穆罕默德</td><td align="left">仇視並滅絕如希特勒</td></tr>
+<tr><td align="left">期待救世主情節</td><td align="left">邪教頭子馬克思有彌賽亞情節</td><td align="left">邪教頭子穆罕默德本身就被當作救世主</td><td align="left">孽種耶穌本身也被當作救世主</td></tr>
+<tr><td align="left">對待其他異質文明</td><td align="left">差點消滅中國、朝鮮、安南整個華夏文明圈</td><td align="left">消滅了波斯、東羅馬等文明</td><td align="left">消滅了西羅馬、瑪雅等文明</td></tr>
+<tr><td align="left">對待同性戀</td><td align="left">處死</td><td align="left">用石頭砸死</td><td align="left">用火燒死</td></tr>
+<tr><td align="left">對待科學</td><td align="left">科學社會主義一點也不科學</td><td align="left">和《可蘭》不同的應該統統消滅掉</td><td align="left">和《新約》不同的應該統統消滅掉，布魯諾之類的應該燒死</td></tr>
 </tbody></table>
-</div>
 <p>布尔什维克政权的组织形式类似于中世纪罗马教会、伊斯兰教哈里发国，其他一般左派政治运动的组织形式类似于现代新教教会。</p>
 <blockquote>
 <p>按照基督教教义，人在被耶和华创造之初，活在伊甸园里。&quot;耶和华在东方的伊甸，为亚当和伊娃造了一个乐园。那里地上撒满金子、珍珠、红玛瑙，各种树木从地里长出来，开满各种奇花异卉，非常好看；树上的果子还可以作为食物。园子当中还有生命树和分别善恶树。还有河水在园中淙淙流淌，滋润大地。河水分成四道环绕伊甸：第一条河叫比逊，环绕哈胖拉全地；第二条河叫基训，环绕古实全地；第三条河叫希底结，从亚述旁边流过；第四条河就是伯拉河。作为耶和华的恩赐，天不下雨而五谷丰登。耶和华让亚当和伊娃住在伊甸园中，让他们修葺并看守这个乐园。耶和华吩咐他们说：&quot;园中各样树上的果子你们可以随意吃。只是分别善恶树上的果子你们不可吃，因为你吃的日子必死。&quot;亚当和伊娃赤裸着绝美的形体，品尝着甘美的果实。他们或款款散步，或悠然躺卧，信口给各种各样的动植物取名：地上的走兽、天空的飞鸟、园中的嘉树；田野的鲜花。他们就这样在伊甸乐园中幸福地生活着，履行着耶和华分配的工作。他们因受蛇的引诱违背耶和华的命令吃了伊甸园的禁果，而被耶和华惩罚。蛇“必受咒诅”，从此要用肚子行走及终生吃土；后裔要与女人的后裔彼此为仇，女人的后裔要伤它的头，而它则要伤她们的脚跟；(创 3:14-15)</p>
@@ -672,50 +670,49 @@ This is the first and greatest commandment.
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="现代欧美文明的中国起源第四.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="现代欧美文明的中国起源第四.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-
-                            <a rel="next" href="三次亡天下带来的沉重后果第六1宋元.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        
+                                                    <a rel="next" href="三次亡天下带来的沉重后果第六1宋元.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-
+                        
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="现代欧美文明的中国起源第四.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="现代欧美文明的中国起源第四.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-
-                    <a rel="next" href="三次亡天下带来的沉重后果第六1宋元.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                
+                                    <a rel="next" href="三次亡天下带来的沉重后果第六1宋元.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-            </nav>
+                            </nav>
 
         </div>
 
-
-
-
-        <script>
+        
+        
+        
+                <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-
-
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
-
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-
-
-    </div>
+        
+        
     </body>
 </html>

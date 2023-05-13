@@ -4,43 +4,44 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>教育：十年樹木百年樹人第十二 - San Min Zhu Yi</title>
-
+                
 
         <!-- Custom HTML head -->
         
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
-
+                <link rel="stylesheet" href="css/print.css" media="print">
+        
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
-
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-
-    </head>
+        
+            </head>
     <body>
-    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script>
+        <script type="text/javascript">
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
+        <script type="text/javascript">
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -56,7 +57,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
+        <script type="text/javascript">
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -68,14 +69,12 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script>
+        <script type="text/javascript">
             var html = document.querySelector('html');
-            var sidebar = null;
+            var sidebar = 'hidden';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
-            } else {
-                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -83,15 +82,15 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主义第五章.html"><strong aria-hidden="true">18.</strong> 民生主义第五章</a></li><li class="chapter-item expanded "><a href="民生主义第六章.html"><strong aria-hidden="true">19.</strong> 民生主义第六章</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">20.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html"><strong aria-hidden="true">21.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">23.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">24.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html"><strong aria-hidden="true">25.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">28.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">30.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">31.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html"><strong aria-hidden="true">32.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">35.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">36.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html" class="active"><strong aria-hidden="true">37.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">38.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">39.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html"><strong aria-hidden="true">40.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">41.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">43.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">44.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">45.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>
-            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主义第五章.html"><strong aria-hidden="true">18.</strong> 民生主义第五章</a></li><li class="chapter-item expanded "><a href="民生主义第六章.html"><strong aria-hidden="true">19.</strong> 民生主义第六章</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">20.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html"><strong aria-hidden="true">21.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">23.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">24.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html"><strong aria-hidden="true">25.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">28.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">30.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">31.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html"><strong aria-hidden="true">32.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">35.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">36.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html" class="active"><strong aria-hidden="true">37.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">38.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">39.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html"><strong aria-hidden="true">40.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">41.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">43.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">44.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">45.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -101,28 +100,28 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                    </div>
+                                            </div>
 
                     <h1 class="menu-title">San Min Zhu Yi</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-
+                                                                        
                     </div>
                 </div>
 
-                <div id="search-wrapper" class="hidden">
+                                <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
                         <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
@@ -132,9 +131,9 @@
                         </ul>
                     </div>
                 </div>
-
+                
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script>
+                <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -468,130 +467,128 @@
 </ul>
 <p>学生在汉普郡学院的几年中拥有学习的主动权，可以根据兴趣的演变重新选择导师，在导师指导下自主制定本科教育的内容。 由于小班化教育(平均课堂人数15人) ，师生关系紧密，在高年级的研讨会(Seminar)中教授时常会邀请学生到家中做客，在晚餐中度过最后一堂课。汉普郡的学生会参与到学校每一层面的管理和决策，上至董事会及战略规划，下至宿舍管理，学生都积极参与其中。学生在校园管理各方面都有参与的机会，例如招募新一任校长、财政规划、制定学校规章制度等。自创校始汉普郡学院的章程就专门规定学生、教授及职工在董事会及各委员会上均有至少一个名额，学生因此可以直接参与学校各层面的决策。学生董事在每学年末由全体学生投票选举产生，经一年见习期成为正式具有投票权的成员，任期一年。同时，汉普郡的校内活动坚持自主自治的原则，在活动经费及策划方面有完全的决定权。汉普郡的学生会向全体学生敞开，每月在市政厅式会议(Town Hall Meeting)上讨论事务，由全场学生投票通过。 学校支持学生在校期间组织社团活动，在校园管理中锻炼能力，并提供一系列社会实践机会，让学生们将学术理论付诸实践。</p>
 <h2 id="中國人必讀書單"><a class="header" href="#中國人必讀書單">中國人必讀書單</a></h2>
-<div class="table-wrapper"><table><thead><tr><th style="text-align: left">書名</th><th style="text-align: left">簡介</th></tr></thead><tbody>
-<tr><td style="text-align: left">論語</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">孟子</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">大學</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">中庸</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">三民主義</td><td style="text-align: left">孫中山</td></tr>
-<tr><td style="text-align: left">民權初步</td><td style="text-align: left">孫中山</td></tr>
-<tr><td style="text-align: left">孝經</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">史記</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">莊子</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">道德經</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">近思錄</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">傳習錄</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">中華民國憲法</td><td style="text-align: left">蔣中正</td></tr>
-<tr><td style="text-align: left">中國基本法律常識</td><td style="text-align: left">司法院</td></tr>
-<tr><td style="text-align: left">國史大綱</td><td style="text-align: left">錢穆</td></tr>
-<tr><td style="text-align: left">壇經</td><td style="text-align: left">六祖慧能</td></tr>
-<tr><td style="text-align: left">中國史學名著</td><td style="text-align: left">錢穆</td></tr>
-<tr><td style="text-align: left">中國思想史</td><td style="text-align: left">錢穆</td></tr>
-<tr><td style="text-align: left">明夷待訪錄</td><td style="text-align: left">黃宗羲</td></tr>
-<tr><td style="text-align: left">说文解字</td><td style="text-align: left">许慎</td></tr>
-<tr><td style="text-align: left">On Liberty</td><td style="text-align: left">John Mill</td></tr>
-<tr><td style="text-align: left">The Dictator's Handbook: Why Bad Behavior is Almost Always Good Politics</td><td style="text-align: left">Bruce Bueno de Mesquita, Alastair Smith</td></tr>
-<tr><td style="text-align: left">Free to Choose: A Personal Statement</td><td style="text-align: left">Milton Friedman</td></tr>
-<tr><td style="text-align: left">自由憲章</td><td style="text-align: left">弗里德里希·哈耶克</td></tr>
-<tr><td style="text-align: left">革命軍</td><td style="text-align: left">鄒容</td></tr>
-<tr><td style="text-align: left">Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger</td><td style="text-align: left">Peter D. Kaufman</td></tr>
-<tr><td style="text-align: left">Rich Dad, Poor Dad.</td><td style="text-align: left">Robert Kiyosaki</td></tr>
-<tr><td style="text-align: left">Nonviolent Communication: A Language of Life</td><td style="text-align: left">Marshall Rosenberg</td></tr>
-<tr><td style="text-align: left">A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra)</td><td style="text-align: left">Barbara Oakley</td></tr>
-<tr><td style="text-align: left">Animal Farm</td><td style="text-align: left">George Orwell</td></tr>
+<table><thead><tr><th align="left">書名</th><th align="left">簡介</th></tr></thead><tbody>
+<tr><td align="left">論語</td><td align="left"></td></tr>
+<tr><td align="left">孟子</td><td align="left"></td></tr>
+<tr><td align="left">大學</td><td align="left"></td></tr>
+<tr><td align="left">中庸</td><td align="left"></td></tr>
+<tr><td align="left">三民主義</td><td align="left">孫中山</td></tr>
+<tr><td align="left">民權初步</td><td align="left">孫中山</td></tr>
+<tr><td align="left">孝經</td><td align="left"></td></tr>
+<tr><td align="left">史記</td><td align="left"></td></tr>
+<tr><td align="left">莊子</td><td align="left"></td></tr>
+<tr><td align="left">道德經</td><td align="left"></td></tr>
+<tr><td align="left">近思錄</td><td align="left"></td></tr>
+<tr><td align="left">傳習錄</td><td align="left"></td></tr>
+<tr><td align="left">中華民國憲法</td><td align="left">蔣中正</td></tr>
+<tr><td align="left">中國基本法律常識</td><td align="left">司法院</td></tr>
+<tr><td align="left">國史大綱</td><td align="left">錢穆</td></tr>
+<tr><td align="left">壇經</td><td align="left">六祖慧能</td></tr>
+<tr><td align="left">中國史學名著</td><td align="left">錢穆</td></tr>
+<tr><td align="left">中國思想史</td><td align="left">錢穆</td></tr>
+<tr><td align="left">明夷待訪錄</td><td align="left">黃宗羲</td></tr>
+<tr><td align="left">说文解字</td><td align="left">许慎</td></tr>
+<tr><td align="left">On Liberty</td><td align="left">John Mill</td></tr>
+<tr><td align="left">The Dictator's Handbook: Why Bad Behavior is Almost Always Good Politics</td><td align="left">Bruce Bueno de Mesquita, Alastair Smith</td></tr>
+<tr><td align="left">Free to Choose: A Personal Statement</td><td align="left">Milton Friedman</td></tr>
+<tr><td align="left">自由憲章</td><td align="left">弗里德里希·哈耶克</td></tr>
+<tr><td align="left">革命軍</td><td align="left">鄒容</td></tr>
+<tr><td align="left">Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger</td><td align="left">Peter D. Kaufman</td></tr>
+<tr><td align="left">Rich Dad, Poor Dad.</td><td align="left">Robert Kiyosaki</td></tr>
+<tr><td align="left">Nonviolent Communication: A Language of Life</td><td align="left">Marshall Rosenberg</td></tr>
+<tr><td align="left">A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra)</td><td align="left">Barbara Oakley</td></tr>
+<tr><td align="left">Animal Farm</td><td align="left">George Orwell</td></tr>
 </tbody></table>
-</div>
 <h2 id="推薦閱讀書單"><a class="header" href="#推薦閱讀書單">推薦閱讀書單</a></h2>
-<div class="table-wrapper"><table><thead><tr><th style="text-align: left">書名</th><th style="text-align: left">作者</th></tr></thead><tbody>
-<tr><td style="text-align: left">大棋局中的國共關系</td><td style="text-align: left">呂迅</td></tr>
-<tr><td style="text-align: left">想象異域</td><td style="text-align: left">葛兆光</td></tr>
-<tr><td style="text-align: left">臺海‧冷戰‧蔣介石：解密檔案中消失的臺灣史1948-1988</td><td style="text-align: left">林孝庭</td></tr>
-<tr><td style="text-align: left">民運手冊</td><td style="text-align: left">王炳章</td></tr>
-<tr><td style="text-align: left">夾邊溝記事</td><td style="text-align: left">楊顯惠</td></tr>
-<tr><td style="text-align: left">文革受難者</td><td style="text-align: left">王友琴</td></tr>
-<tr><td style="text-align: left">革命軍</td><td style="text-align: left">鄒容</td></tr>
-<tr><td style="text-align: left">東周列國誌</td><td style="text-align: left">余邵魚　馮夢龍</td></tr>
-<tr><td style="text-align: left">醒世恆言</td><td style="text-align: left">馮夢龍</td></tr>
-<tr><td style="text-align: left">喻世明言</td><td style="text-align: left">馮夢龍</td></tr>
-<tr><td style="text-align: left">警世通言</td><td style="text-align: left">馮夢龍</td></tr>
-<tr><td style="text-align: left">《九州》系列</td><td style="text-align: left">江南</td></tr>
-<tr><td style="text-align: left">涿鹿·炎的最後子孫</td><td style="text-align: left">江南</td></tr>
-<tr><td style="text-align: left">此間的少年</td><td style="text-align: left">江南</td></tr>
-<tr><td style="text-align: left">悟空傳</td><td style="text-align: left">今何在</td></tr>
-<tr><td style="text-align: left">國語</td><td style="text-align: left">托名左丘明</td></tr>
-<tr><td style="text-align: left">呂氏春秋</td><td style="text-align: left">呂不韋</td></tr>
-<tr><td style="text-align: left">楚辭</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">山海經</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">菜根譚</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">戰國策</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">Freedom and Its Betrayal</td><td style="text-align: left">Isaiah Berlin</td></tr>
-<tr><td style="text-align: left">Liberty: Incorporating Four Essays on Liberty</td><td style="text-align: left">Isaiah Berlin</td></tr>
-<tr><td style="text-align: left">De la démocratie en Amérique</td><td style="text-align: left">Alexis de Tocqueville</td></tr>
-<tr><td style="text-align: left">The Old Regime and the Revolution</td><td style="text-align: left">Alexis de Tocqueville</td></tr>
-<tr><td style="text-align: left">Il Principe</td><td style="text-align: left">Niccolo Machiavelli</td></tr>
-<tr><td style="text-align: left">Discourses on Livy</td><td style="text-align: left">Niccolo Machiavelli</td></tr>
-<tr><td style="text-align: left">Politics</td><td style="text-align: left">Aristotélēs</td></tr>
-<tr><td style="text-align: left">Republic</td><td style="text-align: left">Plato</td></tr>
-<tr><td style="text-align: left">De Senectute</td><td style="text-align: left">Marcus Tullius Cicero</td></tr>
-<tr><td style="text-align: left">Leviathan or The Matter, Forme and Power of a Common Wealth Ecclesiastical and Civil</td><td style="text-align: left">Thomas Hobbes</td></tr>
-<tr><td style="text-align: left">The Second Treatise of Government: An Essay Concerning the True Origin, Extent, and End of Civil Government</td><td style="text-align: left">John Locke</td></tr>
-<tr><td style="text-align: left">Sternstunden der Menschheit</td><td style="text-align: left">Stefan Zweig</td></tr>
-<tr><td style="text-align: left">Lord of the Flies</td><td style="text-align: left">William Golding</td></tr>
-<tr><td style="text-align: left">O Alquimista/The Alchemist</td><td style="text-align: left">Paulo Coelho</td></tr>
-<tr><td style="text-align: left">Foundation</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">Foundation and Empire</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">Second Foundation</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">Prelude to Foundation</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">Forward the Foundation</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">Foundation's Edge</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">Foundation and Earth</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">I, Robot</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">The Caves of Steel</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">The Naked Sun</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">The Robots of Dawn</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">Robots and Empire</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">The Stars, Like Dust</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">The Currents of Space</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">Pebble in the Sky</td><td style="text-align: left">Isaac Asimov</td></tr>
-<tr><td style="text-align: left">銀河英雄伝説</td><td style="text-align: left">田中芳樹</td></tr>
-<tr><td style="text-align: left">Catch-22</td><td style="text-align: left">Joseph Heller</td></tr>
-<tr><td style="text-align: left">The Autobiography of Benjamin Franklin</td><td style="text-align: left">Benjamin Franklin</td></tr>
-<tr><td style="text-align: left">The Old Regime and the Revolution</td><td style="text-align: left">Alexis de Tocqueville</td></tr>
-<tr><td style="text-align: left">Politics</td><td style="text-align: left">Aristotélēs</td></tr>
-<tr><td style="text-align: left">Republic</td><td style="text-align: left">Plato</td></tr>
-<tr><td style="text-align: left">De Senectute</td><td style="text-align: left">Marcus Tullius Cicero</td></tr>
-<tr><td style="text-align: left">Leviathan or The Matter, Forme and Power of a Common Wealth Ecclesiastical and Civil</td><td style="text-align: left">Thomas Hobbes</td></tr>
-<tr><td style="text-align: left">The Second Treatise of Government: An Essay Concerning the True Origin, Extent, and End of Civil Government</td><td style="text-align: left">John Locke</td></tr>
-<tr><td style="text-align: left">1984</td><td style="text-align: left">George Orwell</td></tr>
-<tr><td style="text-align: left">Animal Farm</td><td style="text-align: left">George Orwell</td></tr>
-<tr><td style="text-align: left">Brave New World</td><td style="text-align: left">Aldous Huxley</td></tr>
-<tr><td style="text-align: left">We</td><td style="text-align: left">Yevgeny Zamyatin</td></tr>
-<tr><td style="text-align: left">Fahrenheit 451</td><td style="text-align: left">Ray Bradbury</td></tr>
-<tr><td style="text-align: left">Eichmann in Jerusalem: A Report on the Banality of Evil</td><td style="text-align: left">Hannah Arendt</td></tr>
-<tr><td style="text-align: left">The Theory of Moral Sentiments</td><td style="text-align: left">Adam Smith</td></tr>
-<tr><td style="text-align: left">De l'esprit des lois</td><td style="text-align: left">Montesquieu</td></tr>
-<tr><td style="text-align: left">The Crowd:A Study of the Popular Mind</td><td style="text-align: left">Gustave Le Bon</td></tr>
-<tr><td style="text-align: left">Amusing Ourselves to Death: Public Discourse in the Age of Show Business</td><td style="text-align: left">Neil Postman</td></tr>
-<tr><td style="text-align: left">The Road to Serfdom/Der Weg zur Knechtschaft</td><td style="text-align: left">Friedrich Hayek</td></tr>
-<tr><td style="text-align: left">Capitalism and Freedom</td><td style="text-align: left">Milton Friedman</td></tr>
-<tr><td style="text-align: left">The liberty of ancients compared with that of moderns</td><td style="text-align: left">Henri-Benjamin Constant de Rebecque</td></tr>
-<tr><td style="text-align: left">Vom Kriege/On War</td><td style="text-align: left">Carl Von Clausewitz</td></tr>
-<tr><td style="text-align: left">The Opium of the Intellectuals/L'Opium des intellectuels</td><td style="text-align: left">Raymond Claude Ferdinand Aron</td></tr>
-<tr><td style="text-align: left">Il Principe</td><td style="text-align: left">Niccolo Machiavelli</td></tr>
-<tr><td style="text-align: left">The most important thing</td><td style="text-align: left">Howard Marks</td></tr>
-<tr><td style="text-align: left">Antifragile: Things That Gain From Disorder</td><td style="text-align: left">Nassim Nicholas Taleb</td></tr>
-<tr><td style="text-align: left">Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets</td><td style="text-align: left">Nassim Nicholas Taleb</td></tr>
-<tr><td style="text-align: left">The Black Swan: The Impact of the Highly Improbable</td><td style="text-align: left">Nassim Nicholas Taleb</td></tr>
-<tr><td style="text-align: left">Learn More, Study Less</td><td style="text-align: left">Scott H. Young</td></tr>
-<tr><td style="text-align: left">ULTRALEARNING</td><td style="text-align: left">Scott H. Young</td></tr>
-<tr><td style="text-align: left">The Art of Learning: An Inner Journey to Optimal Performance</td><td style="text-align: left">Josh Waitzkin</td></tr>
-<tr><td style="text-align: left">The Fifth Discipline: The Art and Practice of the Learning Organization</td><td style="text-align: left">Peter Senge</td></tr>
-<tr><td style="text-align: left">Thinking， Fast and Slow</td><td style="text-align: left">Daniel Kahneman</td></tr>
-<tr><td style="text-align: left">Hackers &amp; Painters: Big Ideas from the Computer Age</td><td style="text-align: left">Paul Graham</td></tr>
-<tr><td style="text-align: left">Flow: The Psychology of Optimal Experience</td><td style="text-align: left">Mihály Csíkszentmihályi</td></tr>
-<tr><td style="text-align: left">The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It</td><td style="text-align: left">Kelly McGonigal</td></tr>
+<table><thead><tr><th align="left">書名</th><th align="left">作者</th></tr></thead><tbody>
+<tr><td align="left">大棋局中的國共關系</td><td align="left">呂迅</td></tr>
+<tr><td align="left">想象異域</td><td align="left">葛兆光</td></tr>
+<tr><td align="left">臺海‧冷戰‧蔣介石：解密檔案中消失的臺灣史1948-1988</td><td align="left">林孝庭</td></tr>
+<tr><td align="left">民運手冊</td><td align="left">王炳章</td></tr>
+<tr><td align="left">夾邊溝記事</td><td align="left">楊顯惠</td></tr>
+<tr><td align="left">文革受難者</td><td align="left">王友琴</td></tr>
+<tr><td align="left">革命軍</td><td align="left">鄒容</td></tr>
+<tr><td align="left">東周列國誌</td><td align="left">余邵魚　馮夢龍</td></tr>
+<tr><td align="left">醒世恆言</td><td align="left">馮夢龍</td></tr>
+<tr><td align="left">喻世明言</td><td align="left">馮夢龍</td></tr>
+<tr><td align="left">警世通言</td><td align="left">馮夢龍</td></tr>
+<tr><td align="left">《九州》系列</td><td align="left">江南</td></tr>
+<tr><td align="left">涿鹿·炎的最後子孫</td><td align="left">江南</td></tr>
+<tr><td align="left">此間的少年</td><td align="left">江南</td></tr>
+<tr><td align="left">悟空傳</td><td align="left">今何在</td></tr>
+<tr><td align="left">國語</td><td align="left">托名左丘明</td></tr>
+<tr><td align="left">呂氏春秋</td><td align="left">呂不韋</td></tr>
+<tr><td align="left">楚辭</td><td align="left"></td></tr>
+<tr><td align="left">山海經</td><td align="left"></td></tr>
+<tr><td align="left">菜根譚</td><td align="left"></td></tr>
+<tr><td align="left">戰國策</td><td align="left"></td></tr>
+<tr><td align="left">Freedom and Its Betrayal</td><td align="left">Isaiah Berlin</td></tr>
+<tr><td align="left">Liberty: Incorporating Four Essays on Liberty</td><td align="left">Isaiah Berlin</td></tr>
+<tr><td align="left">De la démocratie en Amérique</td><td align="left">Alexis de Tocqueville</td></tr>
+<tr><td align="left">The Old Regime and the Revolution</td><td align="left">Alexis de Tocqueville</td></tr>
+<tr><td align="left">Il Principe</td><td align="left">Niccolo Machiavelli</td></tr>
+<tr><td align="left">Discourses on Livy</td><td align="left">Niccolo Machiavelli</td></tr>
+<tr><td align="left">Politics</td><td align="left">Aristotélēs</td></tr>
+<tr><td align="left">Republic</td><td align="left">Plato</td></tr>
+<tr><td align="left">De Senectute</td><td align="left">Marcus Tullius Cicero</td></tr>
+<tr><td align="left">Leviathan or The Matter, Forme and Power of a Common Wealth Ecclesiastical and Civil</td><td align="left">Thomas Hobbes</td></tr>
+<tr><td align="left">The Second Treatise of Government: An Essay Concerning the True Origin, Extent, and End of Civil Government</td><td align="left">John Locke</td></tr>
+<tr><td align="left">Sternstunden der Menschheit</td><td align="left">Stefan Zweig</td></tr>
+<tr><td align="left">Lord of the Flies</td><td align="left">William Golding</td></tr>
+<tr><td align="left">O Alquimista/The Alchemist</td><td align="left">Paulo Coelho</td></tr>
+<tr><td align="left">Foundation</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">Foundation and Empire</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">Second Foundation</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">Prelude to Foundation</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">Forward the Foundation</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">Foundation's Edge</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">Foundation and Earth</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">I, Robot</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">The Caves of Steel</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">The Naked Sun</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">The Robots of Dawn</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">Robots and Empire</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">The Stars, Like Dust</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">The Currents of Space</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">Pebble in the Sky</td><td align="left">Isaac Asimov</td></tr>
+<tr><td align="left">銀河英雄伝説</td><td align="left">田中芳樹</td></tr>
+<tr><td align="left">Catch-22</td><td align="left">Joseph Heller</td></tr>
+<tr><td align="left">The Autobiography of Benjamin Franklin</td><td align="left">Benjamin Franklin</td></tr>
+<tr><td align="left">The Old Regime and the Revolution</td><td align="left">Alexis de Tocqueville</td></tr>
+<tr><td align="left">Politics</td><td align="left">Aristotélēs</td></tr>
+<tr><td align="left">Republic</td><td align="left">Plato</td></tr>
+<tr><td align="left">De Senectute</td><td align="left">Marcus Tullius Cicero</td></tr>
+<tr><td align="left">Leviathan or The Matter, Forme and Power of a Common Wealth Ecclesiastical and Civil</td><td align="left">Thomas Hobbes</td></tr>
+<tr><td align="left">The Second Treatise of Government: An Essay Concerning the True Origin, Extent, and End of Civil Government</td><td align="left">John Locke</td></tr>
+<tr><td align="left">1984</td><td align="left">George Orwell</td></tr>
+<tr><td align="left">Animal Farm</td><td align="left">George Orwell</td></tr>
+<tr><td align="left">Brave New World</td><td align="left">Aldous Huxley</td></tr>
+<tr><td align="left">We</td><td align="left">Yevgeny Zamyatin</td></tr>
+<tr><td align="left">Fahrenheit 451</td><td align="left">Ray Bradbury</td></tr>
+<tr><td align="left">Eichmann in Jerusalem: A Report on the Banality of Evil</td><td align="left">Hannah Arendt</td></tr>
+<tr><td align="left">The Theory of Moral Sentiments</td><td align="left">Adam Smith</td></tr>
+<tr><td align="left">De l'esprit des lois</td><td align="left">Montesquieu</td></tr>
+<tr><td align="left">The Crowd:A Study of the Popular Mind</td><td align="left">Gustave Le Bon</td></tr>
+<tr><td align="left">Amusing Ourselves to Death: Public Discourse in the Age of Show Business</td><td align="left">Neil Postman</td></tr>
+<tr><td align="left">The Road to Serfdom/Der Weg zur Knechtschaft</td><td align="left">Friedrich Hayek</td></tr>
+<tr><td align="left">Capitalism and Freedom</td><td align="left">Milton Friedman</td></tr>
+<tr><td align="left">The liberty of ancients compared with that of moderns</td><td align="left">Henri-Benjamin Constant de Rebecque</td></tr>
+<tr><td align="left">Vom Kriege/On War</td><td align="left">Carl Von Clausewitz</td></tr>
+<tr><td align="left">The Opium of the Intellectuals/L'Opium des intellectuels</td><td align="left">Raymond Claude Ferdinand Aron</td></tr>
+<tr><td align="left">Il Principe</td><td align="left">Niccolo Machiavelli</td></tr>
+<tr><td align="left">The most important thing</td><td align="left">Howard Marks</td></tr>
+<tr><td align="left">Antifragile: Things That Gain From Disorder</td><td align="left">Nassim Nicholas Taleb</td></tr>
+<tr><td align="left">Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets</td><td align="left">Nassim Nicholas Taleb</td></tr>
+<tr><td align="left">The Black Swan: The Impact of the Highly Improbable</td><td align="left">Nassim Nicholas Taleb</td></tr>
+<tr><td align="left">Learn More, Study Less</td><td align="left">Scott H. Young</td></tr>
+<tr><td align="left">ULTRALEARNING</td><td align="left">Scott H. Young</td></tr>
+<tr><td align="left">The Art of Learning: An Inner Journey to Optimal Performance</td><td align="left">Josh Waitzkin</td></tr>
+<tr><td align="left">The Fifth Discipline: The Art and Practice of the Learning Organization</td><td align="left">Peter Senge</td></tr>
+<tr><td align="left">Thinking， Fast and Slow</td><td align="left">Daniel Kahneman</td></tr>
+<tr><td align="left">Hackers &amp; Painters: Big Ideas from the Computer Age</td><td align="left">Paul Graham</td></tr>
+<tr><td align="left">Flow: The Psychology of Optimal Experience</td><td align="left">Mihály Csíkszentmihályi</td></tr>
+<tr><td align="left">The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It</td><td align="left">Kelly McGonigal</td></tr>
 </tbody></table>
-</div>
 <h3 id="背书作者问道壶丘"><a class="header" href="#背书作者问道壶丘">背书（作者问道壶丘）</a></h3>
 <p>【背书】 昨天说到了我的教学理念：背书、玩。我的教学理念就这两个事。学都算在玩里，玩着学，数理化都是玩。背书是苦，这个得承认。该苦的时候苦，该乐的时候乐。学是玩，玩是乐，现在的孩子学的不乐，就是做题。该乐的不乐，该苦的，背书，他又不背了。</p>
 <p>好多的理论，要孩子快乐学习，要理解，不能死记硬背。说这些理论的人特别特别的傻。你以为背书就是要理解那些背的东西啊？怎么那么傻呀？小孩，要训练两件事：专注和毅力。你把这两件事训练出来，他就是人才，以后学什么有什么，在哪个领域都能成为人才。小孩你不训练他，他就胡思乱想，他不需要理解，他的理解等同于胡思乱想，你看现在的年轻人专注力特别差，走神，一会都集中不了。背书，就是最好的专注训练，越小越好。你背书，走神一点就背错了，尤其是有人考你背诵的时候，你站着背，一走神准错。第二是毅力，背书需要毅力，没毅力不能吃苦就背不出来，可是从小训练他就不觉得太苦，越大越苦。从小训练，他的毅力自然就培养出来了。</p>
@@ -602,14 +599,13 @@
 <p>背书，背书是大脑训练，别听那些理论说什么小孩要理解，小孩不需要理解，小孩需要专注！背经典，又是最划算的大脑训练。背诗词散文，可以，不划算，应该往后推。</p>
 <h2 id="历史教育问题纠正"><a class="header" href="#历史教育问题纠正">历史教育问题纠正</a></h2>
 <p>1.没有所谓的国共内战，那是中苏战争；没有所谓的国共合作，那是中苏合作。</p>
-<div class="table-wrapper"><table><thead><tr><th style="text-align: left">中苏关系</th><th style="text-align: left">时间</th><th style="text-align: left">重要内容</th></tr></thead><tbody>
-<tr><td style="text-align: left">第一次中苏战争</td><td style="text-align: left">民国七年——民国十二年</td><td style="text-align: left">中国政府派兵进入海参崴保护侨民并支持俄罗斯联邦政府消灭苏俄赤匪，之後中国将领徐树铮率军收复外蒙古和海参崴等地</td></tr>
-<tr><td style="text-align: left">第一次中苏合作</td><td style="text-align: left">民国十二年——民国十六年</td><td style="text-align: left">代表中国政府的中国国民党和代表苏俄的苏联共产党合作</td></tr>
-<tr><td style="text-align: left">第二次中苏战争</td><td style="text-align: left">民国十六年——民国二十五年</td><td style="text-align: left">共匪在苏俄指挥下意图消灭中国政府建立杀人无数的匪伪殖民政府，被中国政府军围剿，逃窜至陕西等地</td></tr>
-<tr><td style="text-align: left">第二次中苏合作</td><td style="text-align: left">民国二十五年——民国二十九年</td><td style="text-align: left">由于倭寇进逼，中苏联合抗日</td></tr>
-<tr><td style="text-align: left">第三次中苏战争</td><td style="text-align: left">民国二十九年——今</td><td style="text-align: left">共匪在苏俄指挥下和倭寇合作意图消灭中国政府建立苏伪殖民极权政府，彻底奴役了中国人民</td></tr>
+<table><thead><tr><th align="left">中苏关系</th><th align="left">时间</th><th align="left">重要内容</th></tr></thead><tbody>
+<tr><td align="left">第一次中苏战争</td><td align="left">民国七年——民国十二年</td><td align="left">中国政府派兵进入海参崴保护侨民并支持俄罗斯联邦政府消灭苏俄赤匪，之後中国将领徐树铮率军收复外蒙古和海参崴等地</td></tr>
+<tr><td align="left">第一次中苏合作</td><td align="left">民国十二年——民国十六年</td><td align="left">代表中国政府的中国国民党和代表苏俄的苏联共产党合作</td></tr>
+<tr><td align="left">第二次中苏战争</td><td align="left">民国十六年——民国二十五年</td><td align="left">共匪在苏俄指挥下意图消灭中国政府建立杀人无数的匪伪殖民政府，被中国政府军围剿，逃窜至陕西等地</td></tr>
+<tr><td align="left">第二次中苏合作</td><td align="left">民国二十五年——民国二十九年</td><td align="left">由于倭寇进逼，中苏联合抗日</td></tr>
+<tr><td align="left">第三次中苏战争</td><td align="left">民国二十九年——今</td><td align="left">共匪在苏俄指挥下和倭寇合作意图消灭中国政府建立苏伪殖民极权政府，彻底奴役了中国人民</td></tr>
 </tbody></table>
-</div>
 <p>2.嚴禁稱呼東北為滿洲</p>
 <p>东北不叫满洲，遼河流域在中國史上深遠的關系，早已發生在秦漢之前。直到明代，建州衛特起，只是吉林長白山外一小部落，遼河兩岸，全屬明代疆土，直到晚明时期还叫辽东。晚清还是叫辽东、关东、关外或东三省，从满清到民国，从未在正式文件中称东北为”满洲“。</p>
 <p>满洲作为地名最早是俄国人叫出来的，以”满洲铁路“为开端，后来日本人为占领东北接过了这个概念，以此将东北与中国割裂开。</p>
@@ -641,51 +637,49 @@
 <p>西化是洋人认样祖宗，你也认洋祖宗。洋人拜马克思，你也拜马克思；洋人蔑视中华文明，你也蔑视中华文明。至于怎么发展呢？当然得靠改姓史密斯或马克思就觉得自己能抬旗了，从此能成为洋大人了，殊不知洋大人肯定瞧不起你这样的不知廉耻的玩意，恐怕只会给你几巴掌。经典例子就是阿Q觉得自己也配姓赵，被赵太爷扇了好几下。</p>
 <p>现代化是洋人牛气，我们也可以牛气。洋人的好东西学过来就行了，毕竟孔子曾经说“三人行必有我师焉。择其善者而从之，其不善者而改之”。比如洋人能造核子武器，我们也要能造核子武器；洋人能发射卫星，我们也要能发射卫星；洋人能用超级计算机，我们也能用超级计算机……阿Q要是持续提升自己然后考中举人、进士不怕赵太爷不让他姓赵，相反赵太爷还得求着他让他姓赵好攀亲戚。</p>
 <h2 id="名词名句翻译问题"><a class="header" href="#名词名句翻译问题">名词名句翻译问题</a></h2>
-<div class="table-wrapper"><table><thead><tr><th style="text-align: left"></th><th style="text-align: left"></th><th style="text-align: left"></th><th style="text-align: left"></th></tr></thead><tbody>
-<tr><td style="text-align: left">名词</td><td style="text-align: left">原翻译</td><td style="text-align: left">新翻译</td><td style="text-align: left">更改原因</td></tr>
-<tr><td style="text-align: left">中国</td><td style="text-align: left">China</td><td style="text-align: left">Chungkuo</td><td style="text-align: left">暴秦与我们中国人势不两立，不共戴天！</td></tr>
-<tr><td style="text-align: left">中华民国</td><td style="text-align: left">Republic of China</td><td style="text-align: left">Republic of Chunghwa</td><td style="text-align: left">同上</td></tr>
-<tr><td style="text-align: left">中国人</td><td style="text-align: left">Chinese</td><td style="text-align: left">Chungkuonese</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">天下</td><td style="text-align: left">无</td><td style="text-align: left">Tianxia</td><td style="text-align: left">无</td></tr>
-<tr><td style="text-align: left">华夏</td><td style="text-align: left">无</td><td style="text-align: left">HuaHsia</td><td style="text-align: left">无</td></tr>
-<tr><td style="text-align: left">诸夏</td><td style="text-align: left">无</td><td style="text-align: left">Chu Hsia</td><td style="text-align: left">便于联合日韩越等共组诸夏联邦！</td></tr>
-<tr><td style="text-align: left">诸华</td><td style="text-align: left">无</td><td style="text-align: left">Chu Hua</td><td style="text-align: left">同上</td></tr>
-<tr><td style="text-align: left">龙</td><td style="text-align: left">Dragon</td><td style="text-align: left">Loong</td><td style="text-align: left">Drogon乃洋人之邪恶生物，龙乃我国文明之象征！</td></tr>
-<tr><td style="text-align: left">Dragon</td><td style="text-align: left">龙</td><td style="text-align: left">飞蜥</td><td style="text-align: left">同上</td></tr>
-<tr><td style="text-align: left">凤凰</td><td style="text-align: left">Phoenix</td><td style="text-align: left">Fenghuang</td><td style="text-align: left">没有所谓的凤凰涅磐</td></tr>
-<tr><td style="text-align: left">God/Deus</td><td style="text-align: left">老天爷/上帝</td><td style="text-align: left">神</td><td style="text-align: left">上帝及老天爷只保佑中国人</td></tr>
-<tr><td style="text-align: left">Halal</td><td style="text-align: left">清真</td><td style="text-align: left">哈拉尔</td><td style="text-align: left">清真乃道教词汇，后来被穆斯林偷走了</td></tr>
-<tr><td style="text-align: left">The Federalist Papers</td><td style="text-align: left">联邦党人文集</td><td style="text-align: left">联邦论</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">Dragon</td><td style="text-align: left">龙</td><td style="text-align: left">飞蜥</td><td style="text-align: left">同上</td></tr>
-<tr><td style="text-align: left">Phoenix</td><td style="text-align: left">凤凰</td><td style="text-align: left">不死火鸟</td><td style="text-align: left">同上</td></tr>
-<tr><td style="text-align: left">Robustness</td><td style="text-align: left">鲁棒性</td><td style="text-align: left">健壮性</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">Jury</td><td style="text-align: left">陪审团</td><td style="text-align: left">审判团</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">Royal</td><td style="text-align: left">皇家</td><td style="text-align: left">王家</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">Utilitarianism</td><td style="text-align: left">功利主义</td><td style="text-align: left">效用主义</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">Aesthetics</td><td style="text-align: left">美学</td><td style="text-align: left">感性学</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left">Cracker</td><td style="text-align: left">黑客</td><td style="text-align: left">骇客</td><td style="text-align: left">黑客代表卓越的程序员，骇客代表做恶的程序员</td></tr>
-<tr><td style="text-align: left">天</td><td style="text-align: left">Heaven</td><td style="text-align: left">TIAN</td><td style="text-align: left">Heaven和天本质上不是一回事</td></tr>
-<tr><td style="text-align: left">日本天皇</td><td style="text-align: left">日本天皇</td><td style="text-align: left">倭王</td><td style="text-align: left">倭国作为藩属国，僭称天皇无礼至极！</td></tr>
-<tr><td style="text-align: left">Russia</td><td style="text-align: left">俄罗斯</td><td style="text-align: left">罗刹</td><td style="text-align: left">俄罗斯为伪清时期翻译，罗刹为皇明时代翻译</td></tr>
-<tr><td style="text-align: left">Neoliberalism</td><td style="text-align: left">新自由主义</td><td style="text-align: left">新古典自由主义</td><td style="text-align: left">新古典自由主义反对大政府</td></tr>
-<tr><td style="text-align: left">New Liberalism</td><td style="text-align: left">新自由主义</td><td style="text-align: left">新型自由主义</td><td style="text-align: left">新型自由主义支持大政府</td></tr>
-<tr><td style="text-align: left">黄色人种</td><td style="text-align: left">蒙古人种</td><td style="text-align: left">中国人种</td><td style="text-align: left">中华文明是原生文明，历史悠久，族群规模世界第一</td></tr>
-<tr><td style="text-align: left">日本海</td><td style="text-align: left">日本海</td><td style="text-align: left">鲸海</td><td style="text-align: left">鲸海才是古称</td></tr>
-<tr><td style="text-align: left">Eva</td><td style="text-align: left">夏娃</td><td style="text-align: left">伊娃</td><td style="text-align: left">伊娃才是正常音译结果，化外蛮夷怎可称夏？</td></tr>
-<tr><td style="text-align: left">Allah</td><td style="text-align: left">真主</td><td style="text-align: left">安拉</td><td style="text-align: left">真主乃真龙天子，皇天上帝元子，非化外邪神</td></tr>
-<tr><td style="text-align: left">science</td><td style="text-align: left">科学</td><td style="text-align: left">格致</td><td style="text-align: left">格致是明朝时中国人的翻译，科学是日本鬼子的翻译，科学本义是科举之学</td></tr>
-<tr><td style="text-align: left">democracy</td><td style="text-align: left">民主</td><td style="text-align: left">民粹</td><td style="text-align: left">民主本义是民之主，democracy乃暴民政治，翻译成民粹更好</td></tr>
-<tr><td style="text-align: left">Bible</td><td style="text-align: left">圣经</td><td style="text-align: left">新旧约全书</td><td style="text-align: left">圣经本指六经（五经）因为六经名义上都是孔子编纂的所以称之为圣经，后被基督教偷走了，基督教的书称之为《新旧约全书》即可</td></tr>
+<table><thead><tr><th align="left"></th><th align="left"></th><th align="left"></th><th align="left"></th></tr></thead><tbody>
+<tr><td align="left">名词</td><td align="left">原翻译</td><td align="left">新翻译</td><td align="left">更改原因</td></tr>
+<tr><td align="left">中国</td><td align="left">China</td><td align="left">Chungkuo</td><td align="left">暴秦与我们中国人势不两立，不共戴天！</td></tr>
+<tr><td align="left">中华民国</td><td align="left">Republic of China</td><td align="left">Republic of Chunghwa</td><td align="left">同上</td></tr>
+<tr><td align="left">中国人</td><td align="left">Chinese</td><td align="left">Chungkuonese</td><td align="left"></td></tr>
+<tr><td align="left">天下</td><td align="left">无</td><td align="left">Tianxia</td><td align="left">无</td></tr>
+<tr><td align="left">华夏</td><td align="left">无</td><td align="left">HuaHsia</td><td align="left">无</td></tr>
+<tr><td align="left">诸夏</td><td align="left">无</td><td align="left">Chu Hsia</td><td align="left">便于联合日韩越等共组诸夏联邦！</td></tr>
+<tr><td align="left">诸华</td><td align="left">无</td><td align="left">Chu Hua</td><td align="left">同上</td></tr>
+<tr><td align="left">龙</td><td align="left">Dragon</td><td align="left">Loong</td><td align="left">Drogon乃洋人之邪恶生物，龙乃我国文明之象征！</td></tr>
+<tr><td align="left">Dragon</td><td align="left">龙</td><td align="left">飞蜥</td><td align="left">同上</td></tr>
+<tr><td align="left">凤凰</td><td align="left">Phoenix</td><td align="left">Fenghuang</td><td align="left">没有所谓的凤凰涅磐</td></tr>
+<tr><td align="left">God/Deus</td><td align="left">老天爷/上帝</td><td align="left">神</td><td align="left">上帝及老天爷只保佑中国人</td></tr>
+<tr><td align="left">Halal</td><td align="left">清真</td><td align="left">哈拉尔</td><td align="left">清真乃道教词汇，后来被穆斯林偷走了</td></tr>
+<tr><td align="left">The Federalist Papers</td><td align="left">联邦党人文集</td><td align="left">联邦论</td><td align="left"></td></tr>
+<tr><td align="left">Dragon</td><td align="left">龙</td><td align="left">飞蜥</td><td align="left">同上</td></tr>
+<tr><td align="left">Phoenix</td><td align="left">凤凰</td><td align="left">不死火鸟</td><td align="left">同上</td></tr>
+<tr><td align="left">Robustness</td><td align="left">鲁棒性</td><td align="left">健壮性</td><td align="left"></td></tr>
+<tr><td align="left">Jury</td><td align="left">陪审团</td><td align="left">审判团</td><td align="left"></td></tr>
+<tr><td align="left">Royal</td><td align="left">皇家</td><td align="left">王家</td><td align="left"></td></tr>
+<tr><td align="left">Utilitarianism</td><td align="left">功利主义</td><td align="left">效用主义</td><td align="left"></td></tr>
+<tr><td align="left">Aesthetics</td><td align="left">美学</td><td align="left">感性学</td><td align="left"></td></tr>
+<tr><td align="left">Cracker</td><td align="left">黑客</td><td align="left">骇客</td><td align="left">黑客代表卓越的程序员，骇客代表做恶的程序员</td></tr>
+<tr><td align="left">天</td><td align="left">Heaven</td><td align="left">TIAN</td><td align="left">Heaven和天本质上不是一回事</td></tr>
+<tr><td align="left">日本天皇</td><td align="left">日本天皇</td><td align="left">倭王</td><td align="left">倭国作为藩属国，僭称天皇无礼至极！</td></tr>
+<tr><td align="left">Russia</td><td align="left">俄罗斯</td><td align="left">罗刹</td><td align="left">俄罗斯为伪清时期翻译，罗刹为皇明时代翻译</td></tr>
+<tr><td align="left">Neoliberalism</td><td align="left">新自由主义</td><td align="left">新古典自由主义</td><td align="left">新古典自由主义反对大政府</td></tr>
+<tr><td align="left">New Liberalism</td><td align="left">新自由主义</td><td align="left">新型自由主义</td><td align="left">新型自由主义支持大政府</td></tr>
+<tr><td align="left">黄色人种</td><td align="left">蒙古人种</td><td align="left">中国人种</td><td align="left">中华文明是原生文明，历史悠久，族群规模世界第一</td></tr>
+<tr><td align="left">日本海</td><td align="left">日本海</td><td align="left">鲸海</td><td align="left">鲸海才是古称</td></tr>
+<tr><td align="left">Eva</td><td align="left">夏娃</td><td align="left">伊娃</td><td align="left">伊娃才是正常音译结果，化外蛮夷怎可称夏？</td></tr>
+<tr><td align="left">Allah</td><td align="left">真主</td><td align="left">安拉</td><td align="left">真主乃真龙天子，皇天上帝元子，非化外邪神</td></tr>
+<tr><td align="left">science</td><td align="left">科学</td><td align="left">格致</td><td align="left">格致是明朝时中国人的翻译，科学是日本鬼子的翻译，科学本义是科举之学</td></tr>
+<tr><td align="left">democracy</td><td align="left">民主</td><td align="left">民粹</td><td align="left">民主本义是民之主，democracy乃暴民政治，翻译成民粹更好</td></tr>
+<tr><td align="left">Bible</td><td align="left">圣经</td><td align="left">新旧约全书</td><td align="left">圣经本指六经（五经）因为六经名义上都是孔子编纂的所以称之为圣经，后被基督教偷走了，基督教的书称之为《新旧约全书》即可</td></tr>
 </tbody></table>
-</div>
 <p>注：据普林斯顿大学东亚研究所及历史系荣休教授本杰明·艾尔曼考证，中国最早将“science”一词翻作“格致”，直至甲午战争后才将“格致”改翻作“科学”。这场战争彻底改变了中国知识分子看待传统学问——“格致学”的态度。持有坚船与利炮的北洋舰队，竟然无法抵御日本的攻势而败阵下来。日本在明治维新之后，大量翻译西方著作，也创造出了“science”一词对译的日文科学。因此，这场战役，可以说是日本的“科学”超越了中国的“格致学”。特别是在西元二十世纪之后，许多清廷派出赴日、美、英等地留学的留学生，见识到西方世界以及日本的国力、物力之后，纷纷主张废弃中国传统的“格致”之说，改取日本“科学”及其背后所代表的整个西方启蒙、进步、改变的意义。这个转变可以从胡适、陈独秀所创办的《新青年》杂志得见。他们在这部杂志上发表的文章，处处可见将“科学（science）”与“民主（democracy）”称为赛先生、德先生，认为唯有提倡科学与民主才能够拯救颓败的中国。至此，“科学”已取代了“格致学”，成为我们认识现代意义science的中文翻译词汇。</p>
 <p>新文化运动头目对中国文明的伤害亘古未有！</p>
-<div class="table-wrapper"><table><thead><tr><th style="text-align: left">名句</th><th style="text-align: left">原翻译</th><th style="text-align: left">新翻译</th><th style="text-align: left">更改原因</th></tr></thead><tbody>
-<tr><td style="text-align: left">Power tends to corrupt and absolute power corrupts absolutely.</td><td style="text-align: left">权力导致腐败，绝对权力一定导致腐败。</td><td style="text-align: left">权力倾向于腐败，绝对权力绝对腐败。</td><td style="text-align: left">tend to怎么能翻译成导致？</td></tr>
-<tr><td style="text-align: left">Justice delayed is justice denied</td><td style="text-align: left">正义会迟到，但不会缺席。</td><td style="text-align: left">迟到的正义不是正义。</td><td style="text-align: left">正义绝对不应该缺失，也绝对不能迟到，还是单独确实存在的，不依附任何东西。</td></tr>
-<tr><td style="text-align: left">Was vernünftig ist , das ist wirklich , und was wirklich ist , das ist vernünftig</td><td style="text-align: left">存在即合理</td><td style="text-align: left">凡是合乎理性的东西都是现实的，凡是现实的东西都是合乎理性的。</td><td style="text-align: left">wirklich是“实在的”（real，actual）而不是存在（sein）。此外用常识就能知道，存在的未必合理，合理的未必存在。</td></tr>
+<table><thead><tr><th align="left">名句</th><th align="left">原翻译</th><th align="left">新翻译</th><th align="left">更改原因</th></tr></thead><tbody>
+<tr><td align="left">Power tends to corrupt and absolute power corrupts absolutely.</td><td align="left">权力导致腐败，绝对权力一定导致腐败。</td><td align="left">权力倾向于腐败，绝对权力绝对腐败。</td><td align="left">tend to怎么能翻译成导致？</td></tr>
+<tr><td align="left">Justice delayed is justice denied</td><td align="left">正义会迟到，但不会缺席。</td><td align="left">迟到的正义不是正义。</td><td align="left">正义绝对不应该缺失，也绝对不能迟到，还是单独确实存在的，不依附任何东西。</td></tr>
+<tr><td align="left">Was vernünftig ist , das ist wirklich , und was wirklich ist , das ist vernünftig</td><td align="left">存在即合理</td><td align="left">凡是合乎理性的东西都是现实的，凡是现实的东西都是合乎理性的。</td><td align="left">wirklich是“实在的”（real，actual）而不是存在（sein）。此外用常识就能知道，存在的未必合理，合理的未必存在。</td></tr>
 </tbody></table>
-</div>
 <h2 id="附录朱子所作之白鹿洞书院学规"><a class="header" href="#附录朱子所作之白鹿洞书院学规">附录朱子所作之《白鹿洞书院学规》：</a></h2>
 <blockquote>
 <p>父子有亲。君臣有义。夫妇有别。长幼有序。朋友有信。右五教之目。</p>
@@ -1015,50 +1009,49 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="经济：自由放任藏富于民第十一.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="经济：自由放任藏富于民第十一.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-
-                            <a rel="next" href="國防計劃第十三.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        
+                                                    <a rel="next" href="國防計劃第十三.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-
+                        
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="经济：自由放任藏富于民第十一.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="经济：自由放任藏富于民第十一.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-
-                    <a rel="next" href="國防計劃第十三.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                
+                                    <a rel="next" href="國防計劃第十三.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-            </nav>
+                            </nav>
 
         </div>
 
-
-
-
-        <script>
+        
+        
+        
+                <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-
-
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
-
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-
-
-    </div>
+        
+        
     </body>
 </html>
