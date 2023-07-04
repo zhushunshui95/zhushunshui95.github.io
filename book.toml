@@ -1,14 +1,14 @@
 [book]
 title = "San Min Zhu Yi"
-authors = ["Elon Musk"]
+authors = ["zhushunshui"]
 
 language = "zh-CN"
 multilingual = false
 src = "src"
 
-#[output.html]
-
-#[output.wordcount]
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
 
 
 
