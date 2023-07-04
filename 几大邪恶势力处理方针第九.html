@@ -4,44 +4,43 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>几大邪恶势力处理方针第九 - San Min Zhu Yi</title>
-                
+
 
         <!-- Custom HTML head -->
         
-
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-                <link rel="icon" href="favicon.svg">
-                        <link rel="shortcut icon" href="favicon.png">
-                <link rel="stylesheet" href="css/variables.css">
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-                <link rel="stylesheet" href="css/print.css" media="print">
-        
+        <link rel="stylesheet" href="css/print.css" media="print">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-                <link rel="stylesheet" href="fonts/fonts.css">
-        
+        <link rel="stylesheet" href="fonts/fonts.css">
+
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
-            </head>
+
+    </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -57,7 +56,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -69,12 +68,14 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+        <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -82,16 +83,38 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主義育樂兩篇補述.html"><strong aria-hidden="true">18.</strong> 民生主義育樂兩篇補述</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">19.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html"><strong aria-hidden="true">20.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">21.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">23.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html"><strong aria-hidden="true">24.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">25.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">28.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">30.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html" class="active"><strong aria-hidden="true">31.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">32.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">35.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html"><strong aria-hidden="true">36.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">37.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">38.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html"><strong aria-hidden="true">39.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">40.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">41.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">43.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">44.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="风龙云虎1-5.html"><strong aria-hidden="true">45.</strong> 风龙云虎1-5</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主義育樂兩篇補述.html"><strong aria-hidden="true">18.</strong> 民生主義育樂兩篇補述</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">19.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html"><strong aria-hidden="true">20.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">21.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">23.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html"><strong aria-hidden="true">24.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">25.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">28.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">30.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html" class="active"><strong aria-hidden="true">31.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">32.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">35.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html"><strong aria-hidden="true">36.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">37.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">38.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html"><strong aria-hidden="true">39.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">40.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">41.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">43.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">44.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="风龙云虎1-5.html"><strong aria-hidden="true">45.</strong> 风龙云虎1-5</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>
+            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
@@ -100,28 +123,28 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                                            </div>
+                    </div>
 
                     <h1 class="menu-title">San Min Zhu Yi</h1>
 
                     <div class="right-buttons">
-                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                                                                        
+
                     </div>
                 </div>
 
-                                <div id="search-wrapper" class="hidden">
+                <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
                         <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
@@ -131,9 +154,9 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -409,11 +432,12 @@
 <p>共和这个词义的使用在美国开国者时期非常通用。美国宪法的起草者为了很多原因选择共和制。例如，对每一个政治问题从每一个公民收集选票，即直接民主容易产生多数人恶政，是不切实际的。</p>
 <p>此外，宪法规定美国总统由选举人选出的间接选举，选举人依各州的议员数目而定，美国国会实行两院制，不论人口多寡有相同代表的美国参议院比大约按照人口比例分配数目的美国众议院有更大的权力，包括对联邦官员及大法官行使同意权。理论上，议员行使代议的权力，比普通平民对政治事务更了解，并更少情绪化。美国的开国元勋们认为，共和可以设计为用来抵抗“多数人暴政”的保护机制。</p>
 <p>实际上亚里士多德在其代表作《政治学》（Politics）将政体划分为如下六种类型：</p>
-<table><thead><tr><th align="left">政体类型</th><th align="left">优越类型</th><th align="left">低劣类型</th></tr></thead><tbody>
-<tr><td align="left">一人代表整体</td><td align="left">君主制Monarchy</td><td align="left">僭主制Tyranny</td></tr>
-<tr><td align="left">少数人代表整体</td><td align="left">贵族制Aristocracy</td><td align="left">寡头制Oligarchy</td></tr>
-<tr><td align="left">多数人代表整体</td><td align="left">共和制Republic</td><td align="left">民粹制Democracy</td></tr>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">政体类型</th><th style="text-align: left">优越类型</th><th style="text-align: left">低劣类型</th></tr></thead><tbody>
+<tr><td style="text-align: left">一人代表整体</td><td style="text-align: left">君主制Monarchy</td><td style="text-align: left">僭主制Tyranny</td></tr>
+<tr><td style="text-align: left">少数人代表整体</td><td style="text-align: left">贵族制Aristocracy</td><td style="text-align: left">寡头制Oligarchy</td></tr>
+<tr><td style="text-align: left">多数人代表整体</td><td style="text-align: left">共和制Republic</td><td style="text-align: left">民粹制Democracy</td></tr>
 </tbody></table>
+</div>
 <p>亚里士多德认为共和制是最优秀的制度。共和制既可以保证公民积极参与，又可以防止平民针对少数人的暴政。</p>
 <p>自由的核心是财产权，而不是没等级。因为正如著名哲学家弗里德里希·奥古斯特·冯·哈耶克（Friedrich August von Hayek）在其代表作《自由宪章》（The Constitution of Liberty）中强调的那样，自由对立面是极权，而共和对立面是专制。极权统治者往往都仇视商业或者称之为商人，因为商业或者称之为商人能控制资源，阻碍极权统治的建立。西方世界的极权主义者从柏拉图到亚里斯多德到基督教到伊斯兰教再到马列教都仇视商人，中国社会中的极权主义者法家、墨家也都仇视商业。而中国文明核心的儒学则大力强调社会分工，支持商业，称赞商人，如孔子称赞大商人子贡，孟子强调社会分工……</p>
 <p>古典自由并不排斥权威与等级秩序。在自由市场竞争中，也必然会产生君臣（企业家、员工）、权威（企业管理者）、等级秩序（贫富、职称）。以为无等差就是“自由”，这是极为错误的，美国国父乔治·华盛顿（George Washington）就极其尊敬乡绅和礼教，还手抄110条谦恭修身准则。本杰明·富兰克林（Benjamin Franklin）制定修身美德计划……古典自由时代的大人，自由与培育德性并行不悖。</p>
@@ -966,7 +990,7 @@
 <p>曆法二萬八千九百六十八。</p>
 <p>餘數四萬九千六百三十五。</p>
 <p>章月乘年，如章歲得一，為積月。以月法乘積月，如日法得一，為朔積日；餘為小餘。日滿六十，去之；餘為大餘。命甲子算外，得天正平朔。加大餘二十九、小餘六千九百一，得次朔。加平朔大餘七、小餘四千九百七十六、小分四之三，為上弦。又加，得望。又加，得下弦。餘數乘年，如氣法得一，為氣積日。命日如前，得冬至。加大餘十五、小餘二千六十八、小分八之一，得次氣日。加四季之節大餘十二、小餘千六百五十四、小分四，得土王。凡節氣小餘，三之，以氣時法而一，命子半算外，各其加時。置冬至小餘，八之，減沒分，餘滿沒法為日。加冬至去朔日算，依月大小去之，日不滿月算，得沒日。餘分盡為滅。加日六十九、餘七百八，得次沒。</p>
-<table><thead><tr><th>二十四氣</th><th>損益率</th><th>盈縮數</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>二十四氣</th><th>損益率</th><th>盈縮數</th></tr></thead><tbody>
 <tr><td>冬至</td><td>益八百九十六</td><td>盈空</td></tr>
 <tr><td>小寒</td><td>益三百九十八</td><td>盈八百九十六</td></tr>
 <tr><td>大寒</td><td>益四百</td><td>盈千二百九十四</td></tr>
@@ -992,8 +1016,9 @@
 <tr><td>小雪</td><td>損四百五十六</td><td>縮五百五十六</td></tr>
 <tr><td>大雪</td><td>損百</td><td>縮百</td></tr>
 </tbody></table>
+</div>
 <p>以平朔、弦、望入氣日算乘損益率，如十五得一，以損益盈縮數，為定盈縮分。凡不盡，半法已上亦從一。以曆法乘朔積日，滿曆周去之；餘如曆法得一，為日。命日算外，得天正平朔夜半入曆日及餘。次日加一，累而裁之。若以萬四千四百八十四乘平朔小餘，如六千五百三而一，不盡，為小分，以加夜半入曆日。加之滿曆日及餘，去之，得平朔加時所入。加曆日七、餘萬一千八十四、小分三千九百九十五，命如前，得上弦。又加，得望、下弦及後朔。</p>
-<table><thead><tr><th>曆日</th><th>行分</th><th>損益率</th><th>盈縮積分</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>曆日</th><th>行分</th><th>損益率</th><th>盈縮積分</th></tr></thead><tbody>
 <tr><td>一日</td><td>九千九百九</td><td>益三百九十二</td><td>盈初</td></tr>
 <tr><td>二日</td><td>九千八百一十</td><td>益三百四十七</td><td>盈〈二千一百四十四萬一千二百二十六〉</td></tr>
 <tr><td>三日</td><td>九千六百九十五</td><td>益二百九十五</td><td>盈〈二千一百三十九萬四千八百五十八〉</td></tr>
@@ -1023,6 +1048,7 @@
 <tr><td>二十七日</td><td>九千八百九</td><td>損三百四十七</td><td>縮〈千六百二十九萬五百一十八〉</td></tr>
 <tr><td>二十八日</td><td>九千八百九十一</td><td>損三百八十三</td><td>縮〈六百二十二萬九千八百八十〉</td></tr>
 </tbody></table>
+</div>
 <p>曆行分與次日相減，為行差，後多為進，後少為退。減去行分六百七十六，為差法。各置平朔、弦、望加時入曆日餘，乘所入日損益率，以損益其下積分，差法除，為定盈縮積分。置平朔、弦、望小餘，各以入氣積分盈加、縮減之，以入曆積分盈減、縮加之，滿若不足、進退日法，皆為定大小餘，命日甲子算外。以歲分乘年為積分，滿周分去之；餘如度法得一，為度。命以虛六，經斗去分，得冬至日度及分。以冬至去朔日算及分減之，得天正平朔前夜半日度及分。〈以小分法十四約度分為行分。凡小分滿法成行分，行分滿法成度。若注曆，又以二十六約行分。月星準此。斗分百七十七，小分七半。〉累加一度，得次日。以行分法乘朔、望定小餘，以九百二十九除為度分，又以十四約為行分。以加夜半度，為朔、望加時日度。定朔加時，日月同度。望則因加日度百八十二、行分四百二十六、小分十太。以夜半入曆日餘乘行差，滿曆法得一，以進加、退減曆行分，為行定分。以朔定小餘乘之，滿日法得一，為行分。以減加時月度，為朔、望夜半月度。求次日，加月行定分，累之。</p>
 <p>歲星率三百七十七萬五千二十三。</p>
 <p>終日三百九十八，行分五百九十六，小分七。</p>
@@ -1430,9 +1456,9 @@
 <p>明武宗朱厚照，明孝宗朱祐樘和张皇后的长子，在位年号正德，是明朝第10位皇帝。一生无子。明武宗是颇有争议的皇帝，他一生贪玩好色，搞怪，喜欢军事，有人把他贬得一无是处；也有人说他追求个性解放，崇尚自由，办事果敢，平易近人。他的名声并不好，很多人分析跟他没有子嗣有关系，因为如果是他儿子做皇帝，应该不会把他生前的一些黑料无限放大，而他的一些功绩却被一笔带过。</p>
 <p>关于他的争议一直没停过，一直到现在都还有。今天说的，是关于他信仰的问题。其实每个人都有信仰自由的权利，在明朝时期更是如此，武宗对各种宗教都有涉猎，也有号称是他的关于伊斯兰教的言论流传，不管是真是假，这些其实也仅限于他本人而已，但是某些人却无限放大，把他个人的事情放大到朱元璋的民族归属上来，着实有些可笑。</p>
 <p><strong>先说事情起源：</strong></p>
-<p><img src="https://p9-open-sign.byteimg.com/pgc-image/c4299c2893064eb6a7eb893965585e3d%7Etplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=Bc9OaAmGlzA2bqOiX%2Fl5wsCXSWE%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
+<p><img src="https://p9-open-sign.byteimg.com/pgc-image/c4299c2893064eb6a7eb893965585e3d~tplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=Bc9OaAmGlzA2bqOiX%2Fl5wsCXSWE%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
 <p>有些人就是从网上随便复制粘贴一些信息来进行传播，甚至他本身连他发的信息内容都记不住，它的目的就是散布谣言，把东西发出去，具体内容是什么、是真是假、造成什么后果，它全都不关心，它只是一个复制粘贴的机器而已。</p>
-<p><img src="https://p6-open-sign.byteimg.com/pgc-image/37e6ffb41de743ed89386b43dd8ad261%7Etplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=W7OPp2ECpXNhU8Q%2FSRbv8bmXSKE%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
+<p><img src="https://p6-open-sign.byteimg.com/pgc-image/37e6ffb41de743ed89386b43dd8ad261~tplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=W7OPp2ECpXNhU8Q%2FSRbv8bmXSKE%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
 <p>我把它刚发给我的信息复制了一下问他出处在哪里，他居然就不认识了，哈哈，问我“在哪里复制的？”，“前言不搭后语”。看来他关于这段话的第一反应也是胡说啊！</p>
 <p>没话说以后，就又贴过来一堆其他的，后面我会一一解读，先说今天这些内容。</p>
 <p>他原文的出处，我帮他找到了：</p>
@@ -1442,10 +1468,10 @@
 因此，基本可以推断，如果一定要给武宗一个宗教的归属，应该是佛教，并非伊斯兰教，虽然他在宗教方面非常博学。</p>
 <p>来源于网上，所有有关武宗宗教信仰分析的记载都会搜到上面这段话，可见很早就已经有人辟过谣了。</p>
 <p>但是我感觉力度不够，打算详细说一说。</p>
-<p><img src="https://p6-open-sign.byteimg.com/pgc-image/1a91ce3bf8b4472c89afa9c5b9eb354b%7Etplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=VpwjiEYg964PfHW0qXkDNwNDFTI%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
-<p><img src="https://p3-open-sign.byteimg.com/pgc-image/45f1f94bf5554dd7b967436546926687%7Etplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=dyx%2BgSCEVMYg5rVYyAqaf%2FpKODk%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
+<p><img src="https://p6-open-sign.byteimg.com/pgc-image/1a91ce3bf8b4472c89afa9c5b9eb354b~tplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=VpwjiEYg964PfHW0qXkDNwNDFTI%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
+<p><img src="https://p3-open-sign.byteimg.com/pgc-image/45f1f94bf5554dd7b967436546926687~tplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=dyx%2BgSCEVMYg5rVYyAqaf%2FpKODk%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
 <p>防止盗图乱用</p>
-<p><img src="https://p9-open-sign.byteimg.com/pgc-image/a699e37a6b1041beae4f4ac27b594f73%7Etplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=l8wlLLNYxkmprkfarT9YMAZC%2BN4%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
+<p><img src="https://p9-open-sign.byteimg.com/pgc-image/a699e37a6b1041beae4f4ac27b594f73~tplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=l8wlLLNYxkmprkfarT9YMAZC%2BN4%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
 <p>防止盗图乱用</p>
 <p><strong>先说一下文中说的出处书****籍《清真先正言行略·陈大策传》</strong>，作者是河南唐县的回民李焕乙，此书的编纂时间为清同治十三年（1874）前后。我考证了一下，这本书是谁的鼻祖呢？</p>
 <p>前面写过这个人物--白寿彝。</p>
@@ -1454,7 +1480,7 @@
 <p>稍微熟悉一点历史的朋友其实就看出来这份名单是多么的可笑和可恶，上述名单我没时间一个一个的去考证和整理，但粗略的一看就能看出很多问题。</p>
 <p>常遇春，汉族，喝酒、嗜杀。按照元朝法律，汉人百姓不可以有名字，只用行辈和父母年龄合算一个数目作为称呼，常遇春的曾祖名四三，祖名重五，父名六六，而色目人(外国人。)可以有名字。</p>
 <p>沐英被列入更是把沐英后代气坏了，前些年还专门发了个声明：</p>
-<p><img src="https://p9-open-sign.byteimg.com/pgc-image/850bc558cd51416eb37497b764ecef2a%7Etplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=37BGI4y9kFG07BSwZ2umVvvZI3Q%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
+<p><img src="https://p9-open-sign.byteimg.com/pgc-image/850bc558cd51416eb37497b764ecef2a~tplv-obj.jpeg?scene=detail&amp;x-expires=1689061697&amp;x-signature=37BGI4y9kFG07BSwZ2umVvvZI3Q%3D" alt="辟谣：关于明武宗朱厚照信仰问题" /></p>
 <p>而沐英墓葬的发掘更是证明了他是汉族，完全是汉族墓葬。声明很长，就不全截进去了，只是想说，这本书问题很大，基本连参考的价值都没有。</p>
 <p>除了这些人，还可以看到，隋唐时期的番将居然也被划了进去，在这里说一下，隋唐时期伊斯兰教影响力没有那么大，而且番将有很多民族，大多数跟回回根本八竿子打不着。</p>
 <p><strong>里面有一首诗，说在明武宗所做：</strong></p>
@@ -1890,7 +1916,9 @@ Unto this angel spak the frere tho:</p>
 <blockquote>
 <h4 id="世界级造假伪造历史的局中局"><a class="header" href="#世界级造假伪造历史的局中局">世界级造假，伪造历史的局中局</a></h4>
 <p>原创 小印 印客美学<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/552.jpg" alt="img" />2021年是文物大丰收的一年，国内有三星堆大发掘，国外有埃及古墓新发现。由于巴米扬大佛的前车之鉴，阿富汗的文物遗产安全也牵动着国内外爱好者的心。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/557.jpg" alt="img" />说到考古和文物，之前网上“金字塔是现代伪造“的谣言就流传很广，抛开这些毫无根据的谣言，近现代考古事业发展以来，国外确实出现了很多文物古董之类造假的事件。</p>
-<p>- 01 -</p>
+<ul>
+<li>01 -</li>
+</ul>
 <p>藤村新一：</p>
 <p>用造假“推进”日本历史研究</p>
 <p>据英国《苏格兰人报》报道，过去数十年来，藤村新一是日本史学界最神奇的名字，他被誉为日本的“石器之神”、“神之手”。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/562.jpg" alt="img" />作为一个业余考古爱好者，1974年后，藤村新一开始进行实地探查，他几乎总是能发现文物，而且文物的年龄越来越大。</p>
@@ -1900,13 +1928,17 @@ Unto this angel spak the frere tho:</p>
 <p>无可抵赖的藤村只能承认自己造假，西元2003年日本考古学协会报告指出，藤村新一参与发掘工作的遗迹有162处有捏造行为，其中159个遗迹被认定毫无学术价值，其中包括日本文明的骄傲——上高森遗址。</p>
 <p>过去数十年间，日本旧石器时代早、中期的相关研究几乎全部丧失价值，各种遗址申请也被撤销，甚至连历史教科书也要重新改写。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/573.jpg" alt="img" /></p>
 <p>日本对“旧石器捏造事件”的反省</p>
-<p>- 02 -</p>
+<ul>
+<li>02 -</li>
+</ul>
 <p>塞西亚王冠：</p>
 <p>价值百万的赝品？</p>
 <p>西元前1世纪，第一位塞西亚国王莫高在犍陀罗（今部分位于巴基斯坦和阿富汗地区）建立塞西亚政权，并逐步向印度西北部扩张。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/585.jpg" alt="img" /></p>
 <p>由于塞西亚王国历史悠久，所以留下来的相关文物非常稀少，但都相当珍贵。</p>
 <p>西元1896年，一位英国珠宝商说他花了重金，从印度买下了昔日塞西亚国王所戴的纯金王冠，于是法国卢浮宫宣布使用20万金法郎购买这个王冠。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/587.jpg" alt="img" />后来工作人员对藏品进行重新评定证实，这个皇冠存在焊接痕迹，只是个近代仿制品，万幸的是这顶王冠是纯金打造，放到今天的物价来看也不亏本。</p>
-<p>- 03 -</p>
+<ul>
+<li>03 -</li>
+</ul>
 <p>莎草纸：</p>
 <p>一波三折的化学造假</p>
 <p>西元2004年，意大利都灵圣保罗银行非盈利基金会拿出275万欧元，购买了一批希腊“徐霞客”阿特米多鲁斯的莎草纸，并将它们送到米兰国立大学的实验室，进行深入的研究和保护。</p>
@@ -1917,7 +1949,9 @@ Unto this angel spak the frere tho:</p>
 <p>阿尔特米多鲁斯（以弗所)的作品残篇</p>
 <p>可故事没完，有专家又测试了一遍，最终发现了文献的造假者——康斯坦丁·西蒙尼德斯（Constantine Simonides），一个西元19世纪的声名狼藉的文物造假者。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/602.jpg" alt="img" />古埃及的莎草纸书</p>
 <p>此人精通古文献的伪造手段，他将一些纸莎草纸放在锌网上，再进行酸处理，可以模拟出两千年的做旧效果，再用保存的古老墨水在纸上伪造内容，最后就伪造出了“阿特米多鲁斯”的作品。</p>
-<p>- 04 -</p>
+<ul>
+<li>04 -</li>
+</ul>
 <p>波斯公主木乃伊：</p>
 <p>史上最年轻的“古代”公主</p>
 <p>西元2000年，巴基斯坦有关部门接到情报，意外缴获了一件叫价1100万美元的文物。</p>
@@ -1926,7 +1960,9 @@ Unto this angel spak the frere tho:</p>
 <p>最让人兴奋的是，在这具棺材上面发现了神秘的楔形文字。</p>
 <p>语言文字专家判断，这些楔形文字属于古波斯语，木乃伊是一位叫罗杜炯的波斯公主。</p>
 <p>然而，后来在“罗杜炯”棺木上的铭文刻痕中发现了现代铅笔芯痕迹，碳14 测定显示，棺材中所躺的草垫制作于50年前。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/611.jpg" alt="img" />人们才意识到这具所谓的木乃伊，只是现代人伪造的一件假文物。后续调查显示，这具木乃伊的主人死于西元1996年，也就是说这具木乃伊伪造时间不超过4年。</p>
-<p>- 05 -</p>
+<ul>
+<li>05 -</li>
+</ul>
 <p>水晶骨头：</p>
 <p>大英博物馆也被骗了</p>
 <p>墨西哥的原居民阿兹特克人有用石头、骨头、木头等材料雕刻人头骨的习俗，称为“死亡头”。</p>
@@ -1935,7 +1971,9 @@ Unto this angel spak the frere tho:</p>
 <p>大英博物馆所珍藏的古阿兹特克人的水晶头骨，据称是古阿兹特克人的遗物，然而研究人员在大英博物馆对水晶头骨进行的实验表明，区别牙齿的锯线用的是西元19世纪才发明的珠宝雕刻技术。</p>
 <p>科学家们曾把水晶头骨和真正的人类头骨作了比较，发现与真正的人类头骨相差无几。</p>
 <p>我们知道，近代光学产生于西元十七世纪，而人类准确地认识自己的骨骼结构，更是十八世纪解剖学兴起以后的事。</p>
-<p>- 06 -</p>
+<ul>
+<li>06 -</li>
+</ul>
 <p>死海古卷：</p>
 <p>骗过博物馆的伪造品？</p>
 <p>贝都因的牧羊人于西元1947年在死海岸边库姆兰（Qumran）定居点周围的洞穴中，发现许多内藏羊皮卷和纸莎草卷文献的陶坛。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/644.jpg" alt="img" /></p>
@@ -1947,7 +1985,9 @@ Unto this angel spak the frere tho:</p>
 <p>这些碎片被私人收藏家和机构花费数百万美元抢购。挪威学者贾斯特内斯告诉以色列《国土报》，自西元2002年以来，许多出版物都证实了碎片是伪造的。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/647.jpg" alt="img" />伪造的死海古卷</p>
 <p>西元2018年10月，华盛顿的圣经博物馆承认，馆内收藏的五个死海卷轴是假的。</p>
 <p>博物馆称，西元2017年，新旧约博物馆的16张死海卷轴作品被送往德国联邦材料研究与测试研究所，由雷宾教授进行一系列测试后得出“五个碎片显示出与古代起源不一致的特征”，被判定为现代伪造品。</p>
-<p>- 07 -</p>
+<ul>
+<li>07 -</li>
+</ul>
 <p>皮尔丹人：</p>
 <p>差点改变历史的骗局？</p>
 <p>“皮尔丹人”是人类学史上著名的骗局。西元1913年，在英国皮尔丹（Piltdown）地区的沙砾中发现了一个类人猿头骨。</p>
@@ -1957,13 +1997,17 @@ Unto this angel spak the frere tho:</p>
 <p>这颗头骨一部分像人类，而另一部分却非常像猿猴。但科学家们一直深信这就是进化的中间产物。</p>
 <p>直到西元1953年，科学家们最终揭示这只是一个科学骗局，是查尔斯道森的杰作。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/684.jpg" alt="img" />现场勘查中的道森（左）和伍德沃德（右）<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/719.jpg" alt="img" />西元1915年约翰‧库克的描绘画作 学者们在仔细研究皮尔丹人头骨</p>
 <p>这颗头骨的颅骨部分属于一位中世纪死者，下颚骨来自一只猩猩，牙齿来自黑猩猩。这个被称为“皮尔丹人”的类人猿头骨，只是中世纪人类头骨和猩猩牙齿拼凑起来的赝品。</p>
-<p>- 08 -</p>
+<ul>
+<li>08 -</li>
+</ul>
 <p>所罗门王石碑：</p>
 <p>写错句子的文物？</p>
 <p>西元2001年，一块石碑被送到以色列考古界的权威专家面前，石碑的历史可追溯到西元前1000年。</p>
 <p>石碑表面所刻文字记录了修复所罗门圣殿一事，这是关于这座传说中的建筑物所找到的第一件考古学上的证据。<img src="https://imagepphcloud.thepaper.cn/pph/image/150/326/722.jpg" alt="img" />BBC 地平线 所罗门国王的石碑 的剧照</p>
 <p>但是最终，地质考古学家尤沃尔.戈伦博士发现，石碑的来源只是一块取自十字军城堡的砖块，石碑上甚至把“我'修缮'圣殿”错写成了“我'损坏'圣殿”，BBC专门做了一期纪录片揭露这个赝品。</p>
-<p>- 09 -</p>
+<ul>
+<li>09 -</li>
+</ul>
 <p>斐济美人鱼化石：</p>
 <p>用猴子拼接的“海妖”</p>
 <p>从古至今，美人鱼一直是热门话题。早在公元前3世纪，巴比仑的史学家巴罗索斯在《古代历史》一书中就有关于美人鱼的记载。</p>
@@ -2274,49 +2318,50 @@ Unto this angel spak the frere tho:</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="光復中華民國的好處第八.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="光復中華民國的好處第八.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-                                                    <a rel="next" href="中国制度设计第十1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                            <a rel="next" href="中国制度设计第十1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="光復中華民國的好處第八.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="光復中華民國的好處第八.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-                                    <a rel="next" href="中国制度设计第十1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                    <a rel="next" href="中国制度设计第十1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                            </nav>
+            </nav>
 
         </div>
 
-        
-        
-        
-                <script type="text/javascript">
+
+
+
+        <script>
             window.playground_copyable = true;
         </script>
-        
-        
-                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
-        
-        
+
+
+    </div>
     </body>
 </html>

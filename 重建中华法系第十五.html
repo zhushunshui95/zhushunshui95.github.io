@@ -4,44 +4,43 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>重建中华法系第十五 - San Min Zhu Yi</title>
-                
+
 
         <!-- Custom HTML head -->
         
-
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-                <link rel="icon" href="favicon.svg">
-                        <link rel="shortcut icon" href="favicon.png">
-                <link rel="stylesheet" href="css/variables.css">
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-                <link rel="stylesheet" href="css/print.css" media="print">
-        
+        <link rel="stylesheet" href="css/print.css" media="print">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-                <link rel="stylesheet" href="fonts/fonts.css">
-        
+        <link rel="stylesheet" href="fonts/fonts.css">
+
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
-            </head>
+
+    </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -57,7 +56,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -69,12 +68,14 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+        <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -82,16 +83,38 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主義育樂兩篇補述.html"><strong aria-hidden="true">18.</strong> 民生主義育樂兩篇補述</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">19.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html"><strong aria-hidden="true">20.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">21.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">23.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html"><strong aria-hidden="true">24.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">25.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">28.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">30.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html"><strong aria-hidden="true">31.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">32.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">35.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html"><strong aria-hidden="true">36.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">37.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">38.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html" class="active"><strong aria-hidden="true">39.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">40.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">41.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">43.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">44.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="风龙云虎1-5.html"><strong aria-hidden="true">45.</strong> 风龙云虎1-5</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主義育樂兩篇補述.html"><strong aria-hidden="true">18.</strong> 民生主義育樂兩篇補述</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">19.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html"><strong aria-hidden="true">20.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">21.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">23.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html"><strong aria-hidden="true">24.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">25.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">28.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">30.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html"><strong aria-hidden="true">31.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">32.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">35.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html"><strong aria-hidden="true">36.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">37.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">38.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html" class="active"><strong aria-hidden="true">39.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">40.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">41.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">43.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">44.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="风龙云虎1-5.html"><strong aria-hidden="true">45.</strong> 风龙云虎1-5</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>
+            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
@@ -100,28 +123,28 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                                            </div>
+                    </div>
 
                     <h1 class="menu-title">San Min Zhu Yi</h1>
 
                     <div class="right-buttons">
-                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                                                                        
+
                     </div>
                 </div>
 
-                                <div id="search-wrapper" class="hidden">
+                <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
                         <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
@@ -131,9 +154,9 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -154,21 +177,22 @@
 <p>中华法系和英美普通法系都没有厚厚的《民法典》，对社会的管理都依靠社会的自生秩序产生的经验、判例和习惯，而不是某些人的主观意志和严密法条。某些“极权主义者”如梁启超眼中没有厚厚的《民法典》就不是好事，迄今这种新文化运动的余毒也消除不了！</p>
 <p><strong>刑罚作用：惩罚罪犯、安慰受害者及其亲友、震慑潜在罪犯</strong></p>
 <h2 id="中华法系万世不更之司法原则及来源"><a class="header" href="#中华法系万世不更之司法原则及来源">中华法系万世不更之司法原则及来源</a></h2>
-<table><thead><tr><th align="left">司法原则</th><th align="left">来源</th></tr></thead><tbody>
-<tr><td align="left">司法独立</td><td align="left">桃应问曰：“舜为天子，皋陶为士，瞽瞍杀人，则如之何？”孟子曰：“执之而已矣。”“然则舜不禁与？”曰：“夫舜恶得而禁之？夫有所受之也。”（《孟子 尽心上》）</td></tr>
-<tr><td align="left">无罪推定即疑罪從無</td><td align="left">《左傳·襄公二十六年》引《夏書》“與其殺不辜，寧失不經”</td></tr>
-<tr><td align="left">宽宥过失犯罪、偶犯</td><td align="left">眚災肆赦（《尚書舜典》）宥過無大（《尚書大禹謨》）乃有大罪非終，乃惟眚災適爾，既道極厥辜，時乃不可殺。（《尚書 康誥》）</td></tr>
-<tr><td align="left">重惩故意犯罪、惯犯</td><td align="left">怙終賊刑（《尚書舜典》）刑故無小（《尚書大禹謨》）人有小罪非眚，乃惟終，自作不典；式爾，有厥罪小，乃不可不殺。（《尚書 康誥》）</td></tr>
-<tr><td align="left">反对株连近亲属</td><td align="left">《康诰》曰：父子兄弟，罪不相及（《春秋左传 昭公二十年》）罪人不孥《孟子·梁惠王下》和罰弗及嗣（《尚書大禹謨》）</td></tr>
-<tr><td align="left">亲属免作证之特权</td><td align="left">“然则舜如之何？”曰：“舜视弃天下，犹弃敝屣也。窃负而逃，遵海滨而处，终身欣然，乐而忘天下。（《孟子 尽心上》）</td></tr>
-<tr><td align="left">矜老恤幼</td><td align="left">八十、九十曰耄，七年曰悼，悼与耄虽有罪，不加刑焉。（《礼记 曲礼上》）</td></tr>
-<tr><td align="left">体恤蠢愚</td><td align="left">壹赦曰幼弱，再赦曰老旄，三赦曰蠢愚。（《周禮·秋官司寇·司刺》）</td></tr>
-<tr><td align="left">因时势制法</td><td align="left">轻重诸罚有权，刑罚世轻世重，惟齐非齐，有伦有要。（《尚书·吕刑》）</td></tr>
-<tr><td align="left">人事与制度结合</td><td align="left">徒法不能以自行《孟子·离娄上》有治人而後有治法，有治法而後復有治人</td></tr>
-<tr><td align="left">合议制、陪审制</td><td align="left">左右皆曰可杀，勿听；诸大夫皆曰可杀，勿听；国人皆曰可杀，然后察之，见可杀焉，然后杀之。故曰国人杀之也。（《孟子·梁惠王下》）以三刺断庶民狱讼之中：一曰讯群臣，二曰讯群吏，三曰讯万民（《周礼 秋官司寇·小司寇》）疑狱，泛与众共之；众疑，赦之。必察小大之比以成之。（《礼记 王制》）</td></tr>
-<tr><td align="left">三审终审制</td><td align="left">成狱辞，史以狱成告于正，正听之。正以狱成告于大司寇，大司寇听之棘木之下。大司寇以狱之成告于王，王命三公参听之。三公以狱之成告于王，王三又，然后制刑。（《礼记 王制》）</td></tr>
-<tr><td align="left">罪刑法定</td><td align="left">《尚书·舜典》：“慎徽五典，五典克从。”（意为非难违法裁判，虞舜能够依照刑法办事。）《礼记·王制》：“有旨无简不听”、《尚书·吕刑》：“无简不听，具严天威。”</td></tr>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">司法原则</th><th style="text-align: left">来源</th></tr></thead><tbody>
+<tr><td style="text-align: left">司法独立</td><td style="text-align: left">桃应问曰：“舜为天子，皋陶为士，瞽瞍杀人，则如之何？”孟子曰：“执之而已矣。”“然则舜不禁与？”曰：“夫舜恶得而禁之？夫有所受之也。”（《孟子 尽心上》）</td></tr>
+<tr><td style="text-align: left">无罪推定即疑罪從無</td><td style="text-align: left">《左傳·襄公二十六年》引《夏書》“與其殺不辜，寧失不經”</td></tr>
+<tr><td style="text-align: left">宽宥过失犯罪、偶犯</td><td style="text-align: left">眚災肆赦（《尚書舜典》）宥過無大（《尚書大禹謨》）乃有大罪非終，乃惟眚災適爾，既道極厥辜，時乃不可殺。（《尚書 康誥》）</td></tr>
+<tr><td style="text-align: left">重惩故意犯罪、惯犯</td><td style="text-align: left">怙終賊刑（《尚書舜典》）刑故無小（《尚書大禹謨》）人有小罪非眚，乃惟終，自作不典；式爾，有厥罪小，乃不可不殺。（《尚書 康誥》）</td></tr>
+<tr><td style="text-align: left">反对株连近亲属</td><td style="text-align: left">《康诰》曰：父子兄弟，罪不相及（《春秋左传 昭公二十年》）罪人不孥《孟子·梁惠王下》和罰弗及嗣（《尚書大禹謨》）</td></tr>
+<tr><td style="text-align: left">亲属免作证之特权</td><td style="text-align: left">“然则舜如之何？”曰：“舜视弃天下，犹弃敝屣也。窃负而逃，遵海滨而处，终身欣然，乐而忘天下。（《孟子 尽心上》）</td></tr>
+<tr><td style="text-align: left">矜老恤幼</td><td style="text-align: left">八十、九十曰耄，七年曰悼，悼与耄虽有罪，不加刑焉。（《礼记 曲礼上》）</td></tr>
+<tr><td style="text-align: left">体恤蠢愚</td><td style="text-align: left">壹赦曰幼弱，再赦曰老旄，三赦曰蠢愚。（《周禮·秋官司寇·司刺》）</td></tr>
+<tr><td style="text-align: left">因时势制法</td><td style="text-align: left">轻重诸罚有权，刑罚世轻世重，惟齐非齐，有伦有要。（《尚书·吕刑》）</td></tr>
+<tr><td style="text-align: left">人事与制度结合</td><td style="text-align: left">徒法不能以自行《孟子·离娄上》有治人而後有治法，有治法而後復有治人</td></tr>
+<tr><td style="text-align: left">合议制、陪审制</td><td style="text-align: left">左右皆曰可杀，勿听；诸大夫皆曰可杀，勿听；国人皆曰可杀，然后察之，见可杀焉，然后杀之。故曰国人杀之也。（《孟子·梁惠王下》）以三刺断庶民狱讼之中：一曰讯群臣，二曰讯群吏，三曰讯万民（《周礼 秋官司寇·小司寇》）疑狱，泛与众共之；众疑，赦之。必察小大之比以成之。（《礼记 王制》）</td></tr>
+<tr><td style="text-align: left">三审终审制</td><td style="text-align: left">成狱辞，史以狱成告于正，正听之。正以狱成告于大司寇，大司寇听之棘木之下。大司寇以狱之成告于王，王命三公参听之。三公以狱之成告于王，王三又，然后制刑。（《礼记 王制》）</td></tr>
+<tr><td style="text-align: left">罪刑法定</td><td style="text-align: left">《尚书·舜典》：“慎徽五典，五典克从。”（意为非难违法裁判，虞舜能够依照刑法办事。）《礼记·王制》：“有旨无简不听”、《尚书·吕刑》：“无简不听，具严天威。”</td></tr>
 </tbody></table>
+</div>
 <h2 id="中华法系特点"><a class="header" href="#中华法系特点">中华法系特点</a></h2>
 <p>中华文明第一次比较明确地公布成文法是鲁昭公六年（孔子纪元17年）三月，郑人铸刑书（《春秋左传 昭公六年》 ），之前基本上都是习惯法，之後逐步进入到以制定法或称之为成文法为主和判例法、习惯法为辅的状态。一般情况下法官根据成文法律对法律明文规定好的犯罪做出合理公正的判决。但实际工作中法官判案往往不能完全依照成文法律规定判，而需要根据实际情况做出符合罪刑责相适应原则的判决即形成判例，更何况很多时候根本就没有法律明确包括进此种类型犯罪。就算成文法律能囊括各种可能存在的情况并准确表述出来相应的处理方式，但这样司法成本会无限增加，造成成文法律实践中效果不大。法官如果能根据社会习惯和已有或未有之法律的精神进行审理判决形成判例，这样可以弥补成文法律实践中的缺陷即由于成文法体现的是立法者的武断权力而极有可能不顾人情从而造成人情与法律的冲突。但中华法系中对于民事和轻微的刑事案件，司法官员应拥有一定程度的自由裁量权，允许司法官员根据天理、人情、国法进行判决。中华法系恰恰能很好地融合民法法系法律稳定的特点与普通法系法律变通的特点，这依然体现了中庸之道。</p>
 <p>中华法系即强调程序正义也很重视实体正义。对于普通的刑事民事案件，司法机关在审判时，通常会按照国家的法律条文判决。但如果遇到案件比较特殊，在法典中找不到相对应的法律条文，司法机关便将该案件逐级上报，最后由中央最高的司法机构研究讨论，奏请皇帝裁决，作出统一的法律解释，该判决也就成为法例，为此后的司法审判所援引，成为先例，该项制度就是具有解释权的中央司法机关对某些重大疑难案件所作出的权威性司法解释的奏谳制度。所谓奏谳，是指地方司法机关在审理案件时，由于事实认定不清或适用法律发生歧义，为了维护法律的权威，使各级司法机关对法律的解释趋于一致，使法律的适用规范统一，逐级向上级司法机关奏请裁决，避免此后类似的案件在裁判时适用法律出现差异，才制定了此项法律制度。此后若遇到类似的疑难案件，可以比照此前的司法判例进行判决，省去了奏谳的程序。奏谳制度的起源可追溯到《尚书 尧典》中的“眚灾肆赦，怙终贼刑”和《左傳·襄公二十六年》引《夏書》“與其殺不辜，寧失不經”的原则。疑难案件奏谳制度的形成，直接促成了死刑复核制度的常态化，通过层层奏报的形式，把死刑的复核权收归中央。宋代更是形成了以“鞠谳分司”为代表的司法程序分割，包括了多个部门反复推定的司法检验、纠错机制。“鞠谳分司”是指负责审清犯罪事实的是一个法官，宋人称为推司；在审清犯罪事实之后，负责检索出此犯罪适用律令的，是另一个法官，宋人称为法司。推司与法司不可以是同一个人，需要回避。“鞠谳分司”能更好地能够形成权力制衡，防止权力滥用。可惜这套制度并没被延续下去。（参考自郑显文《中国古代的法典、制度和礼法社会》第二章）</p>
@@ -476,49 +500,50 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="外交政策第十四.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="外交政策第十四.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-                                                    <a rel="next" href="重要社会问题解决措施第十六.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                            <a rel="next" href="重要社会问题解决措施第十六.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="外交政策第十四.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="外交政策第十四.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-                                    <a rel="next" href="重要社会问题解决措施第十六.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                    <a rel="next" href="重要社会问题解决措施第十六.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                            </nav>
+            </nav>
 
         </div>
 
-        
-        
-        
-                <script type="text/javascript">
+
+
+
+        <script>
             window.playground_copyable = true;
         </script>
-        
-        
-                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
-        
-        
+
+
+    </div>
     </body>
 </html>

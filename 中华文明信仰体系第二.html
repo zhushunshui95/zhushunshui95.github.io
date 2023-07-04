@@ -4,44 +4,43 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>中华文明信仰体系第二 - San Min Zhu Yi</title>
-                
+
 
         <!-- Custom HTML head -->
         
-
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-                <link rel="icon" href="favicon.svg">
-                        <link rel="shortcut icon" href="favicon.png">
-                <link rel="stylesheet" href="css/variables.css">
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-                <link rel="stylesheet" href="css/print.css" media="print">
-        
+        <link rel="stylesheet" href="css/print.css" media="print">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-                <link rel="stylesheet" href="fonts/fonts.css">
-        
+        <link rel="stylesheet" href="fonts/fonts.css">
+
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
-            </head>
+
+    </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -57,7 +56,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -69,12 +68,14 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+        <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -82,16 +83,38 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主義育樂兩篇補述.html"><strong aria-hidden="true">18.</strong> 民生主義育樂兩篇補述</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">19.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html" class="active"><strong aria-hidden="true">20.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">21.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">23.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html"><strong aria-hidden="true">24.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">25.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">28.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">30.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html"><strong aria-hidden="true">31.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">32.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">35.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html"><strong aria-hidden="true">36.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">37.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">38.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html"><strong aria-hidden="true">39.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">40.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">41.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">43.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">44.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="风龙云虎1-5.html"><strong aria-hidden="true">45.</strong> 风龙云虎1-5</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="序.html"><strong aria-hidden="true">1.</strong> 序</a></li><li class="chapter-item expanded "><a href="民族主义第一章.html"><strong aria-hidden="true">2.</strong> 民族主义第一章</a></li><li class="chapter-item expanded "><a href="民族主义第二章.html"><strong aria-hidden="true">3.</strong> 民族主义第二章</a></li><li class="chapter-item expanded "><a href="民族主义第三章.html"><strong aria-hidden="true">4.</strong> 民族主义第三章</a></li><li class="chapter-item expanded "><a href="民族主义第四章.html"><strong aria-hidden="true">5.</strong> 民族主义第四章</a></li><li class="chapter-item expanded "><a href="民族主义第五章.html"><strong aria-hidden="true">6.</strong> 民族主义第五章</a></li><li class="chapter-item expanded "><a href="民族主义第六章.html"><strong aria-hidden="true">7.</strong> 民族主义第六章</a></li><li class="chapter-item expanded "><a href="民权主义第一章.html"><strong aria-hidden="true">8.</strong> 民权主义第一章</a></li><li class="chapter-item expanded "><a href="民权主义第二章.html"><strong aria-hidden="true">9.</strong> 民权主义第二章</a></li><li class="chapter-item expanded "><a href="民权主义第三章.html"><strong aria-hidden="true">10.</strong> 民权主义第三章</a></li><li class="chapter-item expanded "><a href="民权主义第四章.html"><strong aria-hidden="true">11.</strong> 民权主义第四章</a></li><li class="chapter-item expanded "><a href="民权主义第五章.html"><strong aria-hidden="true">12.</strong> 民权主义第五章</a></li><li class="chapter-item expanded "><a href="民权主义第六章.html"><strong aria-hidden="true">13.</strong> 民权主义第六章</a></li><li class="chapter-item expanded "><a href="民生主义第一章.html"><strong aria-hidden="true">14.</strong> 民生主义第一章</a></li><li class="chapter-item expanded "><a href="民生主义第二章.html"><strong aria-hidden="true">15.</strong> 民生主义第二章</a></li><li class="chapter-item expanded "><a href="民生主义第三章.html"><strong aria-hidden="true">16.</strong> 民生主义第三章</a></li><li class="chapter-item expanded "><a href="民生主义第四章.html"><strong aria-hidden="true">17.</strong> 民生主义第四章</a></li><li class="chapter-item expanded "><a href="民生主義育樂兩篇補述.html"><strong aria-hidden="true">18.</strong> 民生主義育樂兩篇補述</a></li><li class="chapter-item expanded "><a href="中华文明的起源与发展第一.html"><strong aria-hidden="true">19.</strong> 中华文明的起源与发展第一</a></li><li class="chapter-item expanded "><a href="中华文明信仰体系第二.html" class="active"><strong aria-hidden="true">20.</strong> 中华文明信仰体系第二</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三1.html"><strong aria-hidden="true">21.</strong> 中华文明的核心：儒学第三1</a></li><li class="chapter-item expanded "><a href="中华文明的核心：儒学第三2.html"><strong aria-hidden="true">22.</strong> 中华文明的核心：儒学第三2</a></li><li class="chapter-item expanded "><a href="现代欧美文明的中国起源第四.html"><strong aria-hidden="true">23.</strong> 现代欧美文明的中国起源第四</a></li><li class="chapter-item expanded "><a href="极权主义的起源第五.html"><strong aria-hidden="true">24.</strong> 极权主义的起源第五</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六1宋元.html"><strong aria-hidden="true">25.</strong> 三次亡天下带来的沉重后果第六1宋元</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六2明清.html"><strong aria-hidden="true">26.</strong> 三次亡天下带来的沉重后果第六2明清</a></li><li class="chapter-item expanded "><a href="三次亡天下带来的沉重后果第六3.html"><strong aria-hidden="true">27.</strong> 三次亡天下带来的沉重后果第六3</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七1臧.html"><strong aria-hidden="true">28.</strong> 臧否百年人物第七1臧</a></li><li class="chapter-item expanded "><a href="臧否百年人物第七2否.html"><strong aria-hidden="true">29.</strong> 臧否百年人物第七2否</a></li><li class="chapter-item expanded "><a href="光復中華民國的好處第八.html"><strong aria-hidden="true">30.</strong> 光復中華民國的好處第八</a></li><li class="chapter-item expanded "><a href="几大邪恶势力处理方针第九.html"><strong aria-hidden="true">31.</strong> 几大邪恶势力处理方针第九</a></li><li class="chapter-item expanded "><a href="中国制度设计第十1.html"><strong aria-hidden="true">32.</strong> 中国制度设计第十1</a></li><li class="chapter-item expanded "><a href="中国制度设计第十2行政选举.html"><strong aria-hidden="true">33.</strong> 中国制度设计第十2行政选举</a></li><li class="chapter-item expanded "><a href="中国制度设计第十3科举改革.html"><strong aria-hidden="true">34.</strong> 中国制度设计第十3科举改革</a></li><li class="chapter-item expanded "><a href="经济：自由放任藏富于民第十一.html"><strong aria-hidden="true">35.</strong> 经济：自由放任藏富于民第十一</a></li><li class="chapter-item expanded "><a href="教育：十年樹木百年樹人第十二.html"><strong aria-hidden="true">36.</strong> 教育：十年樹木百年樹人第十二</a></li><li class="chapter-item expanded "><a href="國防計劃第十三.html"><strong aria-hidden="true">37.</strong> 國防計劃第十三</a></li><li class="chapter-item expanded "><a href="外交政策第十四.html"><strong aria-hidden="true">38.</strong> 外交政策第十四</a></li><li class="chapter-item expanded "><a href="重建中华法系第十五.html"><strong aria-hidden="true">39.</strong> 重建中华法系第十五</a></li><li class="chapter-item expanded "><a href="重要社会问题解决措施第十六.html"><strong aria-hidden="true">40.</strong> 重要社会问题解决措施第十六</a></li><li class="chapter-item expanded "><a href="人权与女权第十七1人权.html"><strong aria-hidden="true">41.</strong> 人权与女权第十七1人权</a></li><li class="chapter-item expanded "><a href="人权与女权第十七2女权.html"><strong aria-hidden="true">42.</strong> 人权与女权第十七2女权</a></li><li class="chapter-item expanded "><a href="读书学习及做学问的合理方式第十八.html"><strong aria-hidden="true">43.</strong> 读书学习及做学问的合理方式第十八</a></li><li class="chapter-item expanded "><a href="洪范.html"><strong aria-hidden="true">44.</strong> 天朝洪范</a></li><li class="chapter-item expanded "><a href="风龙云虎1-5.html"><strong aria-hidden="true">45.</strong> 风龙云虎1-5</a></li><li class="chapter-item expanded "><a href="考古事业与古代文明发展.html"><strong aria-hidden="true">46.</strong> 考古事业与古代文明发展</a></li><li class="chapter-item expanded "><a href="伪史.html"><strong aria-hidden="true">47.</strong> 伪史</a></li><li class="chapter-item expanded "><a href="未完事项.html"><strong aria-hidden="true">48.</strong> 未完事项</a></li></ol>
+            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
@@ -100,28 +123,28 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                                            </div>
+                    </div>
 
                     <h1 class="menu-title">San Min Zhu Yi</h1>
 
                     <div class="right-buttons">
-                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                                                                        
+
                     </div>
                 </div>
 
-                                <div id="search-wrapper" class="hidden">
+                <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
                         <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
@@ -131,9 +154,9 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -192,13 +215,14 @@
 <p>道教中的玉皇大约是东汉时期出现的概念，由儒教中的昊天上帝转化而来，但更人格化了。庄子认为，万事万物本于道，天由道而生。墨子把上帝鬼神看作人类之外的另一种生灵。宋真宗封玉皇号曰“太上开天执符御历含真体道玉皇大天帝”，宋徽宗再加封玉皇大帝为“太上开天执符御历含真体道昊天玉皇上帝”，玉皇和昊天合一，从而大大提高了玉皇在民间的威望，令玉皇信仰流行开来。玉皇上帝、昊天上帝，名称有异，而所指相同，实指一体，只是不同的场合使用不同的概念。儒教、中国传统官方祭祀中一般称昊天上帝，民间、道教中多称玉皇大帝。</p>
 <p>上帝信仰被“祖述尧舜，宪章文武”的儒家继承，出现于儒家经典——五经，这五部经书都提到了该词，其中最早的是《尚书》的“虞书·舜典”。除此之外，四书等其他的儒家经典以及各史书中也提到了上帝，有时也称昊天上帝、皇天上帝，在古代中国的原初神话和宗教体系中，指的是至上神，字面意思就是“在上的帝王”，意味着“最高的主宰”，也称为“帝”，或者“天”，“太一”。“礼莫大于敬天，仪莫大于郊祀”，中国历代皆设祭天之所——天坛，如北京天坛祈年殿即为明朝时中国皇帝祭祀上帝之处，内供奉有皇天上帝之神位。根据周礼，天子于孟春、秋分、冬至以最高礼仪用碧玉、禋祀、太牢祭上帝于天坛。北京天坛即上帝天坛。</p>
 <p>五经中的上帝出现次数很多。统计结果如下表：</p>
-<table><thead><tr><th align="left">经书</th><th align="left">出现次数</th></tr></thead><tbody>
-<tr><td align="left">尚书</td><td align="left">32次</td></tr>
-<tr><td align="left">诗经</td><td align="left">24次</td></tr>
-<tr><td align="left">礼记</td><td align="left">20次</td></tr>
-<tr><td align="left">春秋</td><td align="left">8次</td></tr>
-<tr><td align="left">易经</td><td align="left">2次</td></tr>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">经书</th><th style="text-align: left">出现次数</th></tr></thead><tbody>
+<tr><td style="text-align: left">尚书</td><td style="text-align: left">32次</td></tr>
+<tr><td style="text-align: left">诗经</td><td style="text-align: left">24次</td></tr>
+<tr><td style="text-align: left">礼记</td><td style="text-align: left">20次</td></tr>
+<tr><td style="text-align: left">春秋</td><td style="text-align: left">8次</td></tr>
+<tr><td style="text-align: left">易经</td><td style="text-align: left">2次</td></tr>
 </tbody></table>
+</div>
 <p>相应记载如：</p>
 <blockquote>
 <p>《大雅·荡》：“荡荡上帝，下民之辟。疾威上帝，其命多辟。天生烝民，其命匪谌。靡不有初，鲜克有终。”</p>
@@ -295,30 +319,31 @@
 <p>南宋时朱熹将《大学》、《论语》、《孟子》、《中庸》合为“四书”，“学问须以《大学》为先，次《论语》，次《孟子》，次《中庸》”，朱熹认为古礼不可考，倡导道统之说，自创《朱子家礼》。南宋以来的科举考试重心也转向四书，标志理学成为主流。著名的理学家有周敦颐、程颢、程颐、朱熹、陆九渊、张载、王阳明等。</p>
 <h3 id="儒教礼仪"><a class="header" href="#儒教礼仪">儒教礼仪</a></h3>
 <p>儒教礼仪包括吉礼、凶礼、宾礼、军礼、嘉礼。“以吉礼事邦国之鬼神示，以凶礼哀邦国之忧，以宾礼亲邦国，以军礼同邦国，以嘉礼亲万民”。吉礼是五礼之冠，主要是对天神、地祇、人鬼的祭祀典礼，以就是“皇天、上帝、社稷、寝庙、山林、名川之祀”。《礼记·祭统》说：“礼有五经，莫重于祭。”按照《周礼·春官·大宗伯》的说法，嘉礼包括饮食之礼，婚冠之礼，宾射之礼，飨燕之礼，脤膰之礼，贺庆之礼。华夏王朝秉承《尚书》华夷之辨之旨，《后汉书》、《晋书》、《宋书》、《南齐书》、《隋书》、《旧唐书》、《新唐书》、《宋史》、《明史》均有礼仪志或祭祀志，以示继承周礼。</p>
-<table><thead><tr><th align="left">周礼</th><th align="left">分类</th><th align="left">礼名</th></tr></thead><tbody>
-<tr><td align="left">吉礼</td><td align="left">天神</td><td align="left">郊祀、大雩、朝日、夕月、祓禊</td></tr>
-<tr><td align="left">吉礼</td><td align="left">地祇</td><td align="left">祀皇地祇、神州、社稷、五岳四渎四镇、海、祀社稷山川、五祀</td></tr>
-<tr><td align="left">吉礼</td><td align="left">人鬼</td><td align="left">享宗庙、祭孔</td></tr>
-<tr><td align="left">嘉礼</td><td align="left">饮食之礼，婚冠之礼，宾射之礼，飨燕之礼，脤膰之礼，贺庆之礼</td><td align="left">冠礼、笄礼、聘礼、婚礼、节令（立春、立夏、大暑、立秋、立冬）、视朔、冬至朝贺、除夕、元旦、乡饮酒、乡射礼</td></tr>
-<tr><td align="left">宾礼</td><td align="left">接见、宴请外宾</td><td align="left">相见礼、燕礼、公食大夫礼、觐礼</td></tr>
-<tr><td align="left">军礼</td><td align="left">射礼、大傩、讲武、告齐太公庙</td><td align="left">大射</td></tr>
-<tr><td align="left">凶礼</td><td align="left">丧礼、葬礼、致奠、探病</td><td align="left">既夕礼、虞礼</td></tr>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">周礼</th><th style="text-align: left">分类</th><th style="text-align: left">礼名</th></tr></thead><tbody>
+<tr><td style="text-align: left">吉礼</td><td style="text-align: left">天神</td><td style="text-align: left">郊祀、大雩、朝日、夕月、祓禊</td></tr>
+<tr><td style="text-align: left">吉礼</td><td style="text-align: left">地祇</td><td style="text-align: left">祀皇地祇、神州、社稷、五岳四渎四镇、海、祀社稷山川、五祀</td></tr>
+<tr><td style="text-align: left">吉礼</td><td style="text-align: left">人鬼</td><td style="text-align: left">享宗庙、祭孔</td></tr>
+<tr><td style="text-align: left">嘉礼</td><td style="text-align: left">饮食之礼，婚冠之礼，宾射之礼，飨燕之礼，脤膰之礼，贺庆之礼</td><td style="text-align: left">冠礼、笄礼、聘礼、婚礼、节令（立春、立夏、大暑、立秋、立冬）、视朔、冬至朝贺、除夕、元旦、乡饮酒、乡射礼</td></tr>
+<tr><td style="text-align: left">宾礼</td><td style="text-align: left">接见、宴请外宾</td><td style="text-align: left">相见礼、燕礼、公食大夫礼、觐礼</td></tr>
+<tr><td style="text-align: left">军礼</td><td style="text-align: left">射礼、大傩、讲武、告齐太公庙</td><td style="text-align: left">大射</td></tr>
+<tr><td style="text-align: left">凶礼</td><td style="text-align: left">丧礼、葬礼、致奠、探病</td><td style="text-align: left">既夕礼、虞礼</td></tr>
 </tbody></table>
-<table><thead><tr><th align="left">其余礼名</th><th align="left">描述</th></tr></thead><tbody>
-<tr><td align="left">禅让礼</td><td align="left">为朝代更迭名正言顺，前朝帝王主动设受禅台将天子的地位让出。</td></tr>
-<tr><td align="left">登基礼</td><td align="left">天子的就职典礼。</td></tr>
-<tr><td align="left">封禅礼</td><td align="left">封禅大多在泰山举行，封是祭天，禅是祭地，封禅以强调帝王君权天授的天子身份。</td></tr>
-<tr><td align="left">郊祀礼</td><td align="left">天子祭天地，诸侯祭社稷，大夫祭五祀，为天下祈福。冬至祭天于圜丘，夏至祭地于方丘，二者分别位于国都南郊和北郊，郊谓大祀，祀为群祀，故称为郊祀。</td></tr>
-<tr><td align="left">祀祖礼</td><td align="left">祭祖</td></tr>
-<tr><td align="left">怀子礼</td><td align="left">即“胎教礼”。母亲怀子后，目不视恶色，耳不听淫声，口不出敖言，身不行恶事，心不起恶念，能以胎教。</td></tr>
-<tr><td align="left">出生礼</td><td align="left">诞生 孩子出生后，如果是男孩就给他玉璋并在门左悬挂木弓，如果是女孩就给她瓦器并在门右悬挂佩巾，即弄璋、弄瓦、悬弓、悬帨礼。三朝是孩子出生第三天再抱出来，如果是男孩，就行射礼。满月有满月酒。百日是孩子出生第三个月末，要选择吉日为孩子剃胎发。但不能把胎发全剪掉，男的留个“角”，女的留个“羁”，或者男的留左边，女的留右边。由母亲带领去拜见父亲与祖父，父亲为孩子取名。周岁要占卜前途，即抓周。</td></tr>
-<tr><td align="left">进学礼</td><td align="left">学生与老师初见面，先奉上礼物以表尊敬，即束脩礼。</td></tr>
-<tr><td align="left">成人礼</td><td align="left">冠礼、及笄礼</td></tr>
-<tr><td align="left">婚礼</td><td align="left">中式婚礼和三书六礼。婚礼是儒教非常重要且神圣的礼仪。定为婚礼，别男女，立夫妇之义，使男女各守其道，各循其义，各成其德，各正其位。</td></tr>
-<tr><td align="left">丧礼</td><td align="left">儒教非常重视丧礼，《礼记》中丧礼的篇目有《丧服小记》、《丧大记》、《奔丧》、《问丧》、《丧服四制》、《服问》、《间传》、《三年问》、《檀弓上》、《檀弓下》、《杂记上》、《杂记下》等十余篇。儒教丧礼制度非常复杂，对于人的行为、态度、饮食、丧服、敛日及丧礼的等级、程序都有详细规定。对不同亲疏关系和社会等级又有不同规定。</td></tr>
-<tr><td align="left">立社礼</td><td align="left">王为群姓立社，曰大社。王自为立社，曰王社。诸侯为百姓立社，曰国社。诸侯自为立社，曰侯社。大夫以下成群立社，曰置社</td></tr>
-<tr><td align="left">奠基礼</td><td align="left">起源远古时期猎头祭祀习俗，在破土动工前祭祀本土的生灵祈神保佑。</td></tr>
+</div><div class="table-wrapper"><table><thead><tr><th style="text-align: left">其余礼名</th><th style="text-align: left">描述</th></tr></thead><tbody>
+<tr><td style="text-align: left">禅让礼</td><td style="text-align: left">为朝代更迭名正言顺，前朝帝王主动设受禅台将天子的地位让出。</td></tr>
+<tr><td style="text-align: left">登基礼</td><td style="text-align: left">天子的就职典礼。</td></tr>
+<tr><td style="text-align: left">封禅礼</td><td style="text-align: left">封禅大多在泰山举行，封是祭天，禅是祭地，封禅以强调帝王君权天授的天子身份。</td></tr>
+<tr><td style="text-align: left">郊祀礼</td><td style="text-align: left">天子祭天地，诸侯祭社稷，大夫祭五祀，为天下祈福。冬至祭天于圜丘，夏至祭地于方丘，二者分别位于国都南郊和北郊，郊谓大祀，祀为群祀，故称为郊祀。</td></tr>
+<tr><td style="text-align: left">祀祖礼</td><td style="text-align: left">祭祖</td></tr>
+<tr><td style="text-align: left">怀子礼</td><td style="text-align: left">即“胎教礼”。母亲怀子后，目不视恶色，耳不听淫声，口不出敖言，身不行恶事，心不起恶念，能以胎教。</td></tr>
+<tr><td style="text-align: left">出生礼</td><td style="text-align: left">诞生 孩子出生后，如果是男孩就给他玉璋并在门左悬挂木弓，如果是女孩就给她瓦器并在门右悬挂佩巾，即弄璋、弄瓦、悬弓、悬帨礼。三朝是孩子出生第三天再抱出来，如果是男孩，就行射礼。满月有满月酒。百日是孩子出生第三个月末，要选择吉日为孩子剃胎发。但不能把胎发全剪掉，男的留个“角”，女的留个“羁”，或者男的留左边，女的留右边。由母亲带领去拜见父亲与祖父，父亲为孩子取名。周岁要占卜前途，即抓周。</td></tr>
+<tr><td style="text-align: left">进学礼</td><td style="text-align: left">学生与老师初见面，先奉上礼物以表尊敬，即束脩礼。</td></tr>
+<tr><td style="text-align: left">成人礼</td><td style="text-align: left">冠礼、及笄礼</td></tr>
+<tr><td style="text-align: left">婚礼</td><td style="text-align: left">中式婚礼和三书六礼。婚礼是儒教非常重要且神圣的礼仪。定为婚礼，别男女，立夫妇之义，使男女各守其道，各循其义，各成其德，各正其位。</td></tr>
+<tr><td style="text-align: left">丧礼</td><td style="text-align: left">儒教非常重视丧礼，《礼记》中丧礼的篇目有《丧服小记》、《丧大记》、《奔丧》、《问丧》、《丧服四制》、《服问》、《间传》、《三年问》、《檀弓上》、《檀弓下》、《杂记上》、《杂记下》等十余篇。儒教丧礼制度非常复杂，对于人的行为、态度、饮食、丧服、敛日及丧礼的等级、程序都有详细规定。对不同亲疏关系和社会等级又有不同规定。</td></tr>
+<tr><td style="text-align: left">立社礼</td><td style="text-align: left">王为群姓立社，曰大社。王自为立社，曰王社。诸侯为百姓立社，曰国社。诸侯自为立社，曰侯社。大夫以下成群立社，曰置社</td></tr>
+<tr><td style="text-align: left">奠基礼</td><td style="text-align: left">起源远古时期猎头祭祀习俗，在破土动工前祭祀本土的生灵祈神保佑。</td></tr>
 </tbody></table>
+</div>
 <h3 id="神职系统"><a class="header" href="#神职系统">神职系统</a></h3>
 <h4 id="神职人员"><a class="header" href="#神职人员">神职人员</a></h4>
 <p>儒教是民族宗教和国家宗教，传统上国家组织、家庭组织、教育机构、宗族组织即为教团组织，神职工作内容主要为祭祀、讲学。</p>
@@ -458,49 +483,50 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="中华文明的起源与发展第一.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="中华文明的起源与发展第一.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-                                                    <a rel="next" href="中华文明的核心：儒学第三1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                            <a rel="next" href="中华文明的核心：儒学第三1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="中华文明的起源与发展第一.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="中华文明的起源与发展第一.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-                                    <a rel="next" href="中华文明的核心：儒学第三1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                    <a rel="next" href="中华文明的核心：儒学第三1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                            </nav>
+            </nav>
 
         </div>
 
-        
-        
-        
-                <script type="text/javascript">
+
+
+
+        <script>
             window.playground_copyable = true;
         </script>
-        
-        
-                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
-        
-        
+
+
+    </div>
     </body>
 </html>
